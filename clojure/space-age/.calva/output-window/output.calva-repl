@@ -1,0 +1,208 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+; Syntax error compiling at (space_age.clj:11:1).
+; Unable to resolve symbol: on-earth in this context
+clj꞉space-age꞉> 
+1250000/39447
+clj꞉space-age꞉> 
+1250000/39447
+clj꞉space-age꞉> 
+1250000/39447
+clj꞉space-age꞉> 
+1250000/39447
+clj꞉space-age꞉> 
+31
+clj꞉space-age꞉> 
+31M
+clj꞉space-age꞉> 
+31M
+clj꞉space-age꞉> 
+32M
+clj꞉space-age꞉> 
+32M
+clj꞉space-age꞉> 
+32M
+clj꞉space-age꞉> 
+#'space-age/s
+clj꞉space-age꞉> 
+; Execution error (ArithmeticException) at java.math.BigDecimal/divide (BigDecimal.java:1722).
+; Non-terminating decimal expansion; no exact representable decimal result.
+clj꞉space-age꞉> 
+31.688087814028950237M
+clj꞉space-age꞉> 
+32M
+clj꞉space-age꞉> 
+31.68808781M
+clj꞉space-age꞉> 
+; Syntax error compiling at (space_age.clj:10:21).
+; Unable to resolve symbol: s in this context
+clj꞉space-age꞉> 
+#'space-age-test/on-earth
+clj꞉space-age-test꞉> 
+31.68808781M
+clj꞉space-age꞉> 
+32M
+clj꞉space-age꞉> 
+1250000/39447
+clj꞉space-age꞉> 
+; Execution error (IllegalFormatConversionException) at java.util.Formatter$FormatSpecifier/failConversion (Formatter.java:4426).
+; f != clojure.lang.Ratio
+clj꞉space-age꞉> 
+; Execution error (IllegalFormatConversionException) at java.util.Formatter$FormatSpecifier/failConversion (Formatter.java:4426).
+; f != clojure.lang.Ratio
+clj꞉space-age꞉> 
+; Execution error (IllegalFormatPrecisionException) at java.util.Formatter$FormatSpecifier/checkInteger (Formatter.java:3138).
+; 2
+clj꞉space-age꞉> 
+; Execution error (IllegalFormatPrecisionException) at java.util.Formatter$FormatSpecifier/checkInteger (Formatter.java:3138).
+; 2
+clj꞉space-age꞉> 
+"31.69"
+clj꞉space-age꞉> 
+31.69
+clj꞉space-age꞉> 
+; Execution error (IllegalFormatConversionException) at java.util.Formatter$FormatSpecifier/failConversion (Formatter.java:4426).
+; f != clojure.lang.Ratio
+clj꞉space-age꞉> 
+31.69
+clj꞉space-age꞉> 
+; Evaluating file: space_age_test.clj
+; Syntax error compiling at (space_age_test.clj:26:22).
+; No such var: space-age/on-mars
+; Evaluation of file space_age_test.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6436)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$MapExpr/parse (Compiler.java:3104)
+clojure.lang.Compiler/analyze (Compiler.java:6797)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:594)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+space-age-test/eval23605 (form-init14672772732997112825.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for space-age-test...
+; ERROR in space-age-test/age-in-mercury-years (Numbers.java:16):
+; error: java.lang.NullPointerException (Numbers.java:16)
+; expected:
+(= (Math/round (* 100.0 expected)) (Math/round (* 100.0 actual)))
+; FAIL in space-age-test/age-in-venus-years (space_age_test.clj:7):
+; expected:
+(= (Math/round (* 100.0 expected)) (Math/round (* 100.0 actual)))
+; actual:
+(not (= 978 602))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 1, ns: 1, vars: 3
+clj꞉space-age-test꞉> 
+#'space-age/on-earth
+clj꞉space-age꞉> 
+; Evaluating file: space_age.clj
+#'space-age/on-neptune
+; Running tests for space-age-test...
+; FAIL in space-age-test/age-in-venus-years (space_age_test.clj:7):
+; expected:
+(= (Math/round (* 100.0 expected)) (Math/round (* 100.0 actual)))
+; actual:
+(not (= 978 2498))
+; 5 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 3
+clj꞉space-age-test꞉> 
+#'space-age/on-venus
+clj꞉space-age꞉> 
+#'space-age/on-mercury
+clj꞉space-age꞉> 
+; Evaluating file: space_age.clj
+#'space-age/on-neptune
+; Running tests for space-age-test...
+; FAIL in space-age-test/age-in-venus-years (space_age_test.clj:7):
+; expected:
+(= (Math/round (* 100.0 expected)) (Math/round (* 100.0 actual)))
+; actual:
+(not (= 978 2498))
+; 5 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 3
+clj꞉space-age-test꞉> 
+#'space-age/on-venus
+clj꞉space-age꞉> 
+; Evaluating file: space_age.clj
+#'space-age/on-neptune
+; Running tests for space-age-test...
+; 5 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉space-age-test꞉> 
+; Evaluating file: space_age.clj
+#'space-age/on-neptune
+; Running tests for space-age-test...
+; 5 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉space-age-test꞉> 
+#'space-age/on-neptune
+clj꞉space-age꞉> 
+; Evaluating file: space_age.clj
+#'space-age/on-neptune
+; Running tests for space-age-test...
+; 5 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉space-age-test꞉> 
+; Evaluating file: space_age.clj
+#'space-age/on-neptune
+; Running tests for space-age-test...
+; 5 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉space-age-test꞉> 
+#'space-age/on-mars
+clj꞉space-age꞉> 
+; Evaluating file: space_age.clj
+#'space-age/on-neptune
+; Running tests for space-age-test...
+; 5 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉space-age-test꞉> 
+; Evaluating file: space_age_test.clj
+#'space-age-test/age-on-neptune
+; Running tests for space-age-test...
+; 15 tests finished, all passing 👍, ns: 1, vars: 8
+clj꞉space-age-test꞉> 

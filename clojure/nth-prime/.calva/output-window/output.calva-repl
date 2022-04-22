@@ -1,0 +1,2573 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+; Syntax error compiling at (nth_prime.clj:17:1).
+; Unable to resolve symbol: nth-prime in this context
+clj꞉nth-prime꞉> 
+; Syntax error compiling at (nth_prime.clj:17:1).
+; Unable to resolve symbol: nth-prime in this context
+clj꞉nth-prime꞉> 
+; Execution error (StackOverflowError) at (REPL:1).
+; null
+clj꞉nth-prime꞉> 
+; Execution error (StackOverflowError) at (REPL:1).
+; null
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+3
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+3
+clj꞉nth-prime꞉> 
+71
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+71
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+1223
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+1223
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (StackOverflowError) compiling at (nth_prime.clj:17:1).
+; null
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+nth-prime/eval8327 (form-init18322675943109112436.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Execution error (StackOverflowError) at (REPL:1).
+; null
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+nil
+; Running tests for nth-prime...
+; nREPL Connection was closed
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+; Syntax error compiling at (nth_prime.clj:17:1).
+; Unable to resolve symbol: nth-prime in this context
+clj꞉nth-prime꞉> 
+3
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+71
+; Running tests for nth-prime...
+71
+clj꞉nth-prime꞉> 
+
+(+ 1 2)
+; nREPL Connection was closed
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+3
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+5
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+5
+clj꞉nth-prime꞉> 
+7
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+7
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+197
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+197
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+197
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+463
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+463
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval6731 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+463
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval6807 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+6997
+clj꞉nth-prime꞉> 
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval6883 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+7919
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Execution error (StackOverflowError) at (REPL:1).
+; null
+clj꞉nth-prime꞉> 
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval6961 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval7035 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Execution error (StackOverflowError) at (REPL:1).
+; null
+clj꞉nth-prime꞉> 
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval7111 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval7185 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+7919
+clj꞉nth-prime꞉> 
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval7261 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; Execution error (StackOverflowError) at (REPL:1).
+; null
+clj꞉nth-prime꞉> 
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval7337 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval7411 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+9733
+clj꞉nth-prime꞉> 
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+10657
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval7489 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+11657
+clj꞉nth-prime꞉> 
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval7565 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+12553
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval7641 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+13499
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval7717 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval7791 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+14519
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval7867 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; Execution error (StackOverflowError) at (REPL:1).
+; null
+clj꞉nth-prime꞉> 
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+14519
+clj꞉nth-prime꞉> 
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval7945 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval8019 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:10:17).
+; java.lang.BigInt
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval9843 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Syntax error compiling at (nth_prime.clj:1:7651).
+; Unable to resolve symbol: u in this context
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval9918 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Syntax error (ClassNotFoundException) compiling at (nth_prime.clj:9:17).
+; java.lang.BigInt
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+29
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+#'nth-prime/nth-prime
+clj꞉nth-prime꞉> 
+29
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+7919
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+7919
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Execution error (StackOverflowError) at (REPL:1).
+; null
+clj꞉nth-prime꞉> 
+; Syntax error (StackOverflowError) compiling at (nth_prime.clj:15:1).
+; null
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+nth-prime/eval10153 (form-init8142799390817443790.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/ten-thousand-first-prime (core.clj):
+; the ten thousand and first prime is 104743
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (core.clj):
+; there is no zeroth prime
+; error: java.lang.StackOverflowError (core.clj)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+#'nth-prime/nth-prime
+clj꞉nth-prime꞉> 
+; nREPL Connection was closed
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+; Evaluating file: nth_prime.clj
+2
+; Running tests for nth-prime...
+; FAIL in nth-prime-test/sixth-prime (nth_prime_test.clj:15):
+; the sixth prime is 13
+; expected:
+(= 13 (nth-prime/nth-prime 6))
+; actual:
+(not (= 13 2))
+; FAIL in nth-prime-test/ten-thousand-first-prime (nth_prime_test.clj:19):
+; the ten thousand and first prime is 104743
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; actual:
+(not (= 104743 2))
+; ERROR in nth-prime-test/zeroth-prime (Numbers.java:23):
+; there is no zeroth prime
+; error: java.lang.ArithmeticException: Divide by zero (Numbers.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 2, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error compiling at (nth_prime.clj:7:27).
+; Unable to resolve symbol: la in this context
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6436)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval8123 (form-init17075814565879191536.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; FAIL in nth-prime-test/sixth-prime (nth_prime_test.clj:15):
+; the sixth prime is 13
+; expected:
+13
+; actual:
+2
+; FAIL in nth-prime-test/ten-thousand-first-prime (nth_prime_test.clj:19):
+; the ten thousand and first prime is 104743
+; expected:
+104743
+; actual:
+2
+; ERROR in nth-prime-test/zeroth-prime (Numbers.java:23):
+; there is no zeroth prime
+; error: java.lang.ArithmeticException: Divide by zero (Numbers.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 2, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+2
+; Running tests for nth-prime...
+; FAIL in nth-prime-test/sixth-prime (nth_prime_test.clj:15):
+; the sixth prime is 13
+; expected:
+13
+; actual:
+2
+; FAIL in nth-prime-test/ten-thousand-first-prime (nth_prime_test.clj:19):
+; the ten thousand and first prime is 104743
+; expected:
+104743
+; actual:
+2
+; ERROR in nth-prime-test/zeroth-prime (Numbers.java:23):
+; there is no zeroth prime
+; error: java.lang.ArithmeticException: Divide by zero (Numbers.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 2, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error reading source at (nth_prime.clj:6:64).
+; Unmatched delimiter: ]
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+nth-prime/eval8288 (form-init17075814565879191536.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; FAIL in nth-prime-test/sixth-prime (nth_prime_test.clj:15):
+; the sixth prime is 13
+; expected:
+13
+; actual:
+2
+; FAIL in nth-prime-test/ten-thousand-first-prime (nth_prime_test.clj:19):
+; the ten thousand and first prime is 104743
+; expected:
+104743
+; actual:
+2
+; ERROR in nth-prime-test/zeroth-prime (Numbers.java:23):
+; there is no zeroth prime
+; error: java.lang.ArithmeticException: Divide by zero (Numbers.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 2, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error macroexpanding loop at (nth_prime.clj:4:3).
+; loop requires an even number of forms in binding vector in nth-prime:4
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7009)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7092)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval8358 (form-init17075814565879191536.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; FAIL in nth-prime-test/sixth-prime (nth_prime_test.clj:15):
+; the sixth prime is 13
+; expected:
+13
+; actual:
+2
+; FAIL in nth-prime-test/ten-thousand-first-prime (nth_prime_test.clj:19):
+; the ten thousand and first prime is 104743
+; expected:
+104743
+; actual:
+2
+; ERROR in nth-prime-test/zeroth-prime (Numbers.java:23):
+; there is no zeroth prime
+; error: java.lang.ArithmeticException: Divide by zero (Numbers.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 2, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+2
+; Running tests for nth-prime...
+; FAIL in nth-prime-test/sixth-prime (nth_prime_test.clj:15):
+; the sixth prime is 13
+; expected:
+13
+; actual:
+2
+; FAIL in nth-prime-test/ten-thousand-first-prime (nth_prime_test.clj:19):
+; the ten thousand and first prime is 104743
+; expected:
+104743
+; actual:
+2
+; ERROR in nth-prime-test/zeroth-prime (Numbers.java:23):
+; there is no zeroth prime
+; error: java.lang.ArithmeticException: Divide by zero (Numbers.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 2, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+2
+clj꞉nth-prime꞉> 
+2
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+2
+; Running tests for nth-prime...
+; FAIL in nth-prime-test/sixth-prime (nth_prime_test.clj:15):
+; the sixth prime is 13
+; expected:
+13
+; actual:
+2
+; FAIL in nth-prime-test/ten-thousand-first-prime (nth_prime_test.clj:19):
+; the ten thousand and first prime is 104743
+; expected:
+104743
+; actual:
+2
+; ERROR in nth-prime-test/zeroth-prime (Numbers.java:23):
+; there is no zeroth prime
+; error: java.lang.ArithmeticException: Divide by zero (Numbers.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 2, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+2
+clj꞉nth-prime꞉> 
+2
+clj꞉nth-prime꞉> 
+2
+clj꞉nth-prime꞉> 
+2
+clj꞉nth-prime꞉> 
+2
+clj꞉nth-prime꞉> 
+2
+clj꞉nth-prime꞉> 
+2
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+2
+2
+; Running tests for nth-prime...
+clj꞉nth-prime꞉> 
+; FAIL in nth-prime-test/sixth-prime (nth_prime_test.clj:15):
+; the sixth prime is 13
+; expected:
+13
+; actual:
+2
+; FAIL in nth-prime-test/ten-thousand-first-prime (nth_prime_test.clj:19):
+; the ten thousand and first prime is 104743
+; expected:
+104743
+; actual:
+2
+; ERROR in nth-prime-test/zeroth-prime (Numbers.java:23):
+; there is no zeroth prime
+; error: java.lang.ArithmeticException: Divide by zero (Numbers.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 2, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+2
+clj꞉nth-prime꞉> 
+2
+; Running tests for nth-prime...
+; FAIL in nth-prime-test/sixth-prime (nth_prime_test.clj:15):
+; the sixth prime is 13
+; expected:
+13
+; actual:
+2
+; FAIL in nth-prime-test/ten-thousand-first-prime (nth_prime_test.clj:19):
+; the ten thousand and first prime is 104743
+; expected:
+104743
+; actual:
+2
+; ERROR in nth-prime-test/zeroth-prime (Numbers.java:23):
+; there is no zeroth prime
+; error: java.lang.ArithmeticException: Divide by zero (Numbers.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 2, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+#'nth-prime/nth-prime
+clj꞉nth-prime꞉> 
+; Execution error (OutOfMemoryError) at java.lang.Long/toString (Long.java:473).
+; Java heap space
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+QUIT
+; Running tests for nth-prime...
+; nREPL Connection was closed
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+; Syntax error compiling at (nth_prime.clj:16:9).
+; Unable to resolve symbol: gen-primes in this context
+clj꞉nth-prime꞉> 
+(2 3 5 7 11)
+clj꞉nth-prime꞉> 
+13
+clj꞉nth-prime꞉> 
+13
+clj꞉nth-prime꞉> 
+17
+clj꞉nth-prime꞉> 
+(2
+ 3
+ 5
+ 7
+ 11
+ 13
+ 17
+ 19
+ 23
+ 29
+ 31
+ 37
+ 41
+ 43
+ 47
+ 53
+ 59
+ 61
+ 67
+ 71
+ 73
+ 79
+ 83
+ 89
+ 97
+ 101
+ 103
+ 107
+ 109
+ 113
+ 127
+ 131
+ 137
+ 139
+ 149
+ 151
+ 157
+ 163
+ 167
+ 173
+ 179
+ 181
+ 191
+ 193
+ 197
+ 199
+ 211
+ 223
+ 227
+ 229
+ ...)
+clj꞉nth-prime꞉> 
+; Syntax error compiling at (nth_prime.clj:20:1).
+; Unable to resolve symbol: nth-prime in this context
+clj꞉nth-prime꞉> 
+3
+clj꞉nth-prime꞉> 
+7
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+7
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/zeroth-prime (RT.java:23):
+; there is no zeroth prime
+; error: java.lang.IndexOutOfBoundsException (RT.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+7
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/zeroth-prime (RT.java:23):
+; there is no zeroth prime
+; error: java.lang.IndexOutOfBoundsException (RT.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+7
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/zeroth-prime (RT.java:23):
+; there is no zeroth prime
+; error: java.lang.IndexOutOfBoundsException (RT.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error compiling if at (nth_prime.clj:17:3).
+; Too few arguments to if
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6118)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval8625 (form-init5909565110366115082.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/zeroth-prime (RT.java:23):
+; there is no zeroth prime
+; error: java.lang.IndexOutOfBoundsException (RT.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error compiling if at (nth_prime.clj:17:3).
+; Too few arguments to if
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6118)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval8707 (form-init5909565110366115082.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/zeroth-prime (RT.java:23):
+; there is no zeroth prime
+; error: java.lang.IndexOutOfBoundsException (RT.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error compiling if at (nth_prime.clj:17:3).
+; Too few arguments to if
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6118)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval8789 (form-init5909565110366115082.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/zeroth-prime (RT.java:23):
+; there is no zeroth prime
+; error: java.lang.IndexOutOfBoundsException (RT.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error compiling if at (nth_prime.clj:17:3).
+; Too few arguments to if
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6118)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval8871 (form-init5909565110366115082.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/zeroth-prime (RT.java:23):
+; there is no zeroth prime
+; error: java.lang.IndexOutOfBoundsException (RT.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error compiling if at (nth_prime.clj:17:3).
+; Too few arguments to if
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6118)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval8953 (form-init5909565110366115082.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/zeroth-prime (RT.java:23):
+; there is no zeroth prime
+; error: java.lang.IndexOutOfBoundsException (RT.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error compiling throw at (nth_prime.clj:17:15).
+; Too few arguments to throw, throw expects a single Throwable instance
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$IfExpr$Parser/parse (Compiler.java:2829)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6118)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval9035 (form-init5909565110366115082.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/zeroth-prime (RT.java:23):
+; there is no zeroth prime
+; error: java.lang.IndexOutOfBoundsException (RT.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error compiling at (nth_prime.clj:17:15).
+; Unable to resolve symbol: Ille in this context
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$ThrowExpr$Parser/parse (Compiler.java:2471)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$IfExpr$Parser/parse (Compiler.java:2829)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6118)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nth-prime/eval9117 (form-init5909565110366115082.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/zeroth-prime (RT.java:23):
+; there is no zeroth prime
+; error: java.lang.IndexOutOfBoundsException (RT.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassCastException) compiling at (nth_prime.clj:20:1).
+; class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap')
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+nth-prime/eval9199 (form-init5909565110366115082.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/first-prime (nth_prime.clj:7):
+; the first prime is 2
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:7)
+; expected:
+(= 2 (nth-prime/nth-prime 1))
+; ERROR in nth-prime-test/second-prime (nth_prime.clj:11):
+; the second prime is 3
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:11)
+; expected:
+(= 3 (nth-prime/nth-prime 2))
+; ERROR in nth-prime-test/sixth-prime (nth_prime.clj:15):
+; the sixth prime is 13
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:15)
+; expected:
+(= 13 (nth-prime/nth-prime 6))
+; ERROR in nth-prime-test/ten-thousand-first-prime (nth_prime.clj:19):
+; the ten thousand and first prime is 104743
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:19)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (RT.java:23):
+; there is no zeroth prime
+; error: java.lang.IndexOutOfBoundsException (RT.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 5, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassCastException) compiling at (nth_prime.clj:20:1).
+; class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap')
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+nth-prime/eval9284 (form-init5909565110366115082.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/first-prime (nth_prime.clj:7):
+; the first prime is 2
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:7)
+; expected:
+(= 2 (nth-prime/nth-prime 1))
+; ERROR in nth-prime-test/second-prime (nth_prime.clj:11):
+; the second prime is 3
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:11)
+; expected:
+(= 3 (nth-prime/nth-prime 2))
+; ERROR in nth-prime-test/sixth-prime (nth_prime.clj:15):
+; the sixth prime is 13
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:15)
+; expected:
+(= 13 (nth-prime/nth-prime 6))
+; ERROR in nth-prime-test/ten-thousand-first-prime (nth_prime.clj:19):
+; the ten thousand and first prime is 104743
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:19)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (RT.java:23):
+; there is no zeroth prime
+; error: java.lang.IndexOutOfBoundsException (RT.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 5, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassCastException) compiling at (nth_prime.clj:21:1).
+; class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap')
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+nth-prime/eval9369 (form-init5909565110366115082.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/first-prime (nth_prime.clj:7):
+; the first prime is 2
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:7)
+; expected:
+(= 2 (nth-prime/nth-prime 1))
+; ERROR in nth-prime-test/second-prime (nth_prime.clj:11):
+; the second prime is 3
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:11)
+; expected:
+(= 3 (nth-prime/nth-prime 2))
+; ERROR in nth-prime-test/sixth-prime (nth_prime.clj:15):
+; the sixth prime is 13
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:15)
+; expected:
+(= 13 (nth-prime/nth-prime 6))
+; ERROR in nth-prime-test/ten-thousand-first-prime (nth_prime.clj:19):
+; the ten thousand and first prime is 104743
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:19)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (RT.java:23):
+; there is no zeroth prime
+; error: java.lang.IndexOutOfBoundsException (RT.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 5, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassCastException) compiling at (nth_prime.clj:21:1).
+; class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap')
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+nth-prime/eval9454 (form-init5909565110366115082.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/first-prime (nth_prime.clj:7):
+; the first prime is 2
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:7)
+; expected:
+(= 2 (nth-prime/nth-prime 1))
+; ERROR in nth-prime-test/second-prime (nth_prime.clj:11):
+; the second prime is 3
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:11)
+; expected:
+(= 3 (nth-prime/nth-prime 2))
+; ERROR in nth-prime-test/sixth-prime (nth_prime.clj:15):
+; the sixth prime is 13
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:15)
+; expected:
+(= 13 (nth-prime/nth-prime 6))
+; ERROR in nth-prime-test/ten-thousand-first-prime (nth_prime.clj:19):
+; the ten thousand and first prime is 104743
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:19)
+; expected:
+(= 104743 (nth-prime/nth-prime 10001))
+; ERROR in nth-prime-test/zeroth-prime (RT.java:23):
+; there is no zeroth prime
+; error: java.lang.IndexOutOfBoundsException (RT.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 5, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+7
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/zeroth-prime (RT.java:23):
+; there is no zeroth prime
+; error: java.lang.IndexOutOfBoundsException (RT.java:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+7
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/zeroth-prime (nth_prime.clj:23):
+; there is no zeroth prime
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (ClassCastException) compiling at (nth_prime.clj:21:1).
+; class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap')
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+nth-prime/eval9709 (form-init5909565110366115082.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; ERROR in nth-prime-test/zeroth-prime (nth_prime.clj:23):
+; there is no zeroth prime
+; error: java.lang.ClassCastException: class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap') (nth_prime.clj:23)
+; expected:
+(thrown? IllegalArgumentException (nth-prime/nth-prime 0))
+; 5 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Execution error (ClassCastException) at nth-prime/nth-prime (nth_prime.clj:17).
+; class java.lang.Class cannot be cast to class java.lang.Throwable (java.lang.Class and java.lang.Throwable are in module java.base of loader 'bootstrap')
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+; Syntax error (IllegalArgumentException) compiling at (nth_prime.clj:21:1).
+; null
+; Evaluation of file nth_prime.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+nth-prime/eval9796 (form-init5909565110366115082.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nth-prime...
+; 5 tests finished, all passing 👍, ns: 1, vars: 5
+clj꞉nth-prime꞉> 
+; Execution error (IllegalArgumentException) at nth-prime/nth-prime (nth_prime.clj:17).
+; null
+clj꞉nth-prime꞉> 
+; Evaluating file: nth_prime.clj
+#'nth-prime/nth-prime
+; Running tests for nth-prime...
+; 5 tests finished, all passing 👍, ns: 1, vars: 5
+clj꞉nth-prime꞉> 

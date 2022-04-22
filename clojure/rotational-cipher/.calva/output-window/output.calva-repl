@@ -1,0 +1,568 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+; Error printing return value (ClassCastException) at clojure.lang.Numbers/add (Numbers.java:153).
+; class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉rotational-cipher꞉> 
+(104 101 108 108 111)
+clj꞉rotational-cipher꞉> 
+97
+clj꞉rotational-cipher꞉> 
+65
+clj꞉rotational-cipher꞉> 
+; Error printing return value (ClassCastException) at rotational-cipher/eval23464$fn (form-init12121009845599954764.clj:5).
+; class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉rotational-cipher꞉> 
+; Error printing return value (ClassCastException) at rotational-cipher/eval23474$fn (form-init12121009845599954764.clj:5).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉rotational-cipher꞉> 
+; Error printing return value (ClassCastException) at rotational-cipher/eval23480$fn (form-init12121009845599954764.clj:5).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉rotational-cipher꞉> 
+(104 101 108 108 111)
+clj꞉rotational-cipher꞉> 
+; Error printing return value (ClassCastException) at rotational-cipher/eval23494$fn (form-init12121009845599954764.clj:5).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉rotational-cipher꞉> 
+60
+clj꞉rotational-cipher꞉> 
+; Error printing return value (ClassCastException) at rotational-cipher/eval23508$fn (form-init12121009845599954764.clj:1).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉rotational-cipher꞉> 
+; Error printing return value (ClassCastException) at rotational-cipher/eval23514$fn (form-init12121009845599954764.clj:6).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉rotational-cipher꞉> 
+(99 96 103 103 106)
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/num
+; WARNING: num already refers to: #'clojure.core/num in namespace: rotational-cipher, being replaced by: #'rotational-cipher/num
+clj꞉rotational-cipher꞉> 
+"hello"
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/text
+clj꞉rotational-cipher꞉> 
+(109 106 113 113 116)
+clj꞉rotational-cipher꞉> 
+; Syntax error compiling at (rotational_cipher.clj:5:3).
+; No such namespace: str
+clj꞉rotational-cipher꞉> 
+nil
+clj꞉rotational-cipher꞉> 
+; Error printing return value (ClassCastException) at clojure.lang.Numbers/add (Numbers.java:153).
+; class clojure.core$num cannot be cast to class java.lang.Number (clojure.core$num is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉rotational-cipher꞉> 
+; Error printing return value (ClassCastException) at clojure.lang.Numbers/add (Numbers.java:153).
+; class clojure.core$num cannot be cast to class java.lang.Number (clojure.core$num is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉rotational-cipher꞉> 
+#function[rotational-cipher/eval23581/fn--23582]
+clj꞉rotational-cipher꞉> 
+; Error printing return value (ClassCastException) at clojure.lang.Numbers/add (Numbers.java:153).
+; class clojure.core$num cannot be cast to class java.lang.Number (clojure.core$num is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉rotational-cipher꞉> 
+; Error printing return value (ClassCastException) at clojure.lang.Numbers/add (Numbers.java:153).
+; class clojure.core$num cannot be cast to class java.lang.Number (clojure.core$num is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/text
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/num
+; WARNING: num already refers to: #'clojure.core/num in namespace: rotational-cipher, being replaced by: #'rotational-cipher/num
+clj꞉rotational-cipher꞉> 
+(109 106 113 113 116)
+clj꞉rotational-cipher꞉> 
+(109 106 113 113 116)
+clj꞉rotational-cipher꞉> 
+\"
+clj꞉rotational-cipher꞉> 
+\a
+clj꞉rotational-cipher꞉> 
+(\m \j \q \q \t)
+clj꞉rotational-cipher꞉> 
+"mjqqt"
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/num
+clj꞉rotational-cipher꞉> 
+"ifmmp"
+clj꞉rotational-cipher꞉> 
+; Syntax error compiling at (rotational_cipher.clj:8:16).
+; Unable to resolve symbol: convert in this context
+clj꞉rotational-cipher꞉> 
+nil
+clj꞉rotational-cipher꞉> 
+; Syntax error compiling at (rotational_cipher.clj:5:9).
+; Unable to resolve symbol: n in this context
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/convert
+clj꞉rotational-cipher꞉> 
+; Syntax error compiling at (rotational_cipher.clj:5:9).
+; Unable to resolve symbol: n in this context
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/n
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/char
+; WARNING: char already refers to: #'clojure.core/char in namespace: rotational-cipher, being replaced by: #'rotational-cipher/char
+clj꞉rotational-cipher꞉> 
+105
+clj꞉rotational-cipher꞉> 
+; Execution error (ClassCastException) at rotational-cipher/eval23656 (form-init12121009845599954764.clj:5).
+; class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉rotational-cipher꞉> 
+105
+clj꞉rotational-cipher꞉> 
+; Execution error (ClassCastException) at rotational-cipher/eval23660 (form-init12121009845599954764.clj:5).
+; class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉rotational-cipher꞉> 
+; Execution error (ClassCastException) at rotational-cipher/eval23662 (form-init12121009845599954764.clj:6).
+; class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉rotational-cipher꞉> 
+; Execution error (ClassCastException) at rotational-cipher/eval23664 (form-init12121009845599954764.clj:6).
+; class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/c
+clj꞉rotational-cipher꞉> 
+; Execution error (ClassCastException) at rotational-cipher/eval23666 (form-init12121009845599954764.clj:6).
+; class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/char
+clj꞉rotational-cipher꞉> 
+; Execution error (NullPointerException) at rotational-cipher/eval23668 (form-init12121009845599954764.clj:6).
+; null
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/char
+clj꞉rotational-cipher꞉> 
+\a
+clj꞉rotational-cipher꞉> 
+\i
+clj꞉rotational-cipher꞉> 
+; Execution error (ClassCastException) at rotational-cipher/convert (form-init12121009845599954764.clj:5).
+; class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/text
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/num
+; WARNING: num already refers to: #'clojure.core/num in namespace: rotational-cipher, being replaced by: #'rotational-cipher/num
+clj꞉rotational-cipher꞉> 
+; Error printing return value (ClassCastException) at rotational-cipher/convert (form-init12121009845599954764.clj:5).
+; class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/rotate
+clj꞉rotational-cipher꞉> 
+; Error printing return value (ClassCastException) at rotational-cipher/convert (form-init12121009845599954764.clj:5).
+; class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/rotate
+clj꞉rotational-cipher꞉> 
+; Execution error (ClassCastException) at rotational-cipher/convert (form-init12121009845599954764.clj:5).
+; class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉rotational-cipher꞉> 
+QUIT
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/convert
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/rotate
+clj꞉rotational-cipher꞉> 
+"mjqqt"
+clj꞉rotational-cipher꞉> 
+QUIT
+clj꞉rotational-cipher꞉> 
+"ifmmp"
+clj꞉rotational-cipher꞉> 
+105
+clj꞉rotational-cipher꞉> 
+\i
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/c
+clj꞉rotational-cipher꞉> 
+\e
+clj꞉rotational-cipher꞉> 
+; Evaluating file: rotational_cipher_test.clj
+#'rotational-cipher-test/rotate-all-letters
+; Running tests for rotational-cipher-test...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉rotational-cipher-test꞉> 
+; Evaluating file: rotational_cipher_test.clj
+; Evaluating file: rotational_cipher_test.clj
+; nREPL Connection was closed
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+#'rotational-cipher/n
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/c
+clj꞉rotational-cipher꞉> 
+\e
+clj꞉rotational-cipher꞉> 
+; Evaluating file: rotational_cipher_test.clj
+#'rotational-cipher-test/rotate-all-letters
+; Running tests for rotational-cipher-test...
+; FAIL in rotational-cipher-test/rotate-all-letters (rotational_cipher_test.clj:46):
+; expected:
+(=
+ (rotational-cipher/rotate
+  "The quick brown fox jumps over the lazy dog."
+  13)
+ "Gur dhvpx oebja sbk whzcf bire gur ynml qbt.")
+; actual:
+(not
+ (=
+  "auradhvpxaoebjaasbkawhzcfabireaguraynmlaqbto"
+  "Gur dhvpx oebja sbk whzcf bire gur ynml qbt."))
+; FAIL in rotational-cipher-test/rotate-capital-letters (rotational_cipher_test.clj:21):
+; expected:
+(= (rotational-cipher/rotate "OMG" 5) "TRL")
+; actual:
+(not (= "nlf" "TRL"))
+; FAIL in rotational-cipher-test/rotate-forward-then-backwards-same-number-of-steps (rotational_cipher_test.clj:42):
+; expected:
+(= (rotational-cipher/rotate (rotational-cipher/rotate "B" 28) -28) "B")
+; actual:
+(not (= "v" "B"))
+; FAIL in rotational-cipher-test/rotate-numbers (rotational_cipher_test.clj:27):
+; expected:
+(=
+ (rotational-cipher/rotate "Testing 1 2 3 testing" 4)
+ "Xiwxmrk 1 2 3 xiwxmrk")
+; actual:
+(not (= "riwxmrkrirjrkrxiwxmrk" "Xiwxmrk 1 2 3 xiwxmrk"))
+; FAIL in rotational-cipher-test/rotate-opposite-past-first-letter (rotational_cipher_test.clj:36):
+; expected:
+(= (rotational-cipher/rotate "B" -2) "Z")
+; actual:
+(not (= "t" "Z"))
+; FAIL in rotational-cipher-test/rotate-opposite-past-letter-count (rotational_cipher_test.clj:39):
+; expected:
+(= (rotational-cipher/rotate "B" -28) "Z")
+; actual:
+(not (= "t" "Z"))
+; FAIL in rotational-cipher-test/rotate-punctuation (rotational_cipher_test.clj:30):
+; expected:
+(=
+ (rotational-cipher/rotate "Let's eat, Grandma!" 21)
+ "Gzo'n zvo, Bmviyhv!")
+; actual:
+(not (= "azopnizvouivmviyhvj" "Gzo'n zvo, Bmviyhv!"))
+; FAIL in rotational-cipher-test/rotate-spaces (rotational_cipher_test.clj:24):
+; expected:
+(= (rotational-cipher/rotate "O M G" 5) "T R L")
+; actual:
+(not (= "nslsf" "T R L"))
+; 14 tests finished, problems found. 😭 errors: 0, failures: 8, ns: 1, vars: 14
+clj꞉rotational-cipher-test꞉> 
+#'rotational-cipher/num
+; WARNING: num already refers to: #'clojure.core/num in namespace: rotational-cipher, being replaced by: #'rotational-cipher/num
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/text
+clj꞉rotational-cipher꞉> 
+"ifmmp"
+clj꞉rotational-cipher꞉> 
+65
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/text
+clj꞉rotational-cipher꞉> 
+"cfmmp"
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/c
+clj꞉rotational-cipher꞉> 
+70
+clj꞉rotational-cipher꞉> 
+"cfmmp"
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/text
+clj꞉rotational-cipher꞉> 
+"cfmmp"
+clj꞉rotational-cipher꞉> 
+true
+clj꞉rotational-cipher꞉> 
+; Syntax error compiling at (rotational_cipher.clj:12:6).
+; Unable to resolve symbol: convert-upper-case in this context
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/rotate
+clj꞉rotational-cipher꞉> 
+; Execution error (ClassCastException) at rotational-cipher/convert-upper-case (form-init15887199337460280876.clj:5).
+; class clojure.core$num cannot be cast to class java.lang.Number (clojure.core$num is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉rotational-cipher꞉> 
+true
+clj꞉rotational-cipher꞉> 
+70
+clj꞉rotational-cipher꞉> 
+\F
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/text
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/num
+; WARNING: num already refers to: #'clojure.core/num in namespace: rotational-cipher, being replaced by: #'rotational-cipher/num
+clj꞉rotational-cipher꞉> 
+(\I \f \m \m \p)
+clj꞉rotational-cipher꞉> 
+"Ifmmp"
+clj꞉rotational-cipher꞉> 
+"TRL"
+clj꞉rotational-cipher-test꞉> 
+"TsRsL"
+clj꞉rotational-cipher-test꞉> 
+; Evaluating file: rotational_cipher.clj
+nil
+; Running tests for rotational-cipher-test...
+; FAIL in rotational-cipher-test/rotate-all-letters (rotational_cipher_test.clj:46):
+; expected:
+(=
+ (rotational-cipher/rotate
+  "The quick brown fox jumps over the lazy dog."
+  13)
+ "Gur dhvpx oebja sbk whzcf bire gur ynml qbt.")
+; actual:
+(not
+ (=
+  "Guradhvpxaoebjaasbkawhzcfabireaguraynmlaqbto"
+  "Gur dhvpx oebja sbk whzcf bire gur ynml qbt."))
+; FAIL in rotational-cipher-test/rotate-numbers (rotational_cipher_test.clj:27):
+; expected:
+(=
+ (rotational-cipher/rotate "Testing 1 2 3 testing" 4)
+ "Xiwxmrk 1 2 3 xiwxmrk")
+; actual:
+(not (= "Xiwxmrkrirjrkrxiwxmrk" "Xiwxmrk 1 2 3 xiwxmrk"))
+; FAIL in rotational-cipher-test/rotate-punctuation (rotational_cipher_test.clj:30):
+; expected:
+(=
+ (rotational-cipher/rotate "Let's eat, Grandma!" 21)
+ "Gzo'n zvo, Bmviyhv!")
+; actual:
+(not (= "GzopnizvouiBmviyhvj" "Gzo'n zvo, Bmviyhv!"))
+; FAIL in rotational-cipher-test/rotate-spaces (rotational_cipher_test.clj:24):
+; expected:
+(= (rotational-cipher/rotate "O M G" 5) "T R L")
+; actual:
+(not (= "TsRsL" "T R L"))
+; 14 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 14
+clj꞉rotational-cipher-test꞉> 
+; Execution error (ClassCastException) at rotational-cipher/eval23892 (form-init15887199337460280876.clj:24).
+; class java.lang.String cannot be cast to class java.lang.Character (java.lang.String and java.lang.Character are in module java.base of loader 'bootstrap')
+clj꞉rotational-cipher꞉> 
+32
+clj꞉rotational-cipher꞉> 
+; Evaluating file: rotational_cipher.clj
+nil
+; Running tests for rotational-cipher-test...
+; 14 tests finished, all passing 👍, ns: 1, vars: 14
+clj꞉rotational-cipher-test꞉> 
+; Evaluating file: rotational_cipher.clj
+#'rotational-cipher/rotate
+; Running tests for rotational-cipher-test...
+; ERROR in rotational-cipher-test/rotate-a-by-0-same-output (rotational_cipher.clj:12):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap') (rotational_cipher.clj:12)
+; expected:
+(= (rotational-cipher/rotate "a" 0) "a")
+; ERROR in rotational-cipher-test/rotate-a-by-1 (rotational_cipher.clj:6):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap') (rotational_cipher.clj:6)
+; expected:
+(= (rotational-cipher/rotate "a" 1) "b")
+; ERROR in rotational-cipher-test/rotate-a-by-26-same-output (rotational_cipher.clj:9):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap') (rotational_cipher.clj:9)
+; expected:
+(= (rotational-cipher/rotate "a" 26) "a")
+; ERROR in rotational-cipher-test/rotate-all-letters (rotational_cipher.clj:46):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap') (rotational_cipher.clj:46)
+; expected:
+(=
+ (rotational-cipher/rotate
+  "The quick brown fox jumps over the lazy dog."
+  13)
+ "Gur dhvpx oebja sbk whzcf bire gur ynml qbt.")
+; ERROR in rotational-cipher-test/rotate-capital-letters (rotational_cipher.clj:21):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap') (rotational_cipher.clj:21)
+; expected:
+(= (rotational-cipher/rotate "OMG" 5) "TRL")
+; ERROR in rotational-cipher-test/rotate-forward-then-backwards-same-number-of-steps (rotational_cipher.clj:43):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap') (rotational_cipher.clj:43)
+; expected:
+(= (rotational-cipher/rotate (rotational-cipher/rotate "B" 28) -28) "B")
+; ERROR in rotational-cipher-test/rotate-m-by-13 (rotational_cipher.clj:15):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap') (rotational_cipher.clj:15)
+; expected:
+(= (rotational-cipher/rotate "m" 13) "z")
+; ERROR in rotational-cipher-test/rotate-n-by-13-with-wrap (rotational_cipher.clj:18):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap') (rotational_cipher.clj:18)
+; expected:
+(= (rotational-cipher/rotate "n" 13) "a")
+; ERROR in rotational-cipher-test/rotate-numbers (rotational_cipher.clj:27):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap') (rotational_cipher.clj:27)
+; expected:
+(=
+ (rotational-cipher/rotate "Testing 1 2 3 testing" 4)
+ "Xiwxmrk 1 2 3 xiwxmrk")
+; ERROR in rotational-cipher-test/rotate-opposite-direction (rotational_cipher.clj:33):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap') (rotational_cipher.clj:33)
+; expected:
+(= (rotational-cipher/rotate "b" -1) "a")
+; ERROR in rotational-cipher-test/rotate-opposite-past-first-letter (rotational_cipher.clj:36):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap') (rotational_cipher.clj:36)
+; expected:
+(= (rotational-cipher/rotate "B" -2) "Z")
+; ERROR in rotational-cipher-test/rotate-opposite-past-letter-count (rotational_cipher.clj:39):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap') (rotational_cipher.clj:39)
+; expected:
+(= (rotational-cipher/rotate "B" -28) "Z")
+; ERROR in rotational-cipher-test/rotate-punctuation (rotational_cipher.clj:30):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap') (rotational_cipher.clj:30)
+; expected:
+(=
+ (rotational-cipher/rotate "Let's eat, Grandma!" 21)
+ "Gzo'n zvo, Bmviyhv!")
+; ERROR in rotational-cipher-test/rotate-spaces (rotational_cipher.clj:24):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap') (rotational_cipher.clj:24)
+; expected:
+(= (rotational-cipher/rotate "O M G" 5) "T R L")
+; 14 tests finished, problems found. 😭 errors: 14, failures: 0, ns: 1, vars: 14
+clj꞉rotational-cipher-test꞉> 
+; Execution error (ClassCastException) at rotational-cipher/convert (rotational_cipher.clj:11).
+; class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/n
+clj꞉rotational-cipher꞉> 
+#'rotational-cipher/c
+clj꞉rotational-cipher꞉> 
+; Execution error (ClassCastException) at rotational-cipher/eval23950 (form-init15887199337460280876.clj:11).
+; class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉rotational-cipher꞉> 
+; Execution error (ClassCastException) at rotational-cipher/eval23952 (form-init15887199337460280876.clj:19).
+; class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉rotational-cipher꞉> 
+true
+clj꞉rotational-cipher꞉> 
+true
+clj꞉rotational-cipher꞉> 
+; Evaluating file: rotational_cipher.clj
+nil
+; Running tests for rotational-cipher-test...
+; FAIL in rotational-cipher-test/rotate-a-by-0-same-output (rotational_cipher_test.clj:12):
+; expected:
+(= (rotational-cipher/rotate "a" 0) "a")
+; actual:
+(not (= "97" "a"))
+; FAIL in rotational-cipher-test/rotate-a-by-1 (rotational_cipher_test.clj:6):
+; expected:
+(= (rotational-cipher/rotate "a" 1) "b")
+; actual:
+(not (= "98" "b"))
+; FAIL in rotational-cipher-test/rotate-a-by-26-same-output (rotational_cipher_test.clj:9):
+; expected:
+(= (rotational-cipher/rotate "a" 26) "a")
+; actual:
+(not (= "97" "a"))
+; FAIL in rotational-cipher-test/rotate-all-letters (rotational_cipher_test.clj:46):
+; expected:
+(=
+ (rotational-cipher/rotate
+  "The quick brown fox jumps over the lazy dog."
+  13)
+ "Gur dhvpx oebja sbk whzcf bire gur ynml qbt.")
+; actual:
+(not
+ (=
+  "71117114 100104118112120 1111019810697 11598107 11910412299102 98105114101 103117114 121110109108 11398116."
+  "Gur dhvpx oebja sbk whzcf bire gur ynml qbt."))
+; FAIL in rotational-cipher-test/rotate-capital-letters (rotational_cipher_test.clj:21):
+; expected:
+(= (rotational-cipher/rotate "OMG" 5) "TRL")
+; actual:
+(not (= "848276" "TRL"))
+; FAIL in rotational-cipher-test/rotate-forward-then-backwards-same-number-of-steps (rotational_cipher_test.clj:42):
+; expected:
+(= (rotational-cipher/rotate (rotational-cipher/rotate "B" 28) -28) "B")
+; actual:
+(not (= "68" "B"))
+; FAIL in rotational-cipher-test/rotate-m-by-13 (rotational_cipher_test.clj:15):
+; expected:
+(= (rotational-cipher/rotate "m" 13) "z")
+; actual:
+(not (= "122" "z"))
+; FAIL in rotational-cipher-test/rotate-n-by-13-with-wrap (rotational_cipher_test.clj:18):
+; expected:
+(= (rotational-cipher/rotate "n" 13) "a")
+; actual:
+(not (= "97" "a"))
+; FAIL in rotational-cipher-test/rotate-numbers (rotational_cipher_test.clj:27):
+; expected:
+(=
+ (rotational-cipher/rotate "Testing 1 2 3 testing" 4)
+ "Xiwxmrk 1 2 3 xiwxmrk")
+; actual:
+(not
+ (=
+  "88105119120109114107 1 2 3 120105119120109114107"
+  "Xiwxmrk 1 2 3 xiwxmrk"))
+; FAIL in rotational-cipher-test/rotate-opposite-direction (rotational_cipher_test.clj:33):
+; expected:
+(= (rotational-cipher/rotate "b" -1) "a")
+; actual:
+(not (= "97" "a"))
+; FAIL in rotational-cipher-test/rotate-opposite-past-first-letter (rotational_cipher_test.clj:36):
+; expected:
+(= (rotational-cipher/rotate "B" -2) "Z")
+; actual:
+(not (= "90" "Z"))
+; FAIL in rotational-cipher-test/rotate-opposite-past-letter-count (rotational_cipher_test.clj:39):
+; expected:
+(= (rotational-cipher/rotate "B" -28) "Z")
+; actual:
+(not (= "90" "Z"))
+; FAIL in rotational-cipher-test/rotate-punctuation (rotational_cipher_test.clj:30):
+; expected:
+(=
+ (rotational-cipher/rotate "Let's eat, Grandma!" 21)
+ "Gzo'n zvo, Bmviyhv!")
+; actual:
+(not
+ (=
+  "71122111'110 122118111, 66109118105121104118!"
+  "Gzo'n zvo, Bmviyhv!"))
+; FAIL in rotational-cipher-test/rotate-spaces (rotational_cipher_test.clj:24):
+; expected:
+(= (rotational-cipher/rotate "O M G" 5) "T R L")
+; actual:
+(not (= "84 82 76" "T R L"))
+; 14 tests finished, problems found. 😭 errors: 0, failures: 14, ns: 1, vars: 14
+clj꞉rotational-cipher-test꞉> 
+"105102109109112"
+clj꞉rotational-cipher꞉> 
+"105102109109112"
+clj꞉rotational-cipher꞉> 
+nil
+clj꞉rotational-cipher꞉> 
+"ifmmp"
+clj꞉rotational-cipher꞉> 
+; Evaluating file: rotational_cipher.clj
+nil
+; Running tests for rotational-cipher-test...
+; 14 tests finished, all passing 👍, ns: 1, vars: 14
+clj꞉rotational-cipher-test꞉> 
+"ABC"
+clj꞉rotational-cipher꞉> 

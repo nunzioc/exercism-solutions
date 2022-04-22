@@ -1,0 +1,1 @@
+["^ ","~$pangram?",["^ ","~:row",5,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$pangram","~:top-ns","^7","~:arities",["^ ","~i1",["^ ","~:ret","~:boolean"]]],"~:filename","/home/nunziocicone/exercism/clojure/pangram/src/pangram.clj"]

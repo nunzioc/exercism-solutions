@@ -1,0 +1,158 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+; Evaluating file: two_fer.clj
+#'two-fer/two-fer
+; Running tests for two-fer-test...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉two-fer-test꞉> 
+; Evaluating file: two_fer_test.clj
+#'two-fer-test/name-bob-test
+; Running tests for two-fer-test...
+; FAIL in two-fer-test/two-fer-test (two_fer_test.clj:6):
+; expected:
+"One for you, one for me."
+; actual:
+"One for , one for me."
+; 3 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 3
+clj꞉two-fer-test꞉> 
+; Evaluating file: two_fer.clj
+#'two-fer/two-fer
+; Running tests for two-fer...
+; 3 tests finished, all passing 👍, ns: 1, vars: 3
+clj꞉two-fer꞉> 
+; Evaluating file: anagram.clj
+#'anagram/anagrams-for
+; Running tests for anagram...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉anagram꞉> 
+; Evaluating file: anagram.clj
+; Syntax error reading source at (anagram.clj:4:2).
+; Unmatched delimiter: )
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: anagram.clj
+#'anagram/anagrams-for
+; Running tests for anagram...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉anagram꞉> 
+; Evaluating file: anagram.clj
+#'anagram/anagrams-for
+; Running tests for anagram...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉anagram꞉> 
+; Evaluating file: anagram.clj
+#'anagram/anagrams-for
+; Running tests for anagram...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉anagram꞉> 
+; Evaluating file: anagram.clj
+#'anagram/anagrams-for
+; Running tests for anagram...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉anagram꞉> 
+; Evaluating file: anagram.clj
+#'anagram/anagrams-for
+; Running tests for anagram...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉anagram꞉> 
+; Evaluating file: anagram.clj
+#'anagram/anagrams-for
+; Running tests for anagram...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉anagram꞉> 
+; Evaluating file: anagram.clj
+0
+; Running tests for anagram...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉anagram꞉> 
+; Evaluating file: anagram.clj
+; Syntax error (ClassCastException) compiling at (anagram.clj:6:1).
+; Cannot cast java.lang.String to java.lang.Number
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: anagram.clj
+; Syntax error (ClassCastException) compiling at (anagram.clj:6:1).
+; Cannot cast java.lang.String to java.lang.Number
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: anagram.clj
+; Syntax error (ClassCastException) compiling at (anagram.clj:6:1).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; Execution error (ClassCastException) at anagram/eval8304 (form-init15732421329239133477.clj:6).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉anagram꞉> 
+; Evaluating file: anagram.clj
+; Syntax error (ClassCastException) compiling at (anagram.clj:6:1).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: anagram.clj
+; Syntax error (ClassCastException) compiling at (anagram.clj:6:1).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: anagram.clj
+; Syntax error (ClassCastException) compiling at (anagram.clj:6:1).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: anagram.clj
+; Syntax error (ClassCastException) compiling at (anagram.clj:6:1).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+3
+clj꞉anagram꞉> 
+; Evaluating file: anagram.clj
+; Syntax error (ClassCastException) compiling at (anagram.clj:6:1).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: anagram.clj
+; Syntax error (ClassCastException) compiling at (anagram.clj:5:1).
+; Cannot cast java.lang.String to java.lang.Number
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: anagram.clj
+; Syntax error reading source at (anagram.clj:8:1).
+; EOF while reading string
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: anagram.clj
+; Syntax error (ClassCastException) compiling at (anagram.clj:5:1).
+; Cannot cast java.lang.String to java.lang.Number
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: anagram.clj
+; Syntax error (ClassCastException) compiling at (anagram.clj:5:1).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: anagram.clj
+; Syntax error (ClassCastException) compiling at (anagram.clj:5:1).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: anagram.clj
+; Syntax error (ClassCastException) compiling at (anagram.clj:5:1).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: anagram.clj
+; Syntax error (ClassCastException) compiling at (anagram.clj:5:1).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: anagram.clj
+; Syntax error (ClassCastException) compiling at (anagram.clj:5:1).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: anagram.clj
+; Syntax error (ClassCastException) compiling at (anagram.clj:5:1).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+; Evaluation of file anagram.clj failed: class clojure.lang.Compiler$CompilerException
+; nREPL Connection was closed

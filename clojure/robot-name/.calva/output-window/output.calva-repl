@@ -1,0 +1,2982 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+; Syntax error compiling at (robot_name.clj:20:1).
+; Unable to resolve symbol: robot in this context
+clj꞉robot-name꞉> 
+; Execution error (IllegalArgumentException) at robot-name/robot (form-init15905398469660097067.clj:15).
+; contains? not supported on type: clojure.lang.Atom
+clj꞉robot-name꞉> 
+; Execution error (IllegalArgumentException) at robot-name/robot (form-init15905398469660097067.clj:15).
+; contains? not supported on type: clojure.lang.Atom
+clj꞉robot-name꞉> 
+; Execution error (IllegalArgumentException) at robot-name/robot (form-init15905398469660097067.clj:15).
+; contains? not supported on type: clojure.lang.Atom
+clj꞉robot-name꞉> 
+; Syntax error compiling at (robot_name.clj:21:1).
+; Unable to resolve symbol: temp in this context
+clj꞉robot-name꞉> 
+#'robot-name/temp
+clj꞉robot-name꞉> 
+; Execution error (ClassCastException) at robot-name/eval8221 (form-init15905398469660097067.clj:21).
+; class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉robot-name꞉> 
+1
+nil
+clj꞉robot-name꞉> 
+1
+clj꞉robot-name꞉> 
+; Execution error (ClassCastException) at robot-name/eval8383 (form-init15905398469660097067.clj:21).
+; class java.lang.Long cannot be cast to class clojure.lang.IPersistentCollection (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+clj꞉robot-name꞉> 
+#'robot-name/temp
+clj꞉robot-name꞉> 
+#{"hi"}
+clj꞉robot-name꞉> 
+{:name "HL944"}
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name_test.clj
+; Syntax error compiling at (robot_name_test.clj:7:18).
+; No such var: robot-name/robot-name
+; Evaluation of file robot_name_test.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$MapExpr/parse (Compiler.java:3104)
+clojure.lang.Compiler/analyze (Compiler.java:6797)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:594)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+robot-name-test/eval8407 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name-test...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉robot-name-test꞉> 
+#'robot-name/reset-name
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name_test.clj
+#'robot-name-test/new-names-different-each-time
+; Running tests for robot-name-test...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "MS431" "MS431"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "MF433" "MF433"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name-test꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "BV007" "BV007"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "MW154" "MW154"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (AFn.java:30):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/set (AFn.java:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:37):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/set (AFn.java:37)
+; ERROR in robot-name-test/new-name-matches (AFn.java:23):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/set (AFn.java:23)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:44):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/set (AFn.java:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (AFn.java:30):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/update (AFn.java:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:37):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/update (AFn.java:37)
+; ERROR in robot-name-test/new-name-matches (AFn.java:23):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/update (AFn.java:23)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:44):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/update (AFn.java:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (AFn.java:30):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/update (AFn.java:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:37):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/update (AFn.java:37)
+; ERROR in robot-name-test/new-name-matches (AFn.java:23):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/update (AFn.java:23)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:44):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/update (AFn.java:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (AFn.java:30):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: clojure.core/update (AFn.java:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:37):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: clojure.core/update (AFn.java:37)
+; ERROR in robot-name-test/new-name-matches (AFn.java:23):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: clojure.core/update (AFn.java:23)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:44):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: clojure.core/update (AFn.java:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (AFn.java:30):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: robot-name/gen-name (AFn.java:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:37):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: robot-name/gen-name (AFn.java:37)
+; ERROR in robot-name-test/new-name-matches (AFn.java:23):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: robot-name/gen-name (AFn.java:23)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:44):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: robot-name/gen-name (AFn.java:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "BV831" "BV831"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "ZV670" "ZV670"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "XW287" "XW287"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "IW561" "IW561"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "OV749" "OV749"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "HG812" "HG812"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (AFn.java:30):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:37):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:37)
+; ERROR in robot-name-test/new-name-matches (AFn.java:23):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:23)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:44):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+#'robot-name/reset-name
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (AFn.java:30):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:37):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:37)
+; ERROR in robot-name-test/new-name-matches (AFn.java:23):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:23)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:44):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ArityException) compiling at (robot_name.clj:28:1).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval9716 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (AFn.java:30):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:37):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:37)
+; ERROR in robot-name-test/new-name-matches (AFn.java:23):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:23)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:44):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ArityException) compiling at (robot_name.clj:28:1).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval9799 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (AFn.java:30):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:37):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:37)
+; ERROR in robot-name-test/new-name-matches (AFn.java:23):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:23)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:44):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ArityException) compiling at (robot_name.clj:28:1).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval9882 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (AFn.java:30):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:37):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:37)
+; ERROR in robot-name-test/new-name-matches (AFn.java:23):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:23)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:44):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ArityException) compiling at (robot_name.clj:28:1).
+; Wrong number of args (2) passed to: robot-name/reset-name
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval9965 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (AFn.java:30):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:37):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:37)
+; ERROR in robot-name-test/new-name-matches (AFn.java:23):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:23)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:44):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ArityException) compiling at (robot_name.clj:28:1).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval10048 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (AFn.java:30):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:37):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:37)
+; ERROR in robot-name-test/new-name-matches (AFn.java:23):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:23)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:44):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Execution error (ArityException) at robot-name/reset-name (robot_name.clj:27).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+{:name "OU568"}
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "XM142" "XM142"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "MC937" "MC937"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+{:name "KQ995"}
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "GU999" "GU999"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "SD505" "SD505"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ArityException) compiling at (robot_name.clj:26:1).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval10295 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (AFn.java:16):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:16)
+; ERROR in robot-name-test/name-matches-pattern (AFn.java:11):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:11)
+; ERROR in robot-name-test/new-name-different (AFn.java:28):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:28)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:35):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:35)
+; ERROR in robot-name-test/new-name-matches (AFn.java:21):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:21)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:42):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:42)
+; ERROR in robot-name-test/robot-name (AFn.java:6):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap (AFn.java:6)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#atom[{:name "IB303"} 0x1a5d9e34]
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (robot_name.clj:17):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:17)
+; ERROR in robot-name-test/name-matches-pattern (robot_name.clj:12):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:12)
+; ERROR in robot-name-test/new-name-different (robot_name.clj:29):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:36):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:36)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:22):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:22)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:43):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:43)
+; ERROR in robot-name-test/robot-name (robot_name.clj:7):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#atom[{:name "CH244"} 0x396dea62]
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (robot_name.clj:17):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:17)
+; ERROR in robot-name-test/name-matches-pattern (robot_name.clj:12):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:12)
+; ERROR in robot-name-test/new-name-different (robot_name.clj:29):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:36):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:36)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:22):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:22)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:43):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:43)
+; ERROR in robot-name-test/robot-name (robot_name.clj:7):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error compiling if at (robot_name.clj:22:7).
+; Too few arguments to if
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+robot-name/eval10532 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (robot_name.clj:17):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:17)
+; ERROR in robot-name-test/name-matches-pattern (robot_name.clj:12):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:12)
+; ERROR in robot-name-test/new-name-different (robot_name.clj:29):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:36):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:36)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:22):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:22)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:43):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:43)
+; ERROR in robot-name-test/robot-name (robot_name.clj:7):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#atom[{:name "IZ206"} 0x1080929c]
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (robot_name.clj:17):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:17)
+; ERROR in robot-name-test/name-matches-pattern (robot_name.clj:12):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:12)
+; ERROR in robot-name-test/new-name-different (robot_name.clj:29):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:36):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:36)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:22):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:22)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:43):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:43)
+; ERROR in robot-name-test/robot-name (robot_name.clj:7):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#atom[{:name "FU956"} 0x653b6a81]
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (robot_name.clj:17):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:17)
+; ERROR in robot-name-test/name-matches-pattern (robot_name.clj:12):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:12)
+; ERROR in robot-name-test/new-name-different (robot_name.clj:29):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:36):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:36)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:22):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:22)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:43):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:43)
+; ERROR in robot-name-test/robot-name (robot_name.clj:7):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#atom[{:name "QM411"} 0x6cb50571]
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (robot_name.clj:17):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:17)
+; ERROR in robot-name-test/name-matches-pattern (robot_name.clj:12):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:12)
+; ERROR in robot-name-test/new-name-different (robot_name.clj:29):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:36):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:36)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:22):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:22)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:43):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:43)
+; ERROR in robot-name-test/robot-name (robot_name.clj:7):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#atom[{:name "SC679"} 0x607dd20d]
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "XQ169" "XQ169"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "WV088" "WV088"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#atom[{:name "LO358"} 0x2a3ae608]
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "ZC425" "ZC425"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "NH139" "NH139"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#atom[{:name "XN396"} 0x39ea5a1e]
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "GR231" "GR231"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "HX084" "HX084"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:26:1).
+; class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @3880175b; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval11083 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (core.clj:30):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @3880175b; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (core.clj:37):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @3880175b; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:37)
+; ERROR in robot-name-test/new-name-matches (core.clj:23):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @3880175b; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:23)
+; ERROR in robot-name-test/new-names-different-each-time (core.clj:44):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @3880175b; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:26:1).
+; class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @589db646; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval11163 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (core.clj:30):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @589db646; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (core.clj:37):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @589db646; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:37)
+; ERROR in robot-name-test/new-name-matches (core.clj:23):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @589db646; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:23)
+; ERROR in robot-name-test/new-names-different-each-time (core.clj:44):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @589db646; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:26:1).
+; class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @55555c90; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval11243 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (core.clj:30):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @55555c90; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (core.clj:37):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @55555c90; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:37)
+; ERROR in robot-name-test/new-name-matches (core.clj:23):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @55555c90; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:23)
+; ERROR in robot-name-test/new-names-different-each-time (core.clj:44):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @55555c90; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:26:1).
+; class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @262ab5b7; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval11323 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (core.clj:30):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @262ab5b7; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (core.clj:37):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @262ab5b7; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:37)
+; ERROR in robot-name-test/new-name-matches (core.clj:23):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @262ab5b7; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:23)
+; ERROR in robot-name-test/new-names-different-each-time (core.clj:44):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @262ab5b7; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (core.clj:30):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @1e23f202; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (core.clj:37):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @1e23f202; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:37)
+; ERROR in robot-name-test/new-name-matches (core.clj:23):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @1e23f202; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:23)
+; ERROR in robot-name-test/new-names-different-each-time (core.clj:44):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @1e23f202; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "PJ237" "PJ237"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "XH732" "XH732"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (core.clj:17):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @531914e0; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:17)
+; ERROR in robot-name-test/name-matches-pattern (core.clj:12):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @531914e0; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:12)
+; ERROR in robot-name-test/new-name-different (core.clj:29):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @531914e0; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (core.clj:36):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @531914e0; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:36)
+; ERROR in robot-name-test/new-name-matches (core.clj:22):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @531914e0; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:22)
+; ERROR in robot-name-test/new-names-different-each-time (core.clj:43):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @531914e0; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:43)
+; ERROR in robot-name-test/robot-name (core.clj:7):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class robot_name$robot cannot be cast to class java.util.concurrent.Future (robot_name$robot is in unnamed module of loader clojure.lang.DynamicClassLoader @531914e0; java.util.concurrent.Future is in module java.base of loader 'bootstrap') (core.clj:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "QH292" "QH292"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "JK592" "JK592"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+#'robot-name/reset-name
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "FU795" "FU795"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "KA892" "KA892"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+()
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "JY289" "JY289"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "FH999" "FH999"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ArityException) compiling at (robot_name.clj:27:1).
+; Wrong number of args (0) passed to: robot-name/reset-name
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval11889 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "EB651" "EB651"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "CZ094" "CZ094"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+{:name nil}
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "SZ989" "SZ989"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "RJ403" "RJ403"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+{:name nil}
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ArityException) compiling at (robot_name.clj:27:1).
+; Wrong number of args (0) passed to: clojure.lang.PersistentArrayMap
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval12051 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "VP288" "VP288"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "DB122" "DB122"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:27:1).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval12131 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "QX308" "QX308"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "QL868" "QL868"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Execution error (ClassCastException) at robot-name/robot-name (robot_name.clj:22).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error reading source at (robot_name.clj:27:26).
+; Unmatched delimiter: )
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+robot-name/eval12213 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "EQ253" "EQ253"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "GF996" "GF996"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error reading source at (robot_name.clj:27:27).
+; Unmatched delimiter: )
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+robot-name/eval12293 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "CW035" "CW035"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "NP824" "NP824"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+"XI368"
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "HS390" "HS390"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "QJ660" "QJ660"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+"RH482"
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:27:1).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval12455 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "NW892" "NW892"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "SF991" "SF991"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Execution error (ClassCastException) at robot-name/robot-name (robot_name.clj:22).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:27:1).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval12537 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "ZT044" "ZT044"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "PS032" "PS032"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:27:1).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval12617 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "XF478" "XF478"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "GF270" "GF270"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:27:1).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval12697 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "HU860" "HU860"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "PS840" "PS840"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:27:1).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval12777 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "EL358" "EL358"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "CU308" "CU308"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:27:1).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval12857 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "BC069" "BC069"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "TA199" "TA199"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:27:1).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval12937 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "GL922" "GL922"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "LU668" "LU668"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:27:1).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval13017 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "BP785" "BP785"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "WF110" "WF110"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:27:1).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval13097 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "EP851" "EP851"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "IY630" "IY630"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:27:1).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval13177 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "UR418" "UR418"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "BS453" "BS453"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:27:1).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval13257 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "YW766" "YW766"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "WD283" "WD283"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+#'robot-name/tmp
+clj꞉robot-name꞉> 
+nil
+clj꞉robot-name꞉> 
+{:name nil}
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error compiling at (robot_name.clj:25:3).
+; Unable to resolve symbol: swapassoc in this context
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+robot-name/eval13341 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= "QK960" "QK960"))
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= "HP431" "HP431"))
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:27:1).
+; class clojure.core$assoc__5401 cannot be cast to class clojure.lang.IAtom (clojure.core$assoc__5401 and clojure.lang.IAtom are in unnamed module of loader 'app')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval13418 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (core.clj:30):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.core$assoc__5401 cannot be cast to class clojure.lang.IAtom (clojure.core$assoc__5401 and clojure.lang.IAtom are in unnamed module of loader 'app') (core.clj:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (core.clj:37):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.core$assoc__5401 cannot be cast to class clojure.lang.IAtom (clojure.core$assoc__5401 and clojure.lang.IAtom are in unnamed module of loader 'app') (core.clj:37)
+; ERROR in robot-name-test/new-name-matches (core.clj:23):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.core$assoc__5401 cannot be cast to class clojure.lang.IAtom (clojure.core$assoc__5401 and clojure.lang.IAtom are in unnamed module of loader 'app') (core.clj:23)
+; ERROR in robot-name-test/new-names-different-each-time (core.clj:44):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.core$assoc__5401 cannot be cast to class clojure.lang.IAtom (clojure.core$assoc__5401 and clojure.lang.IAtom are in unnamed module of loader 'app') (core.clj:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:27:1).
+; class clojure.lang.PersistentArrayMap cannot be cast to class clojure.lang.IAtom (clojure.lang.PersistentArrayMap and clojure.lang.IAtom are in unnamed module of loader 'app')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval13498 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (core.clj:30):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentArrayMap cannot be cast to class clojure.lang.IAtom (clojure.lang.PersistentArrayMap and clojure.lang.IAtom are in unnamed module of loader 'app') (core.clj:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (core.clj:37):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentArrayMap cannot be cast to class clojure.lang.IAtom (clojure.lang.PersistentArrayMap and clojure.lang.IAtom are in unnamed module of loader 'app') (core.clj:37)
+; ERROR in robot-name-test/new-name-matches (core.clj:23):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentArrayMap cannot be cast to class clojure.lang.IAtom (clojure.lang.PersistentArrayMap and clojure.lang.IAtom are in unnamed module of loader 'app') (core.clj:23)
+; ERROR in robot-name-test/new-names-different-each-time (core.clj:44):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentArrayMap cannot be cast to class clojure.lang.IAtom (clojure.lang.PersistentArrayMap and clojure.lang.IAtom are in unnamed module of loader 'app') (core.clj:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Execution error (ClassCastException) at robot-name/reset-name (robot_name.clj:25).
+; class clojure.lang.PersistentArrayMap cannot be cast to class clojure.lang.IAtom (clojure.lang.PersistentArrayMap and clojure.lang.IAtom are in unnamed module of loader 'app')
+clj꞉robot-name꞉> 
+#<Atom@37a03d9f: {:name "EY222"}>
+clj꞉robot-name꞉> 
+; Execution error (ClassCastException) at robot-name/reset-name (robot_name.clj:25).
+; class clojure.lang.PersistentArrayMap cannot be cast to class clojure.lang.IAtom (clojure.lang.PersistentArrayMap and clojure.lang.IAtom are in unnamed module of loader 'app')
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:27:1).
+; class clojure.lang.PersistentArrayMap cannot be cast to class clojure.lang.IAtom (clojure.lang.PersistentArrayMap and clojure.lang.IAtom are in unnamed module of loader 'app')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval13584 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (core.clj:30):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentArrayMap cannot be cast to class clojure.lang.IAtom (clojure.lang.PersistentArrayMap and clojure.lang.IAtom are in unnamed module of loader 'app') (core.clj:30)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (core.clj:37):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentArrayMap cannot be cast to class clojure.lang.IAtom (clojure.lang.PersistentArrayMap and clojure.lang.IAtom are in unnamed module of loader 'app') (core.clj:37)
+; ERROR in robot-name-test/new-name-matches (core.clj:23):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentArrayMap cannot be cast to class clojure.lang.IAtom (clojure.lang.PersistentArrayMap and clojure.lang.IAtom are in unnamed module of loader 'app') (core.clj:23)
+; ERROR in robot-name-test/new-names-different-each-time (core.clj:44):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentArrayMap cannot be cast to class clojure.lang.IAtom (clojure.lang.PersistentArrayMap and clojure.lang.IAtom are in unnamed module of loader 'app') (core.clj:44)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Execution error (ClassCastException) at robot-name/reset-name (robot_name.clj:25).
+; class clojure.lang.PersistentArrayMap cannot be cast to class clojure.lang.IAtom (clojure.lang.PersistentArrayMap and clojure.lang.IAtom are in unnamed module of loader 'app')
+clj꞉robot-name꞉> 
+; Execution error (ClassCastException) at robot-name/reset-name (form-init15905398469660097067.clj:25).
+; class clojure.lang.PersistentArrayMap cannot be cast to class clojure.lang.IAtom (clojure.lang.PersistentArrayMap and clojure.lang.IAtom are in unnamed module of loader 'app')
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:27:1).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval13684 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-does-not-change-until-reset (robot_name_test.clj:39):
+; expected:
+#<Atom@30ffb0b4: {:name "UP855"}>
+; actual:
+#<Atom@3726e4ff: {:name "XL013"}>
+; ERROR in robot-name-test/new-name-matches (core.clj:25):
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class java.lang.CharSequence (clojure.lang.Atom is in unnamed module of loader 'app'; java.lang.CharSequence is in module java.base of loader 'bootstrap') (core.clj:25)
+; expected:
+(re-seq #"[A-Z]{2}\d{3}" its-new-name)
+; 7 tests finished, problems found. 😭 errors: 1, failures: 1, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+{:name nil}
+clj꞉robot-name꞉> 
+; Execution error (ClassCastException) at robot-name/robot-name (robot_name.clj:22).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+clj꞉robot-name꞉> 
+; Execution error (ClassCastException) at robot-name/robot-name (form-init15905398469660097067.clj:22).
+; class clojure.lang.PersistentArrayMap cannot be cast to class java.util.concurrent.Future (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.util.concurrent.Future is in module java.base of loader 'bootstrap')
+clj꞉robot-name꞉> 
+{:name nil}
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; FAIL in robot-name-test/new-name-does-not-change-until-reset (robot_name_test.clj:39):
+; expected:
+#<Atom@1d946139: {:name "JW703"}>
+; actual:
+#<Atom@5818144c: {:name "BI564"}>
+; ERROR in robot-name-test/new-name-matches (core.clj:25):
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class java.lang.CharSequence (clojure.lang.Atom is in unnamed module of loader 'app'; java.lang.CharSequence is in module java.base of loader 'bootstrap') (core.clj:25)
+; expected:
+(re-seq #"[A-Z]{2}\d{3}" its-new-name)
+; 7 tests finished, problems found. 😭 errors: 1, failures: 1, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+#<Atom@3c123dd3: {:name nil}>
+clj꞉robot-name꞉> 
+#<Atom@1b06056: {:name "FO539"}>
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:28:1).
+; class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval13874 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (robot_name.clj:31):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:31)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:38):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:38)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:24):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:24)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:45):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:45)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:28:1).
+; class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval13954 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (robot_name.clj:31):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:31)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:38):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:38)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:24):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:24)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:45):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:45)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:28:1).
+; class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval14034 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (robot_name.clj:31):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:31)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:38):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:38)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:24):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:24)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:45):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:45)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error reading source at (robot_name.clj:31:1).
+; EOF while reading, starting at line 21
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+robot-name/eval14114 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (robot_name.clj:31):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:31)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:38):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:38)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:24):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:24)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:45):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:45)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error reading source at (robot_name.clj:31:1).
+; EOF while reading, starting at line 21
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+robot-name/eval14189 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (robot_name.clj:31):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:31)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:38):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:38)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:24):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:24)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:45):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:45)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error reading source at (robot_name.clj:31:1).
+; EOF while reading, starting at line 21
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+robot-name/eval14264 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (robot_name.clj:31):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:31)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:38):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:38)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:24):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:24)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:45):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:45)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error reading source at (robot_name.clj:31:1).
+; EOF while reading, starting at line 21
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+robot-name/eval14339 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (robot_name.clj:31):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:31)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:38):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:38)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:24):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:24)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:45):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:45)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error reading source at (robot_name.clj:31:1).
+; EOF while reading, starting at line 21
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+robot-name/eval14414 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/new-name-different (robot_name.clj:31):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:31)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:38):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:38)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:24):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:24)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:45):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:45)
+; 7 tests finished, problems found. 😭 errors: 4, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; FAIL in robot-name-test/different-robots-different-names (robot_name_test.clj:18):
+; expected:
+(not= its-name (-> (robot-name/robot) robot-name/robot-name))
+; actual:
+(not (not= nil nil))
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= nil nil))
+; ERROR in robot-name-test/new-name-matches (Matcher.java:25):
+; error: java.lang.NullPointerException (Matcher.java:25)
+; expected:
+(re-seq #"[A-Z]{2}\d{3}" its-new-name)
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= nil nil))
+; ERROR in robot-name-test/robot-name (Matcher.java:8):
+; error: java.lang.NullPointerException (Matcher.java:8)
+; expected:
+(re-seq #"[A-Z]{2}\d{3}" its-name)
+; 7 tests finished, problems found. 😭 errors: 2, failures: 3, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; FAIL in robot-name-test/different-robots-different-names (robot_name_test.clj:18):
+; expected:
+(not= its-name (-> (robot-name/robot) robot-name/robot-name))
+; actual:
+(not (not= nil nil))
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= nil nil))
+; ERROR in robot-name-test/new-name-matches (Matcher.java:25):
+; error: java.lang.NullPointerException (Matcher.java:25)
+; expected:
+(re-seq #"[A-Z]{2}\d{3}" its-new-name)
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= nil nil))
+; ERROR in robot-name-test/robot-name (Matcher.java:8):
+; error: java.lang.NullPointerException (Matcher.java:8)
+; expected:
+(re-seq #"[A-Z]{2}\d{3}" its-name)
+; 7 tests finished, problems found. 😭 errors: 2, failures: 3, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; FAIL in robot-name-test/different-robots-different-names (robot_name_test.clj:18):
+; expected:
+(not= its-name (-> (robot-name/robot) robot-name/robot-name))
+; actual:
+(not (not= nil nil))
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= nil nil))
+; ERROR in robot-name-test/new-name-matches (Matcher.java:25):
+; error: java.lang.NullPointerException (Matcher.java:25)
+; expected:
+(re-seq #"[A-Z]{2}\d{3}" its-new-name)
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= nil nil))
+; ERROR in robot-name-test/robot-name (Matcher.java:8):
+; error: java.lang.NullPointerException (Matcher.java:8)
+; expected:
+(re-seq #"[A-Z]{2}\d{3}" its-name)
+; 7 tests finished, problems found. 😭 errors: 2, failures: 3, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error compiling at (robot_name.clj:23:9).
+; Unable to resolve symbol: s in this context
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$IfExpr$Parser/parse (Compiler.java:2829)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+robot-name/eval14732 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; FAIL in robot-name-test/different-robots-different-names (robot_name_test.clj:18):
+; expected:
+(not= its-name (-> (robot-name/robot) robot-name/robot-name))
+; actual:
+(not (not= nil nil))
+; FAIL in robot-name-test/new-name-different (robot_name_test.clj:32):
+; expected:
+(not= its-original-name its-new-name)
+; actual:
+(not (not= nil nil))
+; ERROR in robot-name-test/new-name-matches (Matcher.java:25):
+; error: java.lang.NullPointerException (Matcher.java:25)
+; expected:
+(re-seq #"[A-Z]{2}\d{3}" its-new-name)
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= nil nil))
+; ERROR in robot-name-test/robot-name (Matcher.java:8):
+; error: java.lang.NullPointerException (Matcher.java:8)
+; expected:
+(re-seq #"[A-Z]{2}\d{3}" its-name)
+; 7 tests finished, problems found. 😭 errors: 2, failures: 3, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (AFn.java:17):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/swap! (AFn.java:17)
+; ERROR in robot-name-test/name-matches-pattern (AFn.java:12):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/swap! (AFn.java:12)
+; ERROR in robot-name-test/new-name-different (AFn.java:29):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/swap! (AFn.java:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:36):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/swap! (AFn.java:36)
+; ERROR in robot-name-test/new-name-matches (AFn.java:22):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/swap! (AFn.java:22)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:43):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/swap! (AFn.java:43)
+; ERROR in robot-name-test/robot-name (AFn.java:7):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/swap! (AFn.java:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (AFn.java:17):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/swap! (AFn.java:17)
+; ERROR in robot-name-test/name-matches-pattern (AFn.java:12):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/swap! (AFn.java:12)
+; ERROR in robot-name-test/new-name-different (AFn.java:29):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/swap! (AFn.java:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:36):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/swap! (AFn.java:36)
+; ERROR in robot-name-test/new-name-matches (AFn.java:22):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/swap! (AFn.java:22)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:43):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/swap! (AFn.java:43)
+; ERROR in robot-name-test/robot-name (AFn.java:7):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/swap! (AFn.java:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (AFn.java:17):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/swap! (AFn.java:17)
+; ERROR in robot-name-test/name-matches-pattern (AFn.java:12):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/swap! (AFn.java:12)
+; ERROR in robot-name-test/new-name-different (AFn.java:29):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/swap! (AFn.java:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:36):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/swap! (AFn.java:36)
+; ERROR in robot-name-test/new-name-matches (AFn.java:22):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/swap! (AFn.java:22)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:43):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/swap! (AFn.java:43)
+; ERROR in robot-name-test/robot-name (AFn.java:7):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/swap! (AFn.java:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (AFn.java:17):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: clojure.core/assoc--5401 (AFn.java:17)
+; ERROR in robot-name-test/name-matches-pattern (AFn.java:12):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: clojure.core/assoc--5401 (AFn.java:12)
+; ERROR in robot-name-test/new-name-different (AFn.java:29):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: clojure.core/assoc--5401 (AFn.java:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (AFn.java:36):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: clojure.core/assoc--5401 (AFn.java:36)
+; ERROR in robot-name-test/new-name-matches (AFn.java:22):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: clojure.core/assoc--5401 (AFn.java:22)
+; ERROR in robot-name-test/new-names-different-each-time (AFn.java:43):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: clojure.core/assoc--5401 (AFn.java:43)
+; ERROR in robot-name-test/robot-name (AFn.java:7):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: clojure.core/assoc--5401 (AFn.java:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; FAIL in robot-name-test/different-robots-different-names (robot_name_test.clj:18):
+; expected:
+(not= its-name (-> (robot-name/robot) robot-name/robot-name))
+; actual:
+(not (not= {:name ()} {:name ()}))
+; ERROR in robot-name-test/new-name-matches (Matcher.java:25):
+; error: java.lang.NullPointerException (Matcher.java:25)
+; expected:
+(re-seq #"[A-Z]{2}\d{3}" its-new-name)
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= nil nil))
+; ERROR in robot-name-test/robot-name (core.clj:8):
+; error: java.lang.ClassCastException: class clojure.lang.PersistentArrayMap cannot be cast to class java.lang.CharSequence (clojure.lang.PersistentArrayMap is in unnamed module of loader 'app'; java.lang.CharSequence is in module java.base of loader 'bootstrap') (core.clj:8)
+; expected:
+(re-seq #"[A-Z]{2}\d{3}" its-name)
+; 7 tests finished, problems found. 😭 errors: 2, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (robot_name.clj:17):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:17)
+; ERROR in robot-name-test/name-matches-pattern (robot_name.clj:12):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:12)
+; ERROR in robot-name-test/new-name-different (robot_name.clj:29):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:36):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:36)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:22):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:22)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:43):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:43)
+; ERROR in robot-name-test/robot-name (robot_name.clj:7):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (robot_name.clj:17):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:17)
+; ERROR in robot-name-test/name-matches-pattern (robot_name.clj:12):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:12)
+; ERROR in robot-name-test/new-name-different (robot_name.clj:29):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:36):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:36)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:22):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:22)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:43):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:43)
+; ERROR in robot-name-test/robot-name (robot_name.clj:7):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (robot_name.clj:17):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:17)
+; ERROR in robot-name-test/name-matches-pattern (robot_name.clj:12):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:12)
+; ERROR in robot-name-test/new-name-different (robot_name.clj:29):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:36):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:36)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:22):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:22)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:43):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:43)
+; ERROR in robot-name-test/robot-name (robot_name.clj:7):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (robot_name.clj:17):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:17)
+; ERROR in robot-name-test/name-matches-pattern (robot_name.clj:12):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:12)
+; ERROR in robot-name-test/new-name-different (robot_name.clj:29):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:36):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:36)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:22):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:22)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:43):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:43)
+; ERROR in robot-name-test/robot-name (robot_name.clj:7):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (robot_name.clj:17):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:17)
+; ERROR in robot-name-test/name-matches-pattern (robot_name.clj:12):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:12)
+; ERROR in robot-name-test/new-name-different (robot_name.clj:29):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:36):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:36)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:22):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:22)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:43):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:43)
+; ERROR in robot-name-test/robot-name (robot_name.clj:7):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+#<Atom@5b8575e3: {:name nil}>
+clj꞉robot-name꞉> 
+nil
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (robot_name.clj:17):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:17)
+; ERROR in robot-name-test/name-matches-pattern (robot_name.clj:12):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:12)
+; ERROR in robot-name-test/new-name-different (robot_name.clj:29):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:36):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:36)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:22):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:22)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:43):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:43)
+; ERROR in robot-name-test/robot-name (robot_name.clj:7):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+nil
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (robot_name.clj:17):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:17)
+; ERROR in robot-name-test/name-matches-pattern (robot_name.clj:12):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:12)
+; ERROR in robot-name-test/new-name-different (robot_name.clj:29):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:36):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:36)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:22):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:22)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:43):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:43)
+; ERROR in robot-name-test/robot-name (robot_name.clj:7):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (ClassCastException) compiling at (robot_name.clj:31:1).
+; class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval15802 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (robot_name.clj:17):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:17)
+; ERROR in robot-name-test/name-matches-pattern (robot_name.clj:12):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:12)
+; ERROR in robot-name-test/new-name-different (robot_name.clj:29):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:36):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:36)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:22):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:22)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:43):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:43)
+; ERROR in robot-name-test/robot-name (robot_name.clj:7):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app') (robot_name.clj:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Execution error (ClassCastException) at robot-name/robot-name (robot_name.clj:23).
+; class clojure.lang.Atom cannot be cast to class clojure.lang.IFn (clojure.lang.Atom and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; FAIL in robot-name-test/name-matches-pattern (robot_name_test.clj:13):
+; expected:
+"VF527"
+; actual:
+"OY478"
+; ERROR in robot-name-test/new-name-matches (Matcher.java:25):
+; error: java.lang.NullPointerException (Matcher.java:25)
+; expected:
+(re-seq #"[A-Z]{2}\d{3}" its-new-name)
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= nil nil))
+; 7 tests finished, problems found. 😭 errors: 1, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+"PU999"
+clj꞉robot-name꞉> 
+nil
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; FAIL in robot-name-test/name-matches-pattern (robot_name_test.clj:13):
+; expected:
+"XZ007"
+; actual:
+"AX471"
+; ERROR in robot-name-test/new-name-matches (Matcher.java:25):
+; error: java.lang.NullPointerException (Matcher.java:25)
+; expected:
+(re-seq #"[A-Z]{2}\d{3}" its-new-name)
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= nil nil))
+; 7 tests finished, problems found. 😭 errors: 1, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; FAIL in robot-name-test/name-matches-pattern (robot_name_test.clj:13):
+; expected:
+"HN454"
+; actual:
+"UR035"
+; ERROR in robot-name-test/new-name-matches (Matcher.java:25):
+; error: java.lang.NullPointerException (Matcher.java:25)
+; expected:
+(re-seq #"[A-Z]{2}\d{3}" its-new-name)
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= nil nil))
+; 7 tests finished, problems found. 😭 errors: 1, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; FAIL in robot-name-test/name-matches-pattern (robot_name_test.clj:13):
+; expected:
+"CG401"
+; actual:
+"TW868"
+; ERROR in robot-name-test/new-name-matches (Matcher.java:25):
+; error: java.lang.NullPointerException (Matcher.java:25)
+; expected:
+(re-seq #"[A-Z]{2}\d{3}" its-new-name)
+; FAIL in robot-name-test/new-names-different-each-time (robot_name_test.clj:46):
+; expected:
+(not=
+ its-new-name
+ (do (robot-name/reset-name a-robot) (robot-name/robot-name a-robot)))
+; actual:
+(not (not= nil nil))
+; 7 tests finished, problems found. 😭 errors: 1, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+#'robot-name/robot-name
+clj꞉robot-name꞉> 
+QUIT
+clj꞉robot-name꞉> 
+QUIT
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; FAIL in robot-name-test/name-matches-pattern (robot_name_test.clj:13):
+; expected:
+"KQ365"
+; actual:
+"VQ465"
+; FAIL in robot-name-test/new-name-does-not-change-until-reset (robot_name_test.clj:39):
+; expected:
+"WY955"
+; actual:
+"GA758"
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+; Syntax error (NullPointerException) compiling at (robot_name.clj:30:1).
+; null
+; Evaluation of file robot_name.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+robot-name/eval16312 (form-init15905398469660097067.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for robot-name...
+; ERROR in robot-name-test/different-robots-different-names (robot_name.clj:17):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (robot_name.clj:17)
+; ERROR in robot-name-test/name-matches-pattern (robot_name.clj:12):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (robot_name.clj:12)
+; ERROR in robot-name-test/new-name-different (robot_name.clj:29):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (robot_name.clj:29)
+; ERROR in robot-name-test/new-name-does-not-change-until-reset (robot_name.clj:36):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (robot_name.clj:36)
+; ERROR in robot-name-test/new-name-matches (robot_name.clj:22):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (robot_name.clj:22)
+; ERROR in robot-name-test/new-names-different-each-time (robot_name.clj:43):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (robot_name.clj:43)
+; ERROR in robot-name-test/robot-name (robot_name.clj:7):
+; : Uncaught exception, not in assertion
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (robot_name.clj:7)
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; 7 tests finished, all passing 👍, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; 7 tests finished, all passing 👍, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+nil
+; Running tests for robot-name...
+; 7 tests finished, all passing 👍, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+"PF823"
+clj꞉robot-name꞉> 
+"TP250"
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; 7 tests finished, all passing 👍, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; 7 tests finished, all passing 👍, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; 7 tests finished, all passing 👍, ns: 1, vars: 7
+clj꞉robot-name꞉> 
+; Evaluating file: robot_name.clj
+#'robot-name/reset-name
+; Running tests for robot-name...
+; 7 tests finished, all passing 👍, ns: 1, vars: 7
+clj꞉robot-name꞉> 

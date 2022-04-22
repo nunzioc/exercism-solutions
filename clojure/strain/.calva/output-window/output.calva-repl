@@ -1,0 +1,101 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+; Syntax error compiling at (strain.clj:6:1).
+; Unable to resolve symbol: retain in this context
+clj꞉strain꞉> 
+[]
+clj꞉strain꞉> 
+nil
+clj꞉strain꞉> 
+#'strain/retain
+clj꞉strain꞉> 
+[2]
+clj꞉strain꞉> 
+; Evaluating file: strain_test.clj
+; Syntax error (IllegalAccessError) compiling at (strain_test.clj:1:1).
+; discard does not exist
+; Evaluation of file strain_test.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+strain-test/eval23450 (form-init6515756239038060049.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for strain-test...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉strain-test꞉> 
+#'strain/discard
+clj꞉strain꞉> 
+; Evaluating file: strain_test.clj
+#'strain-test/does-not-use-existing-implementations
+; Running tests for strain-test...
+; ERROR in strain-test/discard-first (AFn.java:29):
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: strain/discard (AFn.java:29)
+; expected:
+(= [1 2] (discard zero? [0 1 2]))
+; ERROR in strain-test/discard-last (AFn.java:32):
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: strain/discard (AFn.java:32)
+; expected:
+(= [2 1] (discard zero? [2 1 0]))
+; ERROR in strain-test/discard-several (AFn.java:35):
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: strain/discard (AFn.java:35)
+; expected:
+(= [0 2 4] (discard odd? (range 6)))
+; ERROR in strain-test/does-not-use-existing-implementations (AFn.java:42):
+; : Uncaught exception, not in assertion
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: strain/discard (AFn.java:42)
+; ERROR in strain-test/empty-discard (AFn.java:26):
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: strain/discard (AFn.java:26)
+; expected:
+(empty? (discard even? [2 4 6 8 10]))
+; 11 tests finished, problems found. 😭 errors: 5, failures: 0, ns: 1, vars: 11
+clj꞉strain-test꞉> 
+#'strain/discard
+clj꞉strain꞉> 
+; Evaluating file: strain_test.clj
+#'strain-test/does-not-use-existing-implementations
+; Running tests for strain-test...
+; 10 tests finished, all passing 👍, ns: 1, vars: 11
+clj꞉strain-test꞉> 
+; Evaluating file: strain_test.clj
+#'strain-test/does-not-use-existing-implementations
+; Running tests for strain-test...
+; 10 tests finished, all passing 👍, ns: 1, vars: 11
+clj꞉strain-test꞉> 
+#'strain-test/does-not-use-existing-implementations
+clj꞉strain-test꞉> 
+; Evaluating file: strain_test.clj
+#'strain-test/does-not-use-existing-implementations
+; Running tests for strain-test...
+; 10 tests finished, all passing 👍, ns: 1, vars: 11
+clj꞉strain-test꞉> 

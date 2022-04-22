@@ -1,0 +1,1684 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+(= 0 (collatz 1))
+; actual:
+(not (= 0 nil))
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+(= 152 (collatz 1000000))
+; actual:
+(not (= 152 nil))
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+(= 9 (collatz 12))
+; actual:
+(not (= 9 nil))
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+(= 4 (collatz 16))
+; actual:
+(not (= 4 nil))
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+; Syntax error macroexpanding cond at (collatz_conjecture.clj:4:3).
+; cond requires an even number of forms
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+; Syntax error macroexpanding cond at (collatz_conjecture.clj:4:3).
+; cond requires an even number of forms
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+()
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+()
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+()
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+nil
+; ERROR in collatz-conjecture-test/steps-for-1000000 (AFn.java:19):
+; Large number of even and odd steps
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core// (AFn.java:19)
+; expected:
+(= 152 (collatz 1000000))
+; ERROR in collatz-conjecture-test/steps-for-12 (AFn.java:15):
+; even and odd steps
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core// (AFn.java:15)
+; expected:
+(= 9 (collatz 12))
+; ERROR in collatz-conjecture-test/steps-for-16 (AFn.java:11):
+; divide if even
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core// (AFn.java:11)
+; expected:
+(= 4 (collatz 16))
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 3, failures: 2, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+500000
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+6
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+8
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+500000
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+6
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+8
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+; Syntax error macroexpanding clojure.core/cond at (collatz_conjecture.clj:4:3).
+; cond requires an even number of forms
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+; Syntax error macroexpanding clojure.core/cond at (collatz_conjecture.clj:4:3).
+; cond requires an even number of forms
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+; Syntax error macroexpanding clojure.core/cond at (collatz_conjecture.clj:4:3).
+; cond requires an even number of forms
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+()
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+500000
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+6
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+8
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; ERROR in collatz-conjecture-test/steps-for-1 (Numbers.java:7):
+; zero steps for one
+; error: java.lang.ClassCastException: class clojure.lang.PersistentList$EmptyList cannot be cast to class java.lang.Number (clojure.lang.PersistentList$EmptyList is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap') (Numbers.java:7)
+; expected:
+(= 0 (collatz 1))
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+500000
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+6
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+8
+; 6 tests finished, problems found. 😭 errors: 1, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+4
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+500000
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+6
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+8
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+; Syntax error macroexpanding clojure.core/cond at (collatz_conjecture.clj:4:3).
+; cond requires an even number of forms
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+; Syntax error macroexpanding clojure.core/cond at (collatz_conjecture.clj:4:3).
+; cond requires an even number of forms
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+; Syntax error macroexpanding clojure.core/cond at (collatz_conjecture.clj:4:3).
+; cond requires an even number of forms
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+; Syntax error macroexpanding clojure.core/cond at (collatz_conjecture.clj:4:3).
+; cond requires an even number of forms
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+500000
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+6
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+8
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+500000
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+6
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+8
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+16
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+16
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+500000
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+6
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+8
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+1
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+500000
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+6
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+8
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+1
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+4
+; Running tests for collatz-conjecture...
+4
+clj꞉collatz-conjecture꞉> 
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+500000
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+6
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+8
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+46876
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+10
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+true
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+true
+clj꞉collatz-conjecture꞉> 
+true
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+; Syntax error macroexpanding clojure.core/defn- at (collatz_conjecture.clj:4:1).
+; () - failed: Insufficient input at: [:fn-tail] spec: :clojure.core.specs.alpha/defn-args
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+; Syntax error compiling at (collatz_conjecture.clj:7:36).
+; Unable to resolve symbol: step in this context
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+; Syntax error reading source at (collatz_conjecture.clj:13:1).
+; EOF while reading, starting at line 10
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+; Syntax error reading source at (collatz_conjecture.clj:13:1).
+; EOF while reading, starting at line 10
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+17
+; Running tests for collatz-conjecture...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+17
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+; Syntax error macroexpanding clojure.core/defn at (collatz_conjecture.clj:10:1).
+; Call to clojure.core/defn did not conform to spec.
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+; Syntax error macroexpanding clojure.core/defn at (collatz_conjecture.clj:10:1).
+; Call to clojure.core/defn did not conform to spec.
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+; Syntax error macroexpanding clojure.core/defn at (collatz_conjecture.clj:10:1).
+; Call to clojure.core/defn did not conform to spec.
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+; Syntax error macroexpanding clojure.core/defn at (collatz_conjecture.clj:10:1).
+; Call to clojure.core/defn did not conform to spec.
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+0
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+0
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+; Syntax error (ArityException) compiling at (collatz_conjecture.clj:12:1).
+; Wrong number of args (0) passed to: collatz-conjecture/collatz
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+0
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+0
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+0
+clj꞉collatz-conjecture꞉> 
+#'collatz-conjecture/collatz
+clj꞉collatz-conjecture꞉> 
+0
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+; Syntax error (ArityException) compiling at (collatz_conjecture.clj:12:1).
+; Wrong number of args (0) passed to: collatz-conjecture/collatz
+; Evaluation of file collatz_conjecture.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: collatz_conjecture.clj
+1
+; Running tests for collatz-conjecture...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+1
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; nREPL Connection was closed
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉> 
+; Jack-in done.
+clj꞉user꞉> 
+; Syntax error compiling at (collatz_conjecture.clj:13:1).
+; Unable to resolve symbol: collatz in this context
+clj꞉collatz-conjecture꞉> 
+; Syntax error compiling at (collatz_conjecture.clj:13:1).
+; Unable to resolve symbol: collatz in this context
+clj꞉collatz-conjecture꞉> 
+; Syntax error compiling throw at (collatz_conjecture.clj:5:12).
+; Too many arguments to throw, throw expects a single Throwable instance
+; Execution error (IllegalStateException) at collatz-conjecture/eval7757 (form-init9700357787405997628.clj:13).
+; Attempting to call unbound fn: #'collatz-conjecture/collatz
+clj꞉collatz-conjecture꞉> 
+; Execution error (IllegalStateException) at collatz-conjecture/eval7759 (form-init9700357787405997628.clj:13).
+; Attempting to call unbound fn: #'collatz-conjecture/collatz
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-0 (collatz_conjecture_test.clj:23):
+; zero is an error
+; expected:
+(thrown? Throwable (collatz 0))
+; actual:
+nil
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+(= 0 (collatz 1))
+; actual:
+(not (= 0 nil))
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+(= 152 (collatz 1000000))
+; actual:
+(not (= 152 nil))
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+(= 9 (collatz 12))
+; actual:
+(not (= 9 nil))
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+(= 4 (collatz 16))
+; actual:
+(not (= 4 nil))
+; FAIL in collatz-conjecture-test/steps-for-negative (collatz_conjecture_test.clj:28):
+; negative value is an error
+; expected:
+(thrown? Throwable (collatz -15))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+true
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; FAIL in collatz-conjecture-test/steps-for-1 (collatz_conjecture_test.clj:7):
+; zero steps for one
+; expected:
+0
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-1000000 (collatz_conjecture_test.clj:19):
+; Large number of even and odd steps
+; expected:
+152
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-12 (collatz_conjecture_test.clj:15):
+; even and odd steps
+; expected:
+9
+; actual:
+true
+; FAIL in collatz-conjecture-test/steps-for-16 (collatz_conjecture_test.clj:11):
+; divide if even
+; expected:
+4
+; actual:
+true
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 
+; Evaluating file: collatz_conjecture.clj
+#'collatz-conjecture/collatz
+; Running tests for collatz-conjecture...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉collatz-conjecture꞉> 

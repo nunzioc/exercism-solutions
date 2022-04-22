@@ -1,0 +1,1 @@
+["^ ","~$translate-codon",["^ ","~:row",4,"~:col",1,"~:fixed-arities",["~#set",[1]],"~:name","^0","~:ns","~$protein-translation","~:top-ns","^7"],"~$translate-rna",["^ ","^1",16,"^2",1,"^3",["^4",[1]],"^5","^9","^6","^7","^8","^7","~:arities",["^ ","~i1",["^ ","~:ret","~:seq"]]],"~:filename","/home/nunziocicone/exercism/clojure/protein-translation/src/protein_translation.clj"]

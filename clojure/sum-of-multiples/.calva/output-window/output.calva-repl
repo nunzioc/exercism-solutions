@@ -1,0 +1,343 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+#function[clojure.core/mod]
+clj꞉sum-of-multiples꞉> 
+; Syntax error compiling at (sum_of_multiples.clj:4:11).
+; Unable to resolve symbol: % in this context
+clj꞉sum-of-multiples꞉> 
+()
+clj꞉sum-of-multiples꞉> 
+(true false false false false true false false false false true false false false false true false false false false)
+clj꞉sum-of-multiples꞉> 
+[0 5 10 15]
+clj꞉sum-of-multiples꞉> 
+[0 5 10 15]
+clj꞉sum-of-multiples꞉> 
+#'sum-of-multiples/sum-of-multiples
+clj꞉sum-of-multiples꞉> 
+; Evaluating file: sum_of_multiples_test.clj
+#'sum-of-multiples-test/sum-to-10_000-using-empty
+; Running tests for sum-of-multiples-test...
+; ERROR in sum-of-multiples-test/sum-to-1 (PersistentVector.java:6):
+; error: java.lang.IndexOutOfBoundsException (PersistentVector.java:6)
+; expected:
+(zero? (sum-of-multiples/sum-of-multiples '(3 5) 1))
+; ERROR in sum-of-multiples-test/sum-to-10 (PersistentVector.java:12):
+; error: java.lang.IndexOutOfBoundsException (PersistentVector.java:12)
+; expected:
+(= 23 (sum-of-multiples/sum-of-multiples '(3 5) 10))
+; ERROR in sum-of-multiples-test/sum-to-100 (RT.java:15):
+; error: java.lang.IllegalArgumentException: Don't know how to create ISeq from: java.lang.Long (RT.java:15)
+; expected:
+(= 2318 (sum-of-multiples/sum-of-multiples '(3 5) 100))
+; ERROR in sum-of-multiples-test/sum-to-100-using-1 (RT.java:36):
+; error: java.lang.IllegalArgumentException: Don't know how to create ISeq from: java.lang.Long (RT.java:36)
+; expected:
+(= 4950 (sum-of-multiples/sum-of-multiples '(1) 100))
+; ERROR in sum-of-multiples-test/sum-to-1000 (RT.java:18):
+; error: java.lang.IllegalArgumentException: Don't know how to create ISeq from: java.lang.Long (RT.java:18)
+; expected:
+(= 233168 (sum-of-multiples/sum-of-multiples '(3 5) 1000))
+; ERROR in sum-of-multiples-test/sum-to-10_000-using-43-47 (RT.java:33):
+; error: java.lang.IllegalArgumentException: Don't know how to create ISeq from: java.lang.Long (RT.java:33)
+; expected:
+(= 2203160 (sum-of-multiples/sum-of-multiples '(43 47) 10000))
+; ERROR in sum-of-multiples-test/sum-to-10_000-using-empty (Numbers.java:39):
+; error: java.lang.ClassCastException: class clojure.lang.LazySeq cannot be cast to class java.lang.Number (clojure.lang.LazySeq is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap') (Numbers.java:39)
+; expected:
+(zero? (sum-of-multiples/sum-of-multiples '() 10000))
+; ERROR in sum-of-multiples-test/sum-to-15-using-4-6 (PersistentVector.java:24):
+; error: java.lang.IndexOutOfBoundsException (PersistentVector.java:24)
+; expected:
+(= 30 (sum-of-multiples/sum-of-multiples '(4 6) 15))
+; ERROR in sum-of-multiples-test/sum-to-150-using-5-6-8 (RT.java:27):
+; error: java.lang.IllegalArgumentException: Don't know how to create ISeq from: java.lang.Long (RT.java:27)
+; expected:
+(= 4419 (sum-of-multiples/sum-of-multiples '(5 6 8) 150))
+; ERROR in sum-of-multiples-test/sum-to-20-using-7-13-17 (PersistentVector.java:21):
+; error: java.lang.IndexOutOfBoundsException (PersistentVector.java:21)
+; expected:
+(= 51 (sum-of-multiples/sum-of-multiples '(7 13 17) 20))
+; ERROR in sum-of-multiples-test/sum-to-4 (PersistentVector.java:9):
+; error: java.lang.IndexOutOfBoundsException (PersistentVector.java:9)
+; expected:
+(= 3 (sum-of-multiples/sum-of-multiples '(3 5) 4))
+; ERROR in sum-of-multiples-test/sum-to-51-using-5-25 (PersistentVector.java:30):
+; error: java.lang.IndexOutOfBoundsException (PersistentVector.java:30)
+; expected:
+(= 275 (sum-of-multiples/sum-of-multiples '(5 25) 51))
+; 12 tests finished, problems found. 😭 errors: 12, failures: 0, ns: 1, vars: 12
+clj꞉sum-of-multiples-test꞉> 
+#'sum-of-multiples/sum-of-multiples
+clj꞉sum-of-multiples꞉> 
+; Evaluating file: sum_of_multiples.clj
+#'sum-of-multiples/sum-of-multiples
+; Running tests for sum-of-multiples-test...
+; ERROR in sum-of-multiples-test/sum-to-1 (PersistentVector.java:6):
+; error: java.lang.IndexOutOfBoundsException (PersistentVector.java:6)
+; expected:
+(zero? (sum-of-multiples/sum-of-multiples '(3 5) 1))
+; ERROR in sum-of-multiples-test/sum-to-10 (PersistentVector.java:12):
+; error: java.lang.IndexOutOfBoundsException (PersistentVector.java:12)
+; expected:
+(= 23 (sum-of-multiples/sum-of-multiples '(3 5) 10))
+; ERROR in sum-of-multiples-test/sum-to-100 (RT.java:15):
+; error: java.lang.IllegalArgumentException: Don't know how to create ISeq from: java.lang.Long (RT.java:15)
+; expected:
+(= 2318 (sum-of-multiples/sum-of-multiples '(3 5) 100))
+; ERROR in sum-of-multiples-test/sum-to-100-using-1 (RT.java:36):
+; error: java.lang.IllegalArgumentException: Don't know how to create ISeq from: java.lang.Long (RT.java:36)
+; expected:
+(= 4950 (sum-of-multiples/sum-of-multiples '(1) 100))
+; ERROR in sum-of-multiples-test/sum-to-1000 (RT.java:18):
+; error: java.lang.IllegalArgumentException: Don't know how to create ISeq from: java.lang.Long (RT.java:18)
+; expected:
+(= 233168 (sum-of-multiples/sum-of-multiples '(3 5) 1000))
+; ERROR in sum-of-multiples-test/sum-to-10_000-using-43-47 (RT.java:33):
+; error: java.lang.IllegalArgumentException: Don't know how to create ISeq from: java.lang.Long (RT.java:33)
+; expected:
+(= 2203160 (sum-of-multiples/sum-of-multiples '(43 47) 10000))
+; ERROR in sum-of-multiples-test/sum-to-15-using-4-6 (PersistentVector.java:24):
+; error: java.lang.IndexOutOfBoundsException (PersistentVector.java:24)
+; expected:
+(= 30 (sum-of-multiples/sum-of-multiples '(4 6) 15))
+; ERROR in sum-of-multiples-test/sum-to-150-using-5-6-8 (RT.java:27):
+; error: java.lang.IllegalArgumentException: Don't know how to create ISeq from: java.lang.Long (RT.java:27)
+; expected:
+(= 4419 (sum-of-multiples/sum-of-multiples '(5 6 8) 150))
+; ERROR in sum-of-multiples-test/sum-to-20-using-7-13-17 (PersistentVector.java:21):
+; error: java.lang.IndexOutOfBoundsException (PersistentVector.java:21)
+; expected:
+(= 51 (sum-of-multiples/sum-of-multiples '(7 13 17) 20))
+; ERROR in sum-of-multiples-test/sum-to-4 (PersistentVector.java:9):
+; error: java.lang.IndexOutOfBoundsException (PersistentVector.java:9)
+; expected:
+(= 3 (sum-of-multiples/sum-of-multiples '(3 5) 4))
+; ERROR in sum-of-multiples-test/sum-to-51-using-5-25 (PersistentVector.java:30):
+; error: java.lang.IndexOutOfBoundsException (PersistentVector.java:30)
+; expected:
+(= 275 (sum-of-multiples/sum-of-multiples '(5 25) 51))
+; 12 tests finished, problems found. 😭 errors: 11, failures: 0, ns: 1, vars: 12
+clj꞉sum-of-multiples-test꞉> 
+; Execution error (IndexOutOfBoundsException) at sum-of-multiples/sum-of-multiples (sum_of_multiples.clj:7).
+; null
+clj꞉sum-of-multiples꞉> 
+; Execution error (NullPointerException) at java.util.regex.Matcher/getTextLength (Matcher.java:1770).
+; null
+clj꞉sum-of-multiples꞉> 
+; Execution error (IndexOutOfBoundsException) at sum-of-multiples/sum-of-multiples (sum_of_multiples.clj:7).
+; null
+clj꞉sum-of-multiples꞉> 
+; Execution error (IndexOutOfBoundsException) at sum-of-multiples/sum-of-multiples (form-init5455306891765469788.clj:7).
+; null
+clj꞉sum-of-multiples꞉> 
+; Execution error (IndexOutOfBoundsException) at sum-of-multiples/sum-of-multiples (form-init5455306891765469788.clj:7).
+; null
+clj꞉sum-of-multiples꞉> 
+#'sum-of-multiples/multiples
+clj꞉sum-of-multiples꞉> 
+#'sum-of-multiples/sum
+clj꞉sum-of-multiples꞉> 
+; Execution error (ClassCastException) at sum-of-multiples/eval23862 (form-init5455306891765469788.clj:8).
+; class clojure.core$num cannot be cast to class java.lang.Number (clojure.core$num is in unnamed module of loader 'app'; java.lang.Number is in module java.base of loader 'bootstrap')
+clj꞉sum-of-multiples꞉> 
+(0 1 2 3 4 5 6 7 8 9)
+clj꞉sum-of-multiples꞉> 
+(0 1 2 3 4 5 6 7 8 9)
+clj꞉sum-of-multiples꞉> 
+#'sum-of-multiples/num
+; WARNING: num already refers to: #'clojure.core/num in namespace: sum-of-multiples, being replaced by: #'sum-of-multiples/num
+clj꞉sum-of-multiples꞉> 
+(0 1 2 3 4 5 6 7 8 9)
+clj꞉sum-of-multiples꞉> 
+[0 5]
+clj꞉sum-of-multiples꞉> 
+; Syntax error compiling at (sum_of_multiples.clj:12:21).
+; Unable to resolve symbol: multiple in this context
+clj꞉sum-of-multiples꞉> 
+; Syntax error compiling at (sum_of_multiples.clj:12:21).
+; Unable to resolve symbol: multiple in this context
+clj꞉sum-of-multiples꞉> 
+#'sum-of-multiples/multiple
+; WARNING: num already refers to: #'clojure.core/num in namespace: sum-of-multiples, being replaced by: #'sum-of-multiples/num
+clj꞉sum-of-multiples꞉> 
+(0 3 6 9 0 5)
+clj꞉sum-of-multiples꞉> 
+23
+clj꞉sum-of-multiples꞉> 
+; Evaluating file: sum_of_multiples.clj
+; WARNING: num already refers to: #'clojure.core/num in namespace: sum-of-multiples, being replaced by: #'sum-of-multiples/num
+(0 1 2 3 4 5 6 7 8 9)
+; Running tests for sum-of-multiples-test...
+; FAIL in sum-of-multiples-test/sum-to-100 (sum_of_multiples_test.clj:15):
+; expected:
+(= 2318 (sum-of-multiples/sum-of-multiples '(3 5) 100))
+; actual:
+(not (= 2318 2633))
+; FAIL in sum-of-multiples-test/sum-to-1000 (sum_of_multiples_test.clj:18):
+; expected:
+(= 233168 (sum-of-multiples/sum-of-multiples '(3 5) 1000))
+; actual:
+(not (= 233168 266333))
+; FAIL in sum-of-multiples-test/sum-to-10_000-using-43-47 (sum_of_multiples_test.clj:33):
+; expected:
+(= 2203160 (sum-of-multiples/sum-of-multiples '(43 47) 10000))
+; actual:
+(not (= 2203160 2223370))
+; FAIL in sum-of-multiples-test/sum-to-15-using-4-6 (sum_of_multiples_test.clj:24):
+; expected:
+(= 30 (sum-of-multiples/sum-of-multiples '(4 6) 15))
+; actual:
+(not (= 30 42))
+; FAIL in sum-of-multiples-test/sum-to-150-using-5-6-8 (sum_of_multiples_test.clj:27):
+; expected:
+(= 4419 (sum-of-multiples/sum-of-multiples '(5 6 8) 150))
+; actual:
+(not (= 4419 5343))
+; FAIL in sum-of-multiples-test/sum-to-51-using-5-25 (sum_of_multiples_test.clj:30):
+; expected:
+(= 275 (sum-of-multiples/sum-of-multiples '(5 25) 51))
+; actual:
+(not (= 275 350))
+; 12 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 12
+clj꞉sum-of-multiples-test꞉> 
+#'sum-of-multiples/num
+; WARNING: num already refers to: #'clojure.core/num in namespace: sum-of-multiples, being replaced by: #'sum-of-multiples/num
+clj꞉sum-of-multiples꞉> 
+(0
+ 3
+ 6
+ 9
+ 12
+ 15
+ 18
+ 21
+ 24
+ 27
+ 30
+ 33
+ 36
+ 39
+ 42
+ 45
+ 48
+ 51
+ 54
+ 57
+ 60
+ 63
+ 66
+ 69
+ 72
+ 75
+ 78
+ 81
+ 84
+ 87
+ 90
+ 93
+ 96
+ 99
+ 0
+ 5
+ 10
+ 15
+ 20
+ 25
+ 30
+ 35
+ 40
+ 45
+ 50
+ 55
+ 60
+ 65
+ 70
+ 75
+ ...)
+clj꞉sum-of-multiples꞉> 
+2633
+clj꞉sum-of-multiples꞉> 
+(0
+ 3
+ 6
+ 9
+ 12
+ 15
+ 18
+ 21
+ 24
+ 27
+ 30
+ 33
+ 36
+ 39
+ 42
+ 45
+ 48
+ 51
+ 54
+ 57
+ 60
+ 63
+ 66
+ 69
+ 72
+ 75
+ 78
+ 81
+ 84
+ 87
+ 90
+ 93
+ 96
+ 99
+ 0
+ 5
+ 10
+ 15
+ 20
+ 25
+ 30
+ 35
+ 40
+ 45
+ 50
+ 55
+ 60
+ 65
+ 70
+ 75
+ ...)
+clj꞉sum-of-multiples꞉> 
+2633
+clj꞉sum-of-multiples꞉> 
+; Evaluating file: sum_of_multiples.clj
+; WARNING: num already refers to: #'clojure.core/num in namespace: sum-of-multiples, being replaced by: #'sum-of-multiples/num
+(0 1 2 3 4 5 6 7 8 9)
+; Running tests for sum-of-multiples-test...
+; 12 tests finished, all passing 👍, ns: 1, vars: 12
+clj꞉sum-of-multiples-test꞉> 
+; Evaluating file: sum_of_multiples.clj
+#'sum-of-multiples/sum-of-multiples
+; Running tests for sum-of-multiples-test...
+; 12 tests finished, all passing 👍, ns: 1, vars: 12
+clj꞉sum-of-multiples-test꞉> 

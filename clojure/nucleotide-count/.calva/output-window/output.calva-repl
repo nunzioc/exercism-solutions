@@ -1,0 +1,2869 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+; Syntax error compiling at (nucleotide_count.clj:9:1).
+; Unable to resolve symbol: group-by in this context
+clj꞉nucleotide-count꞉> 
+(+ 1 2)
+; Syntax error compiling at (output.calva-repl:24:1).
+; Unable to resolve symbol: + in this context
+clj꞉nucleotide-count꞉> 
+{\A [\A], \C [\C], \T [\T \T \T], \G [\G]}
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error (ArityException) compiling at (nucleotide_count.clj:9:1).
+; Wrong number of args (0) passed to: clojure.core/identity
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+nucleotide-count/eval7841 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+(= {\A 20, \T 21, \G 17, \C 12} (nucleotide-count/nucleotide-counts s))
+; actual:
+(not (= {\A 20, \T 21, \G 17, \C 12} nil))
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+(=
+ 1
+ (nucleotide-count/count-of-nucleotide-in-strand \T "GGGGGTAACCCGG"))
+; actual:
+(not (= 1 nil))
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+(= 0 (nucleotide-count/count-of-nucleotide-in-strand \A ""))
+; actual:
+(not (= 0 nil))
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+(= {\A 0, \T 0, \C 0, \G 0} (nucleotide-count/nucleotide-counts ""))
+; actual:
+(not (= {\A 0, \T 0, \C 0, \G 0} nil))
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+(= 5 (nucleotide-count/count-of-nucleotide-in-strand \C "CCCCC"))
+; actual:
+(not (= 5 nil))
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+(=
+ {\A 0, \T 0, \C 0, \G 8}
+ (nucleotide-count/nucleotide-counts "GGGGGGGG"))
+; actual:
+(not (= {\A 0, \T 0, \C 0, \G 8} nil))
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{[\A] [\A], [\C] [\C], [\T] [\T \T \T], [\G] [\G]}
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error (UnsupportedOperationException) compiling at (nucleotide_count.clj:9:1).
+; count not supported on this type: Character
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+nucleotide-count/eval8274 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+#function[clojure.core/juxt/fn--5807]
+clj꞉nucleotide-count꞉> 
+#function[clojure.core/juxt/fn--5807]
+clj꞉nucleotide-count꞉> 
+; Execution error (UnsupportedOperationException) at nucleotide-count/eval8294 (form-init8592368636219082135.clj:9).
+; count not supported on this type: Character
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error (UnsupportedOperationException) compiling at (nucleotide_count.clj:9:1).
+; count not supported on this type: Character
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+nucleotide-count/eval8374 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Execution error (UnsupportedOperationException) at nucleotide-count/eval8390 (form-init8592368636219082135.clj:9).
+; count not supported on this type: Character
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{[\A] [\A], [\C] [\C], [\T] [\T \T \T], [\G] [\G]}
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{[\A] [\A], [\C] [\C], [\T] [\T \T \T], [\G] [\G]}
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A [\A], \C [\C], \T [\T \T \T], \G [\G]}
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+{\A [\A], \C [\C], \T [\T \T \T], \G [\G]}
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+#function[clojure.core/map/fn--5847]
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Error printing return value (IllegalArgumentException) at clojure.lang.APersistentVector/null (APersistentVector.java:294).
+; Key must be integer
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.ExceptionInfo
+clojure.main/repl (main.clj:419)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+#function[clojure.core/map/fn--5847]
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (1) passed to: nucleotide-count/eval9050/fn--9051
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.ExceptionInfo
+clojure.main/repl (main.clj:419)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Error printing return value (ArityException) at clojure.lang.AFn/throwArity (AFn.java:429).
+; Wrong number of args (1) passed to: nucleotide-count/eval9146/fn--9147
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.ExceptionInfo
+clojure.main/repl (main.clj:419)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling at (nucleotide_count.clj:9:7).
+; Unable to resolve symbol: k in this context
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$VectorExpr/parse (Compiler.java:3260)
+clojure.lang.Compiler/analyze (Compiler.java:6791)
+clojure.lang.Compiler$VectorExpr/parse (Compiler.java:3260)
+clojure.lang.Compiler/analyze (Compiler.java:6791)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7173)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval9228 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling at (nucleotide_count.clj:9:7).
+; Unable to resolve symbol: k in this context
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$VectorExpr/parse (Compiler.java:3260)
+clojure.lang.Compiler/analyze (Compiler.java:6791)
+clojure.lang.Compiler$VectorExpr/parse (Compiler.java:3260)
+clojure.lang.Compiler/analyze (Compiler.java:6791)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7173)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval9322 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling at (nucleotide_count.clj:9:1).
+; Unable to resolve symbol: k in this context
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$VectorExpr/parse (Compiler.java:3260)
+clojure.lang.Compiler/analyze (Compiler.java:6791)
+clojure.lang.Compiler$VectorExpr/parse (Compiler.java:3260)
+clojure.lang.Compiler/analyze (Compiler.java:6791)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7173)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval9416 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling at (nucleotide_count.clj:9:1).
+; Unable to resolve symbol: k in this context
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$VectorExpr/parse (Compiler.java:3260)
+clojure.lang.Compiler/analyze (Compiler.java:6791)
+clojure.lang.Compiler$VectorExpr/parse (Compiler.java:3260)
+clojure.lang.Compiler/analyze (Compiler.java:6791)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7173)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval9509 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error macroexpanding clojure.core/fn at (nucleotide_count.clj:9:6).
+; () - failed: Insufficient input at: [:fn-tail]
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6971)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:6987)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7092)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7173)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval9602 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error macroexpanding clojure.core/fn at (nucleotide_count.clj:9:6).
+; () - failed: Insufficient input at: [:fn-tail]
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6971)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:6987)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7092)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7173)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval9695 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+(nil nil nil nil)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+(nil nil nil nil)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error (ArityException) compiling at (nucleotide_count.clj:10:1).
+; Wrong number of args (0) passed to: clojure.core/frequencies
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+nucleotide-count/eval9988 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error (ArityException) compiling at (nucleotide_count.clj:10:1).
+; Wrong number of args (0) passed to: clojure.core/frequencies
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+nucleotide-count/eval10090 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 1}
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+{\A 1, \C 1, \T 3, \G 1}
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling at (nucleotide_count.clj:7:1).
+; Unable to resolve symbol: strand in this context
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$VectorExpr/parse (Compiler.java:3260)
+clojure.lang.Compiler/analyze (Compiler.java:6791)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval10398 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-all-nucleotides (nucleotide_count_test.clj:27):
+; expected:
+{\A 20, \T 21, \G 17, \C 12}
+; actual:
+nil
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+{}
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+{\G 8}
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling at (nucleotide_count.clj:7:1).
+; Unable to resolve symbol: strand in this context
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$VectorExpr/parse (Compiler.java:3260)
+clojure.lang.Compiler/analyze (Compiler.java:6791)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval10590 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+{}
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+{\G 8}
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling def at (nucleotide_count.clj:7:1).
+; Too many arguments to def
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval10681 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+{}
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+{\G 8}
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error reading source at (nucleotide_count.clj:8:15).
+; Map literal must contain an even number of forms
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+nucleotide-count/eval10772 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+{}
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+{\G 8}
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error reading source at (nucleotide_count.clj:8:20).
+; Unmatched delimiter: )
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+nucleotide-count/eval10863 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+{}
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+{\G 8}
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error reading source at (nucleotide_count.clj:8:21).
+; Map literal must contain an even number of forms
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+nucleotide-count/eval10954 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+{}
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+{\G 8}
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling def at (nucleotide_count.clj:7:1).
+; Too many arguments to def
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval11045 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+{}
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+{\G 8}
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling def at (nucleotide_count.clj:7:1).
+; Too many arguments to def
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval11136 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+{}
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+{\G 8}
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling def at (nucleotide_count.clj:7:1).
+; Too many arguments to def
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval11227 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+{}
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+{\G 8}
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling def at (nucleotide_count.clj:7:1).
+; Too many arguments to def
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval11318 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+{}
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+{\G 8}
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling def at (nucleotide_count.clj:7:1).
+; Too many arguments to def
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval11409 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-nucleotides (nucleotide_count_test.clj:9):
+; expected:
+{\A 0, \T 0, \C 0, \G 0}
+; actual:
+{}
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-sequence-has-only-guanosine (nucleotide_count_test.clj:16):
+; expected:
+{\A 0, \T 0, \C 0, \G 8}
+; actual:
+{\G 8}
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+nil
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+nil
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; ERROR in nucleotide-count-test/counts-only-thymidine (AFn.java:20):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/filter (AFn.java:20)
+; expected:
+(=
+ 1
+ (nucleotide-count/count-of-nucleotide-in-strand \T "GGGGGTAACCCGG"))
+; ERROR in nucleotide-count-test/empty-dna-strand-has-no-adenosine (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/filter (AFn.java:6)
+; expected:
+(= 0 (nucleotide-count/count-of-nucleotide-in-strand \A ""))
+; ERROR in nucleotide-count-test/repetitive-cytidine-gets-counted (AFn.java:13):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/filter (AFn.java:13)
+; expected:
+(= 5 (nucleotide-count/count-of-nucleotide-in-strand \C "CCCCC"))
+; 7 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; ERROR in nucleotide-count-test/counts-only-thymidine (AFn.java:20):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/filter (AFn.java:20)
+; expected:
+(=
+ 1
+ (nucleotide-count/count-of-nucleotide-in-strand \T "GGGGGTAACCCGG"))
+; ERROR in nucleotide-count-test/empty-dna-strand-has-no-adenosine (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/filter (AFn.java:6)
+; expected:
+(= 0 (nucleotide-count/count-of-nucleotide-in-strand \A ""))
+; ERROR in nucleotide-count-test/repetitive-cytidine-gets-counted (AFn.java:13):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/filter (AFn.java:13)
+; expected:
+(= 5 (nucleotide-count/count-of-nucleotide-in-strand \C "CCCCC"))
+; 7 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling at (nucleotide_count.clj:4:11).
+; Unable to resolve symbol: includes? in this context
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval11908 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error reading source at (nucleotide_count.clj:12:1).
+; EOF while reading, starting at line 3
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+nucleotide-count/eval11998 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling at (nucleotide_count.clj:4:11).
+; Unable to resolve symbol: includes? in this context
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval12088 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling at (nucleotide_count.clj:4:11).
+; Unable to resolve symbol: includes? in this context
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval12178 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling at (nucleotide_count.clj:4:18).
+; Unable to resolve symbol: includes? in this context
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$HostExpr$Parser/parse (Compiler.java:1020)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7101)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval12268 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/counts-only-thymidine (nucleotide_count_test.clj:20):
+; expected:
+1
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count_test.clj:6):
+; expected:
+0
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count_test.clj:13):
+; expected:
+5
+; actual:
+#function[clojure.core/filter/fn--5874]
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; ERROR in nucleotide-count-test/counts-only-thymidine (nucleotide_count.clj:20):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (nucleotide_count.clj:20)
+; expected:
+(=
+ 1
+ (nucleotide-count/count-of-nucleotide-in-strand \T "GGGGGTAACCCGG"))
+; ERROR in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count.clj:6):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (nucleotide_count.clj:6)
+; expected:
+(= 0 (nucleotide-count/count-of-nucleotide-in-strand \A ""))
+; ERROR in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count.clj:13):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (nucleotide_count.clj:13)
+; expected:
+(= 5 (nucleotide-count/count-of-nucleotide-in-strand \C "CCCCC"))
+; 7 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error compiling at (nucleotide_count.clj:4:18).
+; Unable to resolve symbol: % in this context
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$HostExpr$Parser/parse (Compiler.java:1020)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7101)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$HostExpr$Parser/parse (Compiler.java:1020)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7101)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+nucleotide-count/eval12460 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; ERROR in nucleotide-count-test/counts-only-thymidine (nucleotide_count.clj:20):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (nucleotide_count.clj:20)
+; expected:
+(=
+ 1
+ (nucleotide-count/count-of-nucleotide-in-strand \T "GGGGGTAACCCGG"))
+; ERROR in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count.clj:6):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (nucleotide_count.clj:6)
+; expected:
+(= 0 (nucleotide-count/count-of-nucleotide-in-strand \A ""))
+; ERROR in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count.clj:13):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (nucleotide_count.clj:13)
+; expected:
+(= 5 (nucleotide-count/count-of-nucleotide-in-strand \C "CCCCC"))
+; 7 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+; Syntax error reading source at (nucleotide_count.clj:4:10).
+; Map literal must contain an even number of forms
+; Evaluation of file nucleotide_count.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+nucleotide-count/eval12660 (form-init8592368636219082135.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+(source defn)
+; Syntax error compiling at (output.calva-repl:2706:1).
+; Unable to resolve symbol: source in this context
+clj꞉nucleotide-count꞉> 
+(clojure.repl/source defn)
+(def 
+
+ ^{:doc "Same as (def name (fn [params* ] exprs*)) or (def
+    name (fn ([params* ] exprs*)+)) with any doc-string or attrs added
+    to the var metadata. prepost-map defines a map with optional keys
+    :pre and :post that contain collections of pre or post conditions."
+   :arglists '([name doc-string? attr-map? [params*] prepost-map? body]
+                [name doc-string? attr-map? ([params*] prepost-map? body)+ attr-map?])
+   :added "1.0"}
+ defn (fn defn [&form &env name & fdecl]
+        ;; Note: Cannot delegate this check to def because of the call to (with-meta name ..)
+        (if (instance? clojure.lang.Symbol name)
+          nil
+          (throw (IllegalArgumentException. "First argument to defn must be a symbol")))
+        (let [m (if (string? (first fdecl))
+                  {:doc (first fdecl)}
+                  {})
+              fdecl (if (string? (first fdecl))
+                      (next fdecl)
+                      fdecl)
+              m (if (map? (first fdecl))
+                  (conj 
+m (first fdecl))
+                  m)
+              fdecl (if (map? (first fdecl))
+                      (next fdecl)
+                      fdecl)
+              fdecl (if (vector? (first fdecl))
+                      (list fdecl)
+                      fdecl)
+              m (if (map? (last fdecl))
+                  (conj m (last fdecl))
+                  m)
+              fdecl (if (map? (last fdecl))
+                      (butlast fdecl)
+                      fdecl)
+              m (conj {:arglists (list 'quote (sigs fdecl))} m)
+              m (let [inline (:inline m)
+                      ifn (first inline)
+                      iname (second inline)]
+                  ;; same as: (if (and (= 'fn ifn) (not (symbol? iname))) ...)
+                  (if (if (clojure.lang.Util/equiv 'fn ifn)
+                        (if (instance? clojure.lang.Symbol iname) false true))
+                    ;; inserts the same fn name to the inline fn if it does not have one
+                    (assoc m :inline (cons ifn (cons (c
+lojure.lang.Symbol/intern (.concat (.getName ^clojure.lang.Symbol name) "__inliner"))
+                                                     (next inline))))
+                    m))
+              m (conj (if (meta name) (meta name) {}) m)]
+          (list 'def (with-meta name m)
+                ;;todo - restore propagation of fn name
+                ;;must figure out how to convey primitive hints to self calls first
+								;;(cons `fn fdecl)
+								(with-meta (cons `fn fdecl) {:rettag (:tag m)})))))
+nil
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; ERROR in nucleotide-count-test/counts-only-thymidine (nucleotide_count.clj:20):
+; error: java.lang.AssertionError: Assert failed: (= nucleotide \A \T \C \G) (nucleotide_count.clj:20)
+; expected:
+(=
+ 1
+ (nucleotide-count/count-of-nucleotide-in-strand \T "GGGGGTAACCCGG"))
+; ERROR in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count.clj:6):
+; error: java.lang.AssertionError: Assert failed: (= nucleotide \A \T \C \G) (nucleotide_count.clj:6)
+; expected:
+(= 0 (nucleotide-count/count-of-nucleotide-in-strand \A ""))
+; ERROR in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count.clj:13):
+; error: java.lang.AssertionError: Assert failed: (= nucleotide \A \T \C \G) (nucleotide_count.clj:13)
+; expected:
+(= 5 (nucleotide-count/count-of-nucleotide-in-strand \C "CCCCC"))
+; 7 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; FAIL in nucleotide-count-test/validates-nucleotides (nucleotide_count_test.clj:23):
+; expected:
+(thrown?
+ Throwable
+ (nucleotide-count/count-of-nucleotide-in-strand \X "GACT"))
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; ERROR in nucleotide-count-test/counts-only-thymidine (nucleotide_count.clj:20):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (nucleotide_count.clj:20)
+; expected:
+(=
+ 1
+ (nucleotide-count/count-of-nucleotide-in-strand \T "GGGGGTAACCCGG"))
+; ERROR in nucleotide-count-test/empty-dna-strand-has-no-adenosine (nucleotide_count.clj:6):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (nucleotide_count.clj:6)
+; expected:
+(= 0 (nucleotide-count/count-of-nucleotide-in-strand \A ""))
+; ERROR in nucleotide-count-test/repetitive-cytidine-gets-counted (nucleotide_count.clj:13):
+; error: java.lang.ClassCastException: class java.lang.Character cannot be cast to class clojure.lang.IFn (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (nucleotide_count.clj:13)
+; expected:
+(= 5 (nucleotide-count/count-of-nucleotide-in-strand \C "CCCCC"))
+; 7 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; ERROR in nucleotide-count-test/counts-only-thymidine (AFn.java:20):
+; error: clojure.lang.ArityException: Wrong number of args (5) passed to: clojure.core/contains? (AFn.java:20)
+; expected:
+(=
+ 1
+ (nucleotide-count/count-of-nucleotide-in-strand \T "GGGGGTAACCCGG"))
+; ERROR in nucleotide-count-test/empty-dna-strand-has-no-adenosine (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (5) passed to: clojure.core/contains? (AFn.java:6)
+; expected:
+(= 0 (nucleotide-count/count-of-nucleotide-in-strand \A ""))
+; ERROR in nucleotide-count-test/repetitive-cytidine-gets-counted (AFn.java:13):
+; error: clojure.lang.ArityException: Wrong number of args (5) passed to: clojure.core/contains? (AFn.java:13)
+; expected:
+(= 5 (nucleotide-count/count-of-nucleotide-in-strand \C "CCCCC"))
+; 7 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; ERROR in nucleotide-count-test/counts-only-thymidine (AFn.java:20):
+; error: clojure.lang.ArityException: Wrong number of args (6) passed to: clojure.core/contains? (AFn.java:20)
+; expected:
+(=
+ 1
+ (nucleotide-count/count-of-nucleotide-in-strand \T "GGGGGTAACCCGG"))
+; ERROR in nucleotide-count-test/empty-dna-strand-has-no-adenosine (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (6) passed to: clojure.core/contains? (AFn.java:6)
+; expected:
+(= 0 (nucleotide-count/count-of-nucleotide-in-strand \A ""))
+; ERROR in nucleotide-count-test/repetitive-cytidine-gets-counted (AFn.java:13):
+; error: clojure.lang.ArityException: Wrong number of args (6) passed to: clojure.core/contains? (AFn.java:13)
+; expected:
+(= 5 (nucleotide-count/count-of-nucleotide-in-strand \C "CCCCC"))
+; 7 tests finished, problems found. 😭 errors: 3, failures: 0, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+{\A 1, \C 1, \T 3, \G 1}
+; Running tests for nucleotide-count...
+; 7 tests finished, all passing 👍, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+#'nucleotide-count/nucleotide-counts
+; Running tests for nucleotide-count...
+; 7 tests finished, all passing 👍, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 
+; Evaluating file: nucleotide_count.clj
+#'nucleotide-count/nucleotide-counts
+; Running tests for nucleotide-count...
+; 7 tests finished, all passing 👍, ns: 1, vars: 7
+clj꞉nucleotide-count꞉> 

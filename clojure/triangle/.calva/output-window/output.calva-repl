@@ -1,0 +1,213 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+#'triangle/scalene?
+clj꞉triangle꞉> 
+; Evaluating file: triangle_test.clj
+#'triangle-test/scalene-sides-may-be-floats
+; Running tests for triangle-test...
+; ERROR in triangle-test/isosceles-equilateral-triangles-also-isosceles (AFn.java:30):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: triangle/isosceles? (AFn.java:30)
+; expected:
+(true? (triangle/isosceles? 4 4 4))
+; ERROR in triangle-test/isosceles-first-last-sides-equal (AFn.java:27):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: triangle/isosceles? (AFn.java:27)
+; expected:
+(true? (triangle/isosceles? 4 3 4))
+; ERROR in triangle-test/isosceles-first-triangle-inequality-violation (AFn.java:36):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: triangle/isosceles? (AFn.java:36)
+; expected:
+(false? (triangle/isosceles? 1 1 3))
+; ERROR in triangle-test/isosceles-first-two-sides-equal (AFn.java:24):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: triangle/isosceles? (AFn.java:24)
+; expected:
+(true? (triangle/isosceles? 4 4 3))
+; ERROR in triangle-test/isosceles-last-two-sides-equal (AFn.java:21):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: triangle/isosceles? (AFn.java:21)
+; expected:
+(true? (triangle/isosceles? 3 4 4))
+; ERROR in triangle-test/isosceles-no-sides-equal (AFn.java:33):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: triangle/isosceles? (AFn.java:33)
+; expected:
+(false? (triangle/isosceles? 2 3 4))
+; ERROR in triangle-test/isosceles-second-triangle-inequality-violation (AFn.java:39):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: triangle/isosceles? (AFn.java:39)
+; expected:
+(false? (triangle/isosceles? 1 3 1))
+; ERROR in triangle-test/isosceles-sides-may-be-floats (AFn.java:45):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: triangle/isosceles? (AFn.java:45)
+; expected:
+(true? (triangle/isosceles? 0.5 0.4 0.5))
+; ERROR in triangle-test/isosceles-third-triangle-inequality-violation (AFn.java:42):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: triangle/isosceles? (AFn.java:42)
+; expected:
+(false? (triangle/isosceles? 3 1 1))
+; ERROR in triangle-test/scalene-all-sides-equal (AFn.java:51):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: triangle/scalene? (AFn.java:51)
+; expected:
+(false? (triangle/scalene? 4 4 4))
+; ERROR in triangle-test/scalene-may-not-violate-triangle-inequality (AFn.java:57):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: triangle/scalene? (AFn.java:57)
+; expected:
+(false? (triangle/scalene? 7 3 2))
+; ERROR in triangle-test/scalene-no-sides-are-equal (AFn.java:48):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: triangle/scalene? (AFn.java:48)
+; expected:
+(true? (triangle/scalene? 5 4 6))
+; ERROR in triangle-test/scalene-sides-may-be-floats (AFn.java:60):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: triangle/scalene? (AFn.java:60)
+; expected:
+(true? (triangle/scalene? 0.5 0.4 0.6))
+; ERROR in triangle-test/scalene-two-sides-equal (AFn.java:54):
+; error: clojure.lang.ArityException: Wrong number of args (3) passed to: triangle/scalene? (AFn.java:54)
+; expected:
+(false? (triangle/scalene? 4 4 3))
+; 19 tests finished, problems found. 😭 errors: 14, failures: 0, ns: 1, vars: 19
+clj꞉triangle-test꞉> 
+#'triangle/scalene?
+clj꞉triangle꞉> 
+; Evaluating file: triangle.clj
+#'triangle/scalene?
+; Running tests for triangle-test...
+; FAIL in triangle-test/isosceles-equilateral-triangles-also-isosceles (triangle_test.clj:30):
+; expected:
+(true? (triangle/isosceles? 4 4 4))
+; actual:
+(not (true? false))
+; FAIL in triangle-test/isosceles-first-last-sides-equal (triangle_test.clj:27):
+; expected:
+(true? (triangle/isosceles? 4 3 4))
+; actual:
+(not (true? false))
+; FAIL in triangle-test/isosceles-first-two-sides-equal (triangle_test.clj:24):
+; expected:
+(true? (triangle/isosceles? 4 4 3))
+; actual:
+(not (true? false))
+; FAIL in triangle-test/isosceles-last-two-sides-equal (triangle_test.clj:21):
+; expected:
+(true? (triangle/isosceles? 3 4 4))
+; actual:
+(not (true? false))
+; FAIL in triangle-test/isosceles-sides-may-be-floats (triangle_test.clj:45):
+; expected:
+(true? (triangle/isosceles? 0.5 0.4 0.5))
+; actual:
+(not (true? false))
+; FAIL in triangle-test/scalene-may-not-violate-triangle-inequality (triangle_test.clj:57):
+; expected:
+(false? (triangle/scalene? 7 3 2))
+; actual:
+(not (false? true))
+; FAIL in triangle-test/scalene-two-sides-equal (triangle_test.clj:54):
+; expected:
+(false? (triangle/scalene? 4 4 3))
+; actual:
+(not (false? true))
+; 19 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 19
+clj꞉triangle-test꞉> 
+true
+clj꞉triangle꞉> 
+#'triangle/scalene?
+clj꞉triangle꞉> 
+#'triangle/isosceles?
+clj꞉triangle꞉> 
+; Evaluating file: triangle.clj
+#'triangle/scalene?
+; Running tests for triangle-test...
+; FAIL in triangle-test/isosceles-equilateral-triangles-also-isosceles (triangle_test.clj:30):
+; expected:
+(true? (triangle/isosceles? 4 4 4))
+; actual:
+(not (true? false))
+; FAIL in triangle-test/isosceles-first-last-sides-equal (triangle_test.clj:27):
+; expected:
+(true? (triangle/isosceles? 4 3 4))
+; actual:
+(not (true? false))
+; FAIL in triangle-test/isosceles-first-two-sides-equal (triangle_test.clj:24):
+; expected:
+(true? (triangle/isosceles? 4 4 3))
+; actual:
+(not (true? false))
+; FAIL in triangle-test/isosceles-last-two-sides-equal (triangle_test.clj:21):
+; expected:
+(true? (triangle/isosceles? 3 4 4))
+; actual:
+(not (true? false))
+; FAIL in triangle-test/isosceles-sides-may-be-floats (triangle_test.clj:45):
+; expected:
+(true? (triangle/isosceles? 0.5 0.4 0.5))
+; actual:
+(not (true? false))
+; FAIL in triangle-test/scalene-may-not-violate-triangle-inequality (triangle_test.clj:57):
+; expected:
+(false? (triangle/scalene? 7 3 2))
+; actual:
+(not (false? true))
+; 19 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 19
+clj꞉triangle-test꞉> 
+#'triangle/is-valid?
+clj꞉triangle꞉> 
+; Evaluating file: triangle.clj
+#'triangle/scalene?
+; Running tests for triangle-test...
+; FAIL in triangle-test/isosceles-equilateral-triangles-also-isosceles (triangle_test.clj:30):
+; expected:
+(true? (triangle/isosceles? 4 4 4))
+; actual:
+(not (true? false))
+; FAIL in triangle-test/isosceles-first-last-sides-equal (triangle_test.clj:27):
+; expected:
+(true? (triangle/isosceles? 4 3 4))
+; actual:
+(not (true? false))
+; FAIL in triangle-test/isosceles-first-two-sides-equal (triangle_test.clj:24):
+; expected:
+(true? (triangle/isosceles? 4 4 3))
+; actual:
+(not (true? false))
+; FAIL in triangle-test/isosceles-last-two-sides-equal (triangle_test.clj:21):
+; expected:
+(true? (triangle/isosceles? 3 4 4))
+; actual:
+(not (true? false))
+; FAIL in triangle-test/isosceles-sides-may-be-floats (triangle_test.clj:45):
+; expected:
+(true? (triangle/isosceles? 0.5 0.4 0.5))
+; actual:
+(not (true? false))
+; 19 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 19
+clj꞉triangle-test꞉> 
+; Evaluating file: triangle.clj
+#'triangle/scalene?
+; Running tests for triangle-test...
+; FAIL in triangle-test/isosceles-equilateral-triangles-also-isosceles (triangle_test.clj:30):
+; expected:
+(true? (triangle/isosceles? 4 4 4))
+; actual:
+(not (true? false))
+; 19 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 19
+clj꞉triangle-test꞉> 
+; Evaluating file: triangle.clj
+#'triangle/scalene?
+; Running tests for triangle-test...
+; 19 tests finished, all passing 👍, ns: 1, vars: 19
+clj꞉triangle-test꞉> 

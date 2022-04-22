@@ -1,0 +1,1 @@
+["^ ","~$collatz-loop",["^ ","~:row",4,"~:col",1,"~:private",true,"~:fixed-arities",["~#set",[2]],"~:name","^0","~:ns","~$collatz-conjecture","~:top-ns","^8"],"~$collatz",["^ ","^1",10,"^2",1,"^4",["^5",[1]],"^6","^:","^7","^8","^9","^8"],"~:filename","/home/nunziocicone/exercism/clojure/collatz-conjecture/src/collatz_conjecture.clj"]

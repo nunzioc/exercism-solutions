@@ -1,0 +1,1633 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+#{\a \d \f \s}
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+#{\a \d \f \s}
+; Running tests for pangram...
+; FAIL in pangram-test/another-missing-character-x (pangram_test.clj:17):
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/empty-sentence (pangram_test.clj:6):
+; expected:
+(false? (pangram? ""))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/lowercase-pangram (pangram_test.clj:9):
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; actual:
+(not (pangram? "the quick brown fox jumps over the lazy dog"))
+; FAIL in pangram-test/missing-character-x (pangram_test.clj:12):
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/missing-letters-replaced-by-numbers (pangram_test.clj:28):
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/mixed-case-and-punctuation (pangram_test.clj:33):
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; actual:
+(not (pangram? "\"Five quacking Zephyrs jolt my wax bed.\""))
+; FAIL in pangram-test/upper-and-lower-not-counted-separately (pangram_test.clj:36):
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/with-numbers (pangram_test.clj:25):
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; actual:
+(not (pangram? "the 1 quick brown fox jumps over the 2 lazy dogs"))
+; FAIL in pangram-test/with-underscores (pangram_test.clj:22):
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; actual:
+(not (pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog"))
+; 9 tests finished, problems found. 😭 errors: 0, failures: 9, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error (ArityException) compiling at (pangram.clj:6:1).
+; Wrong number of args (2) passed to: clojure.core/set
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+pangram/eval6423 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; FAIL in pangram-test/another-missing-character-x (pangram_test.clj:17):
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/empty-sentence (pangram_test.clj:6):
+; expected:
+(false? (pangram? ""))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/lowercase-pangram (pangram_test.clj:9):
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; actual:
+(not (pangram? "the quick brown fox jumps over the lazy dog"))
+; FAIL in pangram-test/missing-character-x (pangram_test.clj:12):
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/missing-letters-replaced-by-numbers (pangram_test.clj:28):
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/mixed-case-and-punctuation (pangram_test.clj:33):
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; actual:
+(not (pangram? "\"Five quacking Zephyrs jolt my wax bed.\""))
+; FAIL in pangram-test/upper-and-lower-not-counted-separately (pangram_test.clj:36):
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/with-numbers (pangram_test.clj:25):
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; actual:
+(not (pangram? "the 1 quick brown fox jumps over the 2 lazy dogs"))
+; FAIL in pangram-test/with-underscores (pangram_test.clj:22):
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; actual:
+(not (pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog"))
+; 9 tests finished, problems found. 😭 errors: 0, failures: 9, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error (ArityException) compiling at (pangram.clj:6:1).
+; Wrong number of args (2) passed to: clojure.core/set
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+pangram/eval6498 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; FAIL in pangram-test/another-missing-character-x (pangram_test.clj:17):
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/empty-sentence (pangram_test.clj:6):
+; expected:
+(false? (pangram? ""))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/lowercase-pangram (pangram_test.clj:9):
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; actual:
+(not (pangram? "the quick brown fox jumps over the lazy dog"))
+; FAIL in pangram-test/missing-character-x (pangram_test.clj:12):
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/missing-letters-replaced-by-numbers (pangram_test.clj:28):
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/mixed-case-and-punctuation (pangram_test.clj:33):
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; actual:
+(not (pangram? "\"Five quacking Zephyrs jolt my wax bed.\""))
+; FAIL in pangram-test/upper-and-lower-not-counted-separately (pangram_test.clj:36):
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/with-numbers (pangram_test.clj:25):
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; actual:
+(not (pangram? "the 1 quick brown fox jumps over the 2 lazy dogs"))
+; FAIL in pangram-test/with-underscores (pangram_test.clj:22):
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; actual:
+(not (pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog"))
+; 9 tests finished, problems found. 😭 errors: 0, failures: 9, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+#{\a \d \f \s}
+; Running tests for pangram...
+; FAIL in pangram-test/another-missing-character-x (pangram_test.clj:17):
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/empty-sentence (pangram_test.clj:6):
+; expected:
+(false? (pangram? ""))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/lowercase-pangram (pangram_test.clj:9):
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; actual:
+(not (pangram? "the quick brown fox jumps over the lazy dog"))
+; FAIL in pangram-test/missing-character-x (pangram_test.clj:12):
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/missing-letters-replaced-by-numbers (pangram_test.clj:28):
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/mixed-case-and-punctuation (pangram_test.clj:33):
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; actual:
+(not (pangram? "\"Five quacking Zephyrs jolt my wax bed.\""))
+; FAIL in pangram-test/upper-and-lower-not-counted-separately (pangram_test.clj:36):
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/with-numbers (pangram_test.clj:25):
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; actual:
+(not (pangram? "the 1 quick brown fox jumps over the 2 lazy dogs"))
+; FAIL in pangram-test/with-underscores (pangram_test.clj:22):
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; actual:
+(not (pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog"))
+; 9 tests finished, problems found. 😭 errors: 0, failures: 9, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+#{\a \d \f \s}
+; Running tests for pangram...
+; FAIL in pangram-test/another-missing-character-x (pangram_test.clj:17):
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; actual:
+(not (false? ()))
+; FAIL in pangram-test/empty-sentence (pangram_test.clj:6):
+; expected:
+(false? (pangram? ""))
+; actual:
+(not (false? ()))
+; FAIL in pangram-test/missing-character-x (pangram_test.clj:12):
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; actual:
+(not (false? ()))
+; FAIL in pangram-test/missing-letters-replaced-by-numbers (pangram_test.clj:28):
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; actual:
+(not (false? ()))
+; FAIL in pangram-test/upper-and-lower-not-counted-separately (pangram_test.clj:36):
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; actual:
+(not (false? ()))
+; 9 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+#{\a \d \f \s}
+; Running tests for pangram...
+; ERROR in pangram-test/another-missing-character-x (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/= (AFn.java:19)
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; ERROR in pangram-test/empty-sentence (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/= (AFn.java:6)
+; expected:
+(false? (pangram? ""))
+; ERROR in pangram-test/lowercase-pangram (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/= (AFn.java:9)
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; ERROR in pangram-test/missing-character-x (AFn.java:14):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/= (AFn.java:14)
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; ERROR in pangram-test/missing-letters-replaced-by-numbers (AFn.java:30):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/= (AFn.java:30)
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; ERROR in pangram-test/mixed-case-and-punctuation (AFn.java:33):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/= (AFn.java:33)
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; ERROR in pangram-test/upper-and-lower-not-counted-separately (AFn.java:38):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/= (AFn.java:38)
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; ERROR in pangram-test/with-numbers (AFn.java:25):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/= (AFn.java:25)
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; ERROR in pangram-test/with-underscores (AFn.java:22):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/= (AFn.java:22)
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; 9 tests finished, problems found. 😭 errors: 9, failures: 0, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+#{\a \d \f \s}
+; Running tests for pangram...
+; FAIL in pangram-test/another-missing-character-x (pangram_test.clj:17):
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; actual:
+(not (false? true))
+; FAIL in pangram-test/empty-sentence (pangram_test.clj:6):
+; expected:
+(false? (pangram? ""))
+; actual:
+(not (false? true))
+; FAIL in pangram-test/missing-character-x (pangram_test.clj:12):
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; actual:
+(not (false? true))
+; FAIL in pangram-test/missing-letters-replaced-by-numbers (pangram_test.clj:28):
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; actual:
+(not (false? true))
+; FAIL in pangram-test/upper-and-lower-not-counted-separately (pangram_test.clj:36):
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; actual:
+(not (false? true))
+; 9 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+#{\a \d \f \s}
+; Running tests for pangram...
+; FAIL in pangram-test/another-missing-character-x (pangram_test.clj:17):
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; actual:
+(not (false? true))
+; FAIL in pangram-test/empty-sentence (pangram_test.clj:6):
+; expected:
+(false? (pangram? ""))
+; actual:
+(not (false? true))
+; FAIL in pangram-test/missing-character-x (pangram_test.clj:12):
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; actual:
+(not (false? true))
+; FAIL in pangram-test/missing-letters-replaced-by-numbers (pangram_test.clj:28):
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; actual:
+(not (false? true))
+; FAIL in pangram-test/upper-and-lower-not-counted-separately (pangram_test.clj:36):
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; actual:
+(not (false? true))
+; 9 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+#{\a \d \f \s}
+; Running tests for pangram...
+; FAIL in pangram-test/another-missing-character-x (pangram_test.clj:17):
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; actual:
+(not (false? true))
+; FAIL in pangram-test/empty-sentence (pangram_test.clj:6):
+; expected:
+(false? (pangram? ""))
+; actual:
+(not (false? true))
+; FAIL in pangram-test/missing-character-x (pangram_test.clj:12):
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; actual:
+(not (false? true))
+; FAIL in pangram-test/missing-letters-replaced-by-numbers (pangram_test.clj:28):
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; actual:
+(not (false? true))
+; FAIL in pangram-test/upper-and-lower-not-counted-separately (pangram_test.clj:36):
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; actual:
+(not (false? true))
+; 9 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+#{\a \d \f \s}
+; Running tests for pangram...
+; FAIL in pangram-test/lowercase-pangram (pangram_test.clj:9):
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; actual:
+(not (pangram? "the quick brown fox jumps over the lazy dog"))
+; FAIL in pangram-test/mixed-case-and-punctuation (pangram_test.clj:33):
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; actual:
+(not (pangram? "\"Five quacking Zephyrs jolt my wax bed.\""))
+; FAIL in pangram-test/with-numbers (pangram_test.clj:25):
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; actual:
+(not (pangram? "the 1 quick brown fox jumps over the 2 lazy dogs"))
+; FAIL in pangram-test/with-underscores (pangram_test.clj:22):
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; actual:
+(not (pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog"))
+; 9 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+#{\space \a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z}
+; Running tests for pangram...
+; FAIL in pangram-test/lowercase-pangram (pangram_test.clj:9):
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; actual:
+(not (pangram? "the quick brown fox jumps over the lazy dog"))
+; FAIL in pangram-test/mixed-case-and-punctuation (pangram_test.clj:33):
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; actual:
+(not (pangram? "\"Five quacking Zephyrs jolt my wax bed.\""))
+; FAIL in pangram-test/with-numbers (pangram_test.clj:25):
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; actual:
+(not (pangram? "the 1 quick brown fox jumps over the 2 lazy dogs"))
+; FAIL in pangram-test/with-underscores (pangram_test.clj:22):
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; actual:
+(not (pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog"))
+; 9 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 9
+clj꞉pangram꞉> 
+#{\space \a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z}
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+#{\space \a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z}
+; Running tests for pangram...
+; ERROR in pangram-test/another-missing-character-x (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:19)
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; ERROR in pangram-test/empty-sentence (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:6)
+; expected:
+(false? (pangram? ""))
+; ERROR in pangram-test/lowercase-pangram (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:9)
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; ERROR in pangram-test/missing-character-x (AFn.java:14):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:14)
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; ERROR in pangram-test/missing-letters-replaced-by-numbers (AFn.java:30):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:30)
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; ERROR in pangram-test/mixed-case-and-punctuation (AFn.java:33):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:33)
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; ERROR in pangram-test/upper-and-lower-not-counted-separately (AFn.java:38):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:38)
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; ERROR in pangram-test/with-numbers (AFn.java:25):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:25)
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; ERROR in pangram-test/with-underscores (AFn.java:22):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:22)
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; 9 tests finished, problems found. 😭 errors: 9, failures: 0, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error compiling at (pangram.clj:4:41).
+; No such namespace: str
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$HostExpr$Parser/parse (Compiler.java:1020)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7101)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+pangram/eval8997 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; ERROR in pangram-test/another-missing-character-x (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:19)
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; ERROR in pangram-test/empty-sentence (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:6)
+; expected:
+(false? (pangram? ""))
+; ERROR in pangram-test/lowercase-pangram (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:9)
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; ERROR in pangram-test/missing-character-x (AFn.java:14):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:14)
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; ERROR in pangram-test/missing-letters-replaced-by-numbers (AFn.java:30):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:30)
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; ERROR in pangram-test/mixed-case-and-punctuation (AFn.java:33):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:33)
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; ERROR in pangram-test/upper-and-lower-not-counted-separately (AFn.java:38):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:38)
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; ERROR in pangram-test/with-numbers (AFn.java:25):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:25)
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; ERROR in pangram-test/with-underscores (AFn.java:22):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:22)
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; 9 tests finished, problems found. 😭 errors: 9, failures: 0, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error compiling at (pangram.clj:5:41).
+; No such namespace: str
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$HostExpr$Parser/parse (Compiler.java:1020)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7101)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+pangram/eval9069 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; ERROR in pangram-test/another-missing-character-x (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:19)
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; ERROR in pangram-test/empty-sentence (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:6)
+; expected:
+(false? (pangram? ""))
+; ERROR in pangram-test/lowercase-pangram (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:9)
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; ERROR in pangram-test/missing-character-x (AFn.java:14):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:14)
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; ERROR in pangram-test/missing-letters-replaced-by-numbers (AFn.java:30):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:30)
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; ERROR in pangram-test/mixed-case-and-punctuation (AFn.java:33):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:33)
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; ERROR in pangram-test/upper-and-lower-not-counted-separately (AFn.java:38):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:38)
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; ERROR in pangram-test/with-numbers (AFn.java:25):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:25)
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; ERROR in pangram-test/with-underscores (AFn.java:22):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:22)
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; 9 tests finished, problems found. 😭 errors: 9, failures: 0, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error macroexpanding clojure.core/ns at (pangram.clj:1:1).
+; (((quote require) [])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6971)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:6987)
+clojure.lang.Compiler/macroexpand (Compiler.java:7074)
+clojure.lang.Compiler/eval (Compiler.java:7160)
+clojure.lang.Compiler/load (Compiler.java:7635)
+pangram/eval9141 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; ERROR in pangram-test/another-missing-character-x (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:19)
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; ERROR in pangram-test/empty-sentence (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:6)
+; expected:
+(false? (pangram? ""))
+; ERROR in pangram-test/lowercase-pangram (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:9)
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; ERROR in pangram-test/missing-character-x (AFn.java:14):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:14)
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; ERROR in pangram-test/missing-letters-replaced-by-numbers (AFn.java:30):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:30)
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; ERROR in pangram-test/mixed-case-and-punctuation (AFn.java:33):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:33)
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; ERROR in pangram-test/upper-and-lower-not-counted-separately (AFn.java:38):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:38)
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; ERROR in pangram-test/with-numbers (AFn.java:25):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:25)
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; ERROR in pangram-test/with-underscores (AFn.java:22):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:22)
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; 9 tests finished, problems found. 😭 errors: 9, failures: 0, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error macroexpanding clojure.core/ns at (pangram.clj:1:1).
+; (((quote require) [clojure.string :as str])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6971)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:6987)
+clojure.lang.Compiler/macroexpand (Compiler.java:7074)
+clojure.lang.Compiler/eval (Compiler.java:7160)
+clojure.lang.Compiler/load (Compiler.java:7635)
+pangram/eval9203 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; ERROR in pangram-test/another-missing-character-x (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:19)
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; ERROR in pangram-test/empty-sentence (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:6)
+; expected:
+(false? (pangram? ""))
+; ERROR in pangram-test/lowercase-pangram (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:9)
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; ERROR in pangram-test/missing-character-x (AFn.java:14):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:14)
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; ERROR in pangram-test/missing-letters-replaced-by-numbers (AFn.java:30):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:30)
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; ERROR in pangram-test/mixed-case-and-punctuation (AFn.java:33):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:33)
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; ERROR in pangram-test/upper-and-lower-not-counted-separately (AFn.java:38):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:38)
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; ERROR in pangram-test/with-numbers (AFn.java:25):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:25)
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; ERROR in pangram-test/with-underscores (AFn.java:22):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:22)
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; 9 tests finished, problems found. 😭 errors: 9, failures: 0, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error macroexpanding clojure.core/ns at (pangram.clj:1:1).
+; (((quote require) [clojure.string :as str])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6971)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:6987)
+clojure.lang.Compiler/macroexpand (Compiler.java:7074)
+clojure.lang.Compiler/eval (Compiler.java:7160)
+clojure.lang.Compiler/load (Compiler.java:7635)
+pangram/eval9265 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; ERROR in pangram-test/another-missing-character-x (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:19)
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; ERROR in pangram-test/empty-sentence (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:6)
+; expected:
+(false? (pangram? ""))
+; ERROR in pangram-test/lowercase-pangram (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:9)
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; ERROR in pangram-test/missing-character-x (AFn.java:14):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:14)
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; ERROR in pangram-test/missing-letters-replaced-by-numbers (AFn.java:30):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:30)
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; ERROR in pangram-test/mixed-case-and-punctuation (AFn.java:33):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:33)
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; ERROR in pangram-test/upper-and-lower-not-counted-separately (AFn.java:38):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:38)
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; ERROR in pangram-test/with-numbers (AFn.java:25):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:25)
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; ERROR in pangram-test/with-underscores (AFn.java:22):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:22)
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; 9 tests finished, problems found. 😭 errors: 9, failures: 0, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error macroexpanding clojure.core/ns at (pangram.clj:1:1).
+; (((quote require) [clojure.string :as str])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6971)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:6987)
+clojure.lang.Compiler/macroexpand (Compiler.java:7074)
+clojure.lang.Compiler/eval (Compiler.java:7160)
+clojure.lang.Compiler/load (Compiler.java:7635)
+pangram/eval9327 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; ERROR in pangram-test/another-missing-character-x (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:19)
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; ERROR in pangram-test/empty-sentence (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:6)
+; expected:
+(false? (pangram? ""))
+; ERROR in pangram-test/lowercase-pangram (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:9)
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; ERROR in pangram-test/missing-character-x (AFn.java:14):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:14)
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; ERROR in pangram-test/missing-letters-replaced-by-numbers (AFn.java:30):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:30)
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; ERROR in pangram-test/mixed-case-and-punctuation (AFn.java:33):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:33)
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; ERROR in pangram-test/upper-and-lower-not-counted-separately (AFn.java:38):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:38)
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; ERROR in pangram-test/with-numbers (AFn.java:25):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:25)
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; ERROR in pangram-test/with-underscores (AFn.java:22):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:22)
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; 9 tests finished, problems found. 😭 errors: 9, failures: 0, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error macroexpanding clojure.core/ns at (pangram.clj:1:1).
+; (((quote require) [clojure.string :as str])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6971)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:6987)
+clojure.lang.Compiler/macroexpand (Compiler.java:7074)
+clojure.lang.Compiler/eval (Compiler.java:7160)
+clojure.lang.Compiler/load (Compiler.java:7635)
+pangram/eval9389 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; ERROR in pangram-test/another-missing-character-x (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:19)
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; ERROR in pangram-test/empty-sentence (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:6)
+; expected:
+(false? (pangram? ""))
+; ERROR in pangram-test/lowercase-pangram (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:9)
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; ERROR in pangram-test/missing-character-x (AFn.java:14):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:14)
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; ERROR in pangram-test/missing-letters-replaced-by-numbers (AFn.java:30):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:30)
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; ERROR in pangram-test/mixed-case-and-punctuation (AFn.java:33):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:33)
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; ERROR in pangram-test/upper-and-lower-not-counted-separately (AFn.java:38):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:38)
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; ERROR in pangram-test/with-numbers (AFn.java:25):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:25)
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; ERROR in pangram-test/with-underscores (AFn.java:22):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:22)
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; 9 tests finished, problems found. 😭 errors: 9, failures: 0, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error macroexpanding clojure.core/ns at (pangram.clj:1:1).
+; (((quote require) [clojure.string :as str])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6971)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:6987)
+clojure.lang.Compiler/macroexpand (Compiler.java:7074)
+clojure.lang.Compiler/eval (Compiler.java:7160)
+clojure.lang.Compiler/load (Compiler.java:7635)
+pangram/eval9451 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; ERROR in pangram-test/another-missing-character-x (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:19)
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; ERROR in pangram-test/empty-sentence (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:6)
+; expected:
+(false? (pangram? ""))
+; ERROR in pangram-test/lowercase-pangram (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:9)
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; ERROR in pangram-test/missing-character-x (AFn.java:14):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:14)
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; ERROR in pangram-test/missing-letters-replaced-by-numbers (AFn.java:30):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:30)
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; ERROR in pangram-test/mixed-case-and-punctuation (AFn.java:33):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:33)
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; ERROR in pangram-test/upper-and-lower-not-counted-separately (AFn.java:38):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:38)
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; ERROR in pangram-test/with-numbers (AFn.java:25):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:25)
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; ERROR in pangram-test/with-underscores (AFn.java:22):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:22)
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; 9 tests finished, problems found. 😭 errors: 9, failures: 0, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error macroexpanding clojure.core/ns at (pangram.clj:1:1).
+; (((quote require) [clojure.string :as str])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6971)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:6987)
+clojure.lang.Compiler/macroexpand (Compiler.java:7074)
+clojure.lang.Compiler/eval (Compiler.java:7160)
+clojure.lang.Compiler/load (Compiler.java:7635)
+pangram/eval9513 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; ERROR in pangram-test/another-missing-character-x (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:19)
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; ERROR in pangram-test/empty-sentence (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:6)
+; expected:
+(false? (pangram? ""))
+; ERROR in pangram-test/lowercase-pangram (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:9)
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; ERROR in pangram-test/missing-character-x (AFn.java:14):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:14)
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; ERROR in pangram-test/missing-letters-replaced-by-numbers (AFn.java:30):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:30)
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; ERROR in pangram-test/mixed-case-and-punctuation (AFn.java:33):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:33)
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; ERROR in pangram-test/upper-and-lower-not-counted-separately (AFn.java:38):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:38)
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; ERROR in pangram-test/with-numbers (AFn.java:25):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:25)
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; ERROR in pangram-test/with-underscores (AFn.java:22):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:22)
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; 9 tests finished, problems found. 😭 errors: 9, failures: 0, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error macroexpanding clojure.core/ns at (pangram.clj:1:1).
+; ((require [clojure.string :as str])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6971)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:6987)
+clojure.lang.Compiler/macroexpand (Compiler.java:7074)
+clojure.lang.Compiler/eval (Compiler.java:7160)
+clojure.lang.Compiler/load (Compiler.java:7635)
+pangram/eval9575 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; ERROR in pangram-test/another-missing-character-x (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:19)
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; ERROR in pangram-test/empty-sentence (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:6)
+; expected:
+(false? (pangram? ""))
+; ERROR in pangram-test/lowercase-pangram (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:9)
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; ERROR in pangram-test/missing-character-x (AFn.java:14):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:14)
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; ERROR in pangram-test/missing-letters-replaced-by-numbers (AFn.java:30):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:30)
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; ERROR in pangram-test/mixed-case-and-punctuation (AFn.java:33):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:33)
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; ERROR in pangram-test/upper-and-lower-not-counted-separately (AFn.java:38):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:38)
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; ERROR in pangram-test/with-numbers (AFn.java:25):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:25)
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; ERROR in pangram-test/with-underscores (AFn.java:22):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:22)
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; 9 tests finished, problems found. 😭 errors: 9, failures: 0, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Syntax error macroexpanding clojure.core/ns at (pangram.clj:1:1).
+; ((require [clojure.string :as str])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Syntax error compiling at (pangram.clj:5:46).
+; No such namespace: str
+clj꞉pangram꞉> 
+; Syntax error macroexpanding clojure.core/ns at (pangram.clj:1:1).
+; ((require [clojure.string :as str])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error macroexpanding clojure.core/ns at (pangram.clj:1:1).
+; (((quote require) [clojure.string :as str])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6971)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:6987)
+clojure.lang.Compiler/macroexpand (Compiler.java:7074)
+clojure.lang.Compiler/eval (Compiler.java:7160)
+clojure.lang.Compiler/load (Compiler.java:7635)
+pangram/eval9637 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; ERROR in pangram-test/another-missing-character-x (AFn.java:19):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:19)
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; ERROR in pangram-test/empty-sentence (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:6)
+; expected:
+(false? (pangram? ""))
+; ERROR in pangram-test/lowercase-pangram (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:9)
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; ERROR in pangram-test/missing-character-x (AFn.java:14):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:14)
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; ERROR in pangram-test/missing-letters-replaced-by-numbers (AFn.java:30):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:30)
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; ERROR in pangram-test/mixed-case-and-punctuation (AFn.java:33):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:33)
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; ERROR in pangram-test/upper-and-lower-not-counted-separately (AFn.java:38):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:38)
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; ERROR in pangram-test/with-numbers (AFn.java:25):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:25)
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; ERROR in pangram-test/with-underscores (AFn.java:22):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.lang.PersistentHashSet (AFn.java:22)
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; 9 tests finished, problems found. 😭 errors: 9, failures: 0, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Syntax error macroexpanding clojure.core/ns at (pangram.clj:1:1).
+; (((quote require) [clojure.string :as str])) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+#{\space \a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z}
+; Running tests for pangram...
+; FAIL in pangram-test/lowercase-pangram (pangram_test.clj:9):
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; actual:
+(not (pangram? "the quick brown fox jumps over the lazy dog"))
+; FAIL in pangram-test/mixed-case-and-punctuation (pangram_test.clj:33):
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; actual:
+(not (pangram? "\"Five quacking Zephyrs jolt my wax bed.\""))
+; FAIL in pangram-test/with-numbers (pangram_test.clj:25):
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; actual:
+(not (pangram? "the 1 quick brown fox jumps over the 2 lazy dogs"))
+; FAIL in pangram-test/with-underscores (pangram_test.clj:22):
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; actual:
+(not (pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog"))
+; 9 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+#{\space \a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z}
+; Running tests for pangram...
+; FAIL in pangram-test/another-missing-character-x (pangram_test.clj:17):
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/empty-sentence (pangram_test.clj:6):
+; expected:
+(false? (pangram? ""))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/lowercase-pangram (pangram_test.clj:9):
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; actual:
+(not (pangram? "the quick brown fox jumps over the lazy dog"))
+; FAIL in pangram-test/missing-character-x (pangram_test.clj:12):
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/missing-letters-replaced-by-numbers (pangram_test.clj:28):
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/mixed-case-and-punctuation (pangram_test.clj:33):
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; actual:
+(not (pangram? "\"Five quacking Zephyrs jolt my wax bed.\""))
+; FAIL in pangram-test/upper-and-lower-not-counted-separately (pangram_test.clj:36):
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/with-numbers (pangram_test.clj:25):
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; actual:
+(not (pangram? "the 1 quick brown fox jumps over the 2 lazy dogs"))
+; FAIL in pangram-test/with-underscores (pangram_test.clj:22):
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; actual:
+(not (pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog"))
+; 9 tests finished, problems found. 😭 errors: 0, failures: 9, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error compiling at (pangram.clj:5:3).
+; Unable to resolve symbol: subset? in this context
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+pangram/eval9849 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; FAIL in pangram-test/another-missing-character-x (pangram_test.clj:17):
+; expected:
+(false? (pangram? "the quick brown fish jumps over the lazy dog"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/empty-sentence (pangram_test.clj:6):
+; expected:
+(false? (pangram? ""))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/lowercase-pangram (pangram_test.clj:9):
+; expected:
+(pangram? "the quick brown fox jumps over the lazy dog")
+; actual:
+(not (pangram? "the quick brown fox jumps over the lazy dog"))
+; FAIL in pangram-test/missing-character-x (pangram_test.clj:12):
+; expected:
+(false?
+ (pangram?
+  "a quick movement of the enemy will jeopardize five gunboats"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/missing-letters-replaced-by-numbers (pangram_test.clj:28):
+; expected:
+(false? (pangram? "7h3 qu1ck brown fox jumps ov3r 7h3 lazy dog"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/mixed-case-and-punctuation (pangram_test.clj:33):
+; expected:
+(pangram? "\"Five quacking Zephyrs jolt my wax bed.\"")
+; actual:
+(not (pangram? "\"Five quacking Zephyrs jolt my wax bed.\""))
+; FAIL in pangram-test/upper-and-lower-not-counted-separately (pangram_test.clj:36):
+; expected:
+(false? (pangram? "the quick brown fox jumps over with lazy FX"))
+; actual:
+(not (false? nil))
+; FAIL in pangram-test/with-numbers (pangram_test.clj:25):
+; expected:
+(pangram? "the 1 quick brown fox jumps over the 2 lazy dogs")
+; actual:
+(not (pangram? "the 1 quick brown fox jumps over the 2 lazy dogs"))
+; FAIL in pangram-test/with-underscores (pangram_test.clj:22):
+; expected:
+(pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog")
+; actual:
+(not (pangram? "the_quick_brown_fox_jumps_over_the_lazy_dog"))
+; 9 tests finished, problems found. 😭 errors: 0, failures: 9, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+#{\space \a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z}
+; Running tests for pangram...
+; 9 tests finished, all passing 👍, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error compiling at (pangram.clj:5:3).
+; Unable to resolve symbol: subset? in this context
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+pangram/eval9996 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; 9 tests finished, all passing 👍, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error compiling at (pangram.clj:6:3).
+; Unable to resolve symbol: subset? in this context
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+pangram/eval10068 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; 9 tests finished, all passing 👍, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error (FileNotFoundException) compiling at (pangram.clj:1:1).
+; Could not locate clojure/set/as__init.class, clojure/set/as.clj or clojure/set/as.cljc on classpath.
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+pangram/eval10140 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; 9 tests finished, all passing 👍, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+; Syntax error (FileNotFoundException) compiling at (pangram.clj:1:1).
+; Could not locate clojure/set/as__init.class, clojure/set/as.clj or clojure/set/as.cljc on classpath.
+; Evaluation of file pangram.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+pangram/eval10208 (form-init3776374324636086931.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for pangram...
+; 9 tests finished, all passing 👍, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Execution error (FileNotFoundException) at pangram/eval10218$loading (form-init3776374324636086931.clj:1).
+; Could not locate clojure/set/as__init.class, clojure/set/as.clj or clojure/set/as.cljc on classpath.
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+#{\space \a \b \c \d \e \f \g \h \i \j \k \l \m \n \o \p \q \r \s \t \u \v \w \x \y \z}
+; Running tests for pangram...
+; 9 tests finished, all passing 👍, ns: 1, vars: 9
+clj꞉pangram꞉> 
+; Evaluating file: pangram.clj
+#'pangram/pangram?
+; Running tests for pangram...
+; 9 tests finished, all passing 👍, ns: 1, vars: 9
+clj꞉pangram꞉> 

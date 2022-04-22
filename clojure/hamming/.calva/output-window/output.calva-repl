@@ -1,0 +1,1188 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+; Syntax error compiling at (hamming.clj:14:1).
+; Unable to resolve symbol: reduce in this context
+clj꞉hamming꞉> 
+; Syntax error compiling at (hamming.clj:14:1).
+; Unable to resolve symbol: reduce in this context
+clj꞉hamming꞉> 
+; Syntax error compiling at (hamming.clj:15:1).
+; Unable to resolve symbol: reduce in this context
+clj꞉hamming꞉> 
+3
+clj꞉hamming꞉> 
+5
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+5
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (NullPointerException) compiling at (hamming.clj:14:1).
+; null
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+hamming/eval8194 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Execution error (NullPointerException) at hamming/eval8210 (form-init13524598101843970169.clj:14).
+; null
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+5
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+5
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+7
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error reading source at (hamming.clj:15:1).
+; EOF while reading, starting at line 14
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+hamming/eval8498 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error reading source at (hamming.clj:15:1).
+; EOF while reading, starting at line 14
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+hamming/eval8596 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error reading source at (hamming.clj:15:1).
+; EOF while reading, starting at line 14
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+hamming/eval8694 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error reading source at (hamming.clj:15:1).
+; EOF while reading, starting at line 14
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+hamming/eval8792 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error reading source at (hamming.clj:15:1).
+; EOF while reading, starting at line 14
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+hamming/eval8890 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error reading source at (hamming.clj:15:1).
+; EOF while reading, starting at line 14
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+hamming/eval8988 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+5
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+5
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+5
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (UnsupportedOperationException) compiling at (hamming.clj:15:1).
+; count not supported on this type: core$filter$fn__5874
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+hamming/eval9288 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (UnsupportedOperationException) compiling at (hamming.clj:15:1).
+; count not supported on this type: core$comp$fn__5792
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+hamming/eval9390 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (UnsupportedOperationException) compiling at (hamming.clj:15:1).
+; count not supported on this type: core$comp$fn__5792
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+hamming/eval9492 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (UnsupportedOperationException) compiling at (hamming.clj:15:1).
+; count not supported on this type: core$comp$fn__5792
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+hamming/eval9594 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (UnsupportedOperationException) compiling at (hamming.clj:15:1).
+; count not supported on this type: core$comp$fn__5792
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+hamming/eval9696 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (UnsupportedOperationException) compiling at (hamming.clj:15:1).
+; count not supported on this type: core$comp$fn__5792
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+hamming/eval9798 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (UnsupportedOperationException) compiling at (hamming.clj:15:1).
+; count not supported on this type: core$comp$fn__5792
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+hamming/eval9900 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (UnsupportedOperationException) compiling at (hamming.clj:15:1).
+; count not supported on this type: core$comp$fn__5792
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+hamming/eval10002 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (UnsupportedOperationException) compiling at (hamming.clj:15:1).
+; count not supported on this type: core$comp$fn__5792
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+hamming/eval10104 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Execution error (UnsupportedOperationException) at hamming/eval10122 (form-init13524598101843970169.clj:15).
+; count not supported on this type: core$comp$fn__5792
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (UnsupportedOperationException) compiling at (hamming.clj:15:1).
+; count not supported on this type: core$filter$fn__5874
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+hamming/eval10208 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (UnsupportedOperationException) compiling at (hamming.clj:15:1).
+; count not supported on this type: core$comp$fn__5792
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+hamming/eval10310 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (ClassCastException) compiling at (hamming.clj:15:1).
+; class clojure.lang.LazySeq cannot be cast to class clojure.lang.IFn (clojure.lang.LazySeq and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+hamming/eval10412 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (ClassCastException) compiling at (hamming.clj:15:1).
+; class clojure.lang.LazySeq cannot be cast to class clojure.lang.IFn (clojure.lang.LazySeq and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+hamming/eval10514 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Execution error (ClassCastException) at hamming/eval10532 (form-init13524598101843970169.clj:15).
+; class clojure.lang.LazySeq cannot be cast to class clojure.lang.IFn (clojure.lang.LazySeq and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (UnsupportedOperationException) compiling at (hamming.clj:15:1).
+; count not supported on this type: core$filter$fn__5874$fn__5875
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+hamming/eval10618 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Execution error (UnsupportedOperationException) at hamming/eval10636 (form-init13524598101843970169.clj:15).
+; count not supported on this type: core$filter$fn__5874$fn__5875
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (UnsupportedOperationException) compiling at (hamming.clj:15:1).
+; count not supported on this type: core$filter$fn__5874$fn__5875
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+hamming/eval10722 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+5
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+5
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error compiling at (hamming.clj:14:22).
+; Unable to resolve symbol: s1 in this context
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$HostExpr$Parser/parse (Compiler.java:1020)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7101)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7173)
+clojure.lang.Compiler/load (Compiler.java:7635)
+hamming/eval11024 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error compiling at (hamming.clj:14:24).
+; Unable to resolve symbol: s1 in this context
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$HostExpr$Parser/parse (Compiler.java:1020)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7101)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7173)
+clojure.lang.Compiler/load (Compiler.java:7635)
+hamming/eval11123 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error macroexpanding clojure.core/defn at (hamming.clj:14:1).
+; () - failed: Insufficient input at: [:fn-tail] spec: :clojure.core.specs.alpha/defn-args
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6971)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:6987)
+clojure.lang.Compiler/macroexpand (Compiler.java:7074)
+clojure.lang.Compiler/eval (Compiler.java:7160)
+clojure.lang.Compiler/load (Compiler.java:7635)
+hamming/eval11224 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error compiling at (hamming.clj:14:40).
+; Unable to resolve symbol: s1 in this context
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$HostExpr$Parser/parse (Compiler.java:1020)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7101)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7173)
+clojure.lang.Compiler/load (Compiler.java:7635)
+hamming/eval11322 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; ERROR in hamming-test/complete-distance-in-small-strand (AFn.java:12):
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: hamming/distance (AFn.java:12)
+; expected:
+(= 3 (hamming/distance "ACT" "GGA"))
+; ERROR in hamming-test/larger-distance (AFn.java:18):
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: hamming/distance (AFn.java:18)
+; expected:
+(= 2 (hamming/distance "ACCAGGG" "ACTATGG"))
+; ERROR in hamming-test/no-difference-between-empty-strands (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: hamming/distance (AFn.java:6)
+; expected:
+(= 0 (hamming/distance "" ""))
+; ERROR in hamming-test/no-difference-between-identical-strands (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: hamming/distance (AFn.java:9)
+; expected:
+(= 0 (hamming/distance "GGACTGA" "GGACTGA"))
+; ERROR in hamming-test/small-distance-in-middle-somewhere (AFn.java:15):
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: hamming/distance (AFn.java:15)
+; expected:
+(= 1 (hamming/distance "GGACG" "GGTCG"))
+; ERROR in hamming-test/undefined-when-lengths-are-different (AFn.java:21):
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: hamming/distance (AFn.java:21)
+; expected:
+(= nil (hamming/distance "AAAC" "TAGGGGAGGCTAGCGGTAGGAC"))
+; ERROR in hamming-test/undefined-when-lengths-are-different (AFn.java:22):
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: hamming/distance (AFn.java:22)
+; expected:
+(= nil (hamming/distance "GACTACGGACAGGGTAACATAG" "GACA"))
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error compiling at (hamming.clj:14:45).
+; Unable to resolve symbol: s1 in this context
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$HostExpr$Parser/parse (Compiler.java:1020)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7101)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7173)
+clojure.lang.Compiler/load (Compiler.java:7635)
+hamming/eval11422 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; FAIL in hamming-test/complete-distance-in-small-strand (hamming_test.clj:12):
+; expected:
+3
+; actual:
+nil
+; FAIL in hamming-test/larger-distance (hamming_test.clj:18):
+; expected:
+2
+; actual:
+nil
+; FAIL in hamming-test/no-difference-between-empty-strands (hamming_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in hamming-test/no-difference-between-identical-strands (hamming_test.clj:9):
+; expected:
+0
+; actual:
+nil
+; FAIL in hamming-test/small-distance-in-middle-somewhere (hamming_test.clj:15):
+; expected:
+1
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+#'hamming/distance
+; Running tests for hamming...
+; FAIL in hamming-test/complete-distance-in-small-strand (hamming_test.clj:12):
+; expected:
+3
+; actual:
+0
+; FAIL in hamming-test/larger-distance (hamming_test.clj:18):
+; expected:
+2
+; actual:
+5
+; FAIL in hamming-test/no-difference-between-identical-strands (hamming_test.clj:9):
+; expected:
+0
+; actual:
+7
+; FAIL in hamming-test/small-distance-in-middle-somewhere (hamming_test.clj:15):
+; expected:
+1
+; actual:
+4
+; FAIL in hamming-test/undefined-when-lengths-are-different (hamming_test.clj:21):
+; expected:
+nil
+; actual:
+1
+; FAIL in hamming-test/undefined-when-lengths-are-different (hamming_test.clj:22):
+; expected:
+nil
+; actual:
+3
+; 7 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+#'hamming/distance
+; Running tests for hamming...
+; FAIL in hamming-test/complete-distance-in-small-strand (hamming_test.clj:12):
+; expected:
+3
+; actual:
+0
+; FAIL in hamming-test/larger-distance (hamming_test.clj:18):
+; expected:
+2
+; actual:
+5
+; FAIL in hamming-test/no-difference-between-identical-strands (hamming_test.clj:9):
+; expected:
+0
+; actual:
+7
+; FAIL in hamming-test/small-distance-in-middle-somewhere (hamming_test.clj:15):
+; expected:
+1
+; actual:
+4
+; FAIL in hamming-test/undefined-when-lengths-are-different (hamming_test.clj:21):
+; expected:
+nil
+; actual:
+1
+; FAIL in hamming-test/undefined-when-lengths-are-different (hamming_test.clj:22):
+; expected:
+nil
+; actual:
+3
+; 7 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+#'hamming/distance
+; Running tests for hamming...
+; FAIL in hamming-test/complete-distance-in-small-strand (hamming_test.clj:12):
+; expected:
+3
+; actual:
+0
+; FAIL in hamming-test/larger-distance (hamming_test.clj:18):
+; expected:
+2
+; actual:
+5
+; FAIL in hamming-test/no-difference-between-identical-strands (hamming_test.clj:9):
+; expected:
+0
+; actual:
+7
+; FAIL in hamming-test/small-distance-in-middle-somewhere (hamming_test.clj:15):
+; expected:
+1
+; actual:
+4
+; FAIL in hamming-test/undefined-when-lengths-are-different (hamming_test.clj:21):
+; expected:
+nil
+; actual:
+1
+; FAIL in hamming-test/undefined-when-lengths-are-different (hamming_test.clj:22):
+; expected:
+nil
+; actual:
+3
+; 7 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+#'hamming/distance
+; Running tests for hamming...
+; FAIL in hamming-test/undefined-when-lengths-are-different (hamming_test.clj:21):
+; expected:
+nil
+; actual:
+3
+; FAIL in hamming-test/undefined-when-lengths-are-different (hamming_test.clj:22):
+; expected:
+nil
+; actual:
+1
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+; Syntax error (ArityException) compiling count at (hamming.clj:15:4).
+; Wrong number of args (0) passed to: clojure.core/count--inliner--5506
+; Evaluation of file hamming.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+hamming/eval11916 (form-init13524598101843970169.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for hamming...
+; FAIL in hamming-test/undefined-when-lengths-are-different (hamming_test.clj:21):
+; expected:
+nil
+; actual:
+3
+; FAIL in hamming-test/undefined-when-lengths-are-different (hamming_test.clj:22):
+; expected:
+nil
+; actual:
+1
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+#'hamming/distance
+; Running tests for hamming...
+; FAIL in hamming-test/undefined-when-lengths-are-different (hamming_test.clj:21):
+; expected:
+nil
+; actual:
+3
+; FAIL in hamming-test/undefined-when-lengths-are-different (hamming_test.clj:22):
+; expected:
+nil
+; actual:
+1
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+#'hamming/distance
+; Running tests for hamming...
+; ERROR in hamming-test/complete-distance-in-small-strand (hamming.clj:12):
+; error: java.lang.ClassCastException: class java.lang.Integer cannot be cast to class clojure.lang.IFn (java.lang.Integer is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (hamming.clj:12)
+; expected:
+(= 3 (hamming/distance "ACT" "GGA"))
+; ERROR in hamming-test/larger-distance (hamming.clj:18):
+; error: java.lang.ClassCastException: class java.lang.Integer cannot be cast to class clojure.lang.IFn (java.lang.Integer is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (hamming.clj:18)
+; expected:
+(= 2 (hamming/distance "ACCAGGG" "ACTATGG"))
+; ERROR in hamming-test/no-difference-between-empty-strands (hamming.clj:6):
+; error: java.lang.ClassCastException: class java.lang.Integer cannot be cast to class clojure.lang.IFn (java.lang.Integer is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (hamming.clj:6)
+; expected:
+(= 0 (hamming/distance "" ""))
+; ERROR in hamming-test/no-difference-between-identical-strands (hamming.clj:9):
+; error: java.lang.ClassCastException: class java.lang.Integer cannot be cast to class clojure.lang.IFn (java.lang.Integer is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (hamming.clj:9)
+; expected:
+(= 0 (hamming/distance "GGACTGA" "GGACTGA"))
+; ERROR in hamming-test/small-distance-in-middle-somewhere (hamming.clj:15):
+; error: java.lang.ClassCastException: class java.lang.Integer cannot be cast to class clojure.lang.IFn (java.lang.Integer is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (hamming.clj:15)
+; expected:
+(= 1 (hamming/distance "GGACG" "GGTCG"))
+; ERROR in hamming-test/undefined-when-lengths-are-different (hamming.clj:21):
+; error: java.lang.ClassCastException: class java.lang.Integer cannot be cast to class clojure.lang.IFn (java.lang.Integer is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (hamming.clj:21)
+; expected:
+(= nil (hamming/distance "AAAC" "TAGGGGAGGCTAGCGGTAGGAC"))
+; ERROR in hamming-test/undefined-when-lengths-are-different (hamming.clj:22):
+; error: java.lang.ClassCastException: class java.lang.Integer cannot be cast to class clojure.lang.IFn (java.lang.Integer is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (hamming.clj:22)
+; expected:
+(= nil (hamming/distance "GACTACGGACAGGGTAACATAG" "GACA"))
+; 7 tests finished, problems found. 😭 errors: 7, failures: 0, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+#'hamming/distance
+; Running tests for hamming...
+; FAIL in hamming-test/complete-distance-in-small-strand (hamming_test.clj:12):
+; expected:
+3
+; actual:
+nil
+; FAIL in hamming-test/larger-distance (hamming_test.clj:18):
+; expected:
+2
+; actual:
+nil
+; FAIL in hamming-test/no-difference-between-empty-strands (hamming_test.clj:6):
+; expected:
+0
+; actual:
+nil
+; FAIL in hamming-test/no-difference-between-identical-strands (hamming_test.clj:9):
+; expected:
+0
+; actual:
+nil
+; FAIL in hamming-test/small-distance-in-middle-somewhere (hamming_test.clj:15):
+; expected:
+1
+; actual:
+nil
+; 7 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+#'hamming/distance
+; Running tests for hamming...
+; FAIL in hamming-test/undefined-when-lengths-are-different (hamming_test.clj:21):
+; expected:
+nil
+; actual:
+3
+; FAIL in hamming-test/undefined-when-lengths-are-different (hamming_test.clj:22):
+; expected:
+nil
+; actual:
+1
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+#'hamming/distance
+; Running tests for hamming...
+; FAIL in hamming-test/undefined-when-lengths-are-different (hamming_test.clj:21):
+; expected:
+nil
+; actual:
+3
+; FAIL in hamming-test/undefined-when-lengths-are-different (hamming_test.clj:22):
+; expected:
+nil
+; actual:
+1
+; 7 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+#'hamming/distance
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+#'hamming/distance
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+#'hamming/distance
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 
+; Evaluating file: hamming.clj
+#'hamming/distance
+; Running tests for hamming...
+; 7 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉hamming꞉> 

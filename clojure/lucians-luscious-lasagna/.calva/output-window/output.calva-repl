@@ -1,0 +1,1735 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Connecting ...
+; No nrepl port file found.
+; Bad url: calva rep
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS: 
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> (apropos "neg")
+; Syntax error compiling at (output.calva-repl:23:12).
+; Unable to resolve symbol: apropos in this context
+clj꞉user꞉> (doc-find "neg")
+; Syntax error compiling at (output.calva-repl:26:12).
+; Unable to resolve symbol: doc-find in this context
+clj꞉user꞉> (clojure.repl.doc-find "neg")
+; Syntax error (ClassNotFoundException) compiling at (output.calva-repl:29:12).
+; clojure.repl.doc-find
+clj꞉user꞉> 
+(clojure.repl)
+; Syntax error (ClassNotFoundException) compiling at (output.calva-repl:33:1).
+; clojure.repl
+clj꞉user꞉> 
+; Evaluating file: lucians_luscious_lasagna_test.clj
+; Syntax error compiling at (lucians_luscious_lasagna_test.clj:6:3).
+; No such var: lucians-luscious-lasagna/expected-time
+; Evaluation of file lucians_luscious_lasagna_test.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: lucians_luscious_lasagna_test.clj
+; Syntax error compiling at (lucians_luscious_lasagna_test.clj:6:3).
+; No such var: lucians-luscious-lasagna/expected-time
+; Evaluation of file lucians_luscious_lasagna_test.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: lucians_luscious_lasagna_test.clj
+; Syntax error compiling at (lucians_luscious_lasagna_test.clj:6:3).
+; No such var: lucians-luscious-lasagna/expected-time
+; Evaluation of file lucians_luscious_lasagna_test.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: lucians_luscious_lasagna_test.clj
+; Syntax error compiling at (lucians_luscious_lasagna_test.clj:6:3).
+; No such var: lucians-luscious-lasagna/expected-time
+; Evaluation of file lucians_luscious_lasagna_test.clj failed: class clojure.lang.Compiler$CompilerException
+; Syntax error compiling at (lucians_luscious_lasagna.clj:24:6).
+; Unable to resolve symbol: prep-time in this context
+clj꞉lucians-luscious-lasagna꞉> 
+#'lucians-luscious-lasagna/total-time
+clj꞉lucians-luscious-lasagna꞉> 
+; Evaluating file: lucians_luscious_lasagna_test.clj
+#'lucians-luscious-lasagna-test/total-time-multiple-layers-test
+; Running tests for lucians-luscious-lasagna-test...
+; ERROR in lucians-luscious-lasagna-test/total-time-multiple-layers-test (Numbers.java:21):
+; error: java.lang.ClassCastException: class java.lang.Boolean cannot be cast to class java.lang.Number (java.lang.Boolean and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:21)
+; expected:
+(= 16 (lucians-luscious-lasagna/total-time 4 8))
+; ERROR in lucians-luscious-lasagna-test/total-time-one-layer-test (Numbers.java:18):
+; error: java.lang.ClassCastException: class java.lang.Boolean cannot be cast to class java.lang.Number (java.lang.Boolean and java.lang.Number are in module java.base of loader 'bootstrap') (Numbers.java:18)
+; expected:
+(= 32 (lucians-luscious-lasagna/total-time 1 30))
+; 6 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 6
+clj꞉lucians-luscious-lasagna-test꞉> 
+; Evaluating file: lucians_luscious_lasagna.clj
+; Syntax error compiling at (lucians_luscious_lasagna.clj:24:29).
+; Unable to resolve symbol: neg in this context
+; Evaluation of file lucians_luscious_lasagna.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: lucians_luscious_lasagna.clj
+#'lucians-luscious-lasagna/total-time
+; Running tests for lucians-luscious-lasagna...
+; ERROR in lucians-luscious-lasagna-test/total-time-multiple-layers-test (lucians_luscious_lasagna.clj:21):
+; error: java.lang.ClassCastException: class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (lucians_luscious_lasagna.clj:21)
+; expected:
+(= 16 (lucians-luscious-lasagna/total-time 4 8))
+; ERROR in lucians-luscious-lasagna-test/total-time-one-layer-test (lucians_luscious_lasagna.clj:18):
+; error: java.lang.ClassCastException: class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (lucians_luscious_lasagna.clj:18)
+; expected:
+(= 32 (lucians-luscious-lasagna/total-time 1 30))
+; 6 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 6
+clj꞉lucians-luscious-lasagna꞉> 
+; Evaluating file: lucians_luscious_lasagna.clj
+#'lucians-luscious-lasagna/total-time
+; Running tests for lucians-luscious-lasagna...
+; FAIL in lucians-luscious-lasagna-test/total-time-multiple-layers-test (lucians_luscious_lasagna_test.clj:21):
+; expected:
+16
+; actual:
+-24
+; FAIL in lucians-luscious-lasagna-test/total-time-one-layer-test (lucians_luscious_lasagna_test.clj:18):
+; expected:
+32
+; actual:
+-8
+; 6 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 6
+clj꞉lucians-luscious-lasagna꞉> 
+; Evaluating file: lucians_luscious_lasagna.clj
+#'lucians-luscious-lasagna/total-time
+; Running tests for lucians-luscious-lasagna...
+; FAIL in lucians-luscious-lasagna-test/total-time-multiple-layers-test (lucians_luscious_lasagna_test.clj:21):
+; expected:
+16
+; actual:
+-24
+; FAIL in lucians-luscious-lasagna-test/total-time-one-layer-test (lucians_luscious_lasagna_test.clj:18):
+; expected:
+32
+; actual:
+-8
+; 6 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 6
+clj꞉lucians-luscious-lasagna꞉> 
+; Evaluating file: lucians_luscious_lasagna.clj
+#'lucians-luscious-lasagna/total-time
+; Running tests for lucians-luscious-lasagna-test...
+; FAIL in lucians-luscious-lasagna-test/total-time-multiple-layers-test (lucians_luscious_lasagna_test.clj:21):
+; expected:
+16
+; actual:
+-24
+; FAIL in lucians-luscious-lasagna-test/total-time-one-layer-test (lucians_luscious_lasagna_test.clj:18):
+; expected:
+32
+; actual:
+-8
+; 6 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 6
+clj꞉lucians-luscious-lasagna-test꞉> 
+; Evaluating file: lucians_luscious_lasagna_test.clj
+; Syntax error reading source at (lucians_luscious_lasagna_test.clj:22:1).
+; EOF while reading, starting at line 17
+; Evaluation of file lucians_luscious_lasagna_test.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: lucians_luscious_lasagna_test.clj
+#'lucians-luscious-lasagna-test/total-time-multiple-layers-test
+; Running tests for lucians-luscious-lasagna-test...
+; FAIL in lucians-luscious-lasagna-test/total-time-multiple-layers-test (lucians_luscious_lasagna_test.clj:21):
+; expected:
+16
+; actual:
+-24
+; FAIL in lucians-luscious-lasagna-test/total-time-one-layer-test (lucians_luscious_lasagna_test.clj:18):
+; expected:
+32
+; actual:
+-8
+; 6 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 6
+clj꞉lucians-luscious-lasagna-test꞉> 
+; Evaluating file: lucians_luscious_lasagna.clj
+#'lucians-luscious-lasagna/total-time
+; Running tests for lucians-luscious-lasagna...
+; ERROR in lucians-luscious-lasagna-test/total-time-multiple-layers-test (lucians_luscious_lasagna.clj:21):
+; error: java.lang.ClassCastException: class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (lucians_luscious_lasagna.clj:21)
+; expected:
+(= 16 (lucians-luscious-lasagna/total-time 4 8))
+; ERROR in lucians-luscious-lasagna-test/total-time-one-layer-test (lucians_luscious_lasagna.clj:18):
+; error: java.lang.ClassCastException: class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (lucians_luscious_lasagna.clj:18)
+; expected:
+(= 32 (lucians-luscious-lasagna/total-time 1 30))
+; 6 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 6
+clj꞉lucians-luscious-lasagna꞉> 
+; Evaluating file: lucians_luscious_lasagna.clj
+; Syntax error reading source at (lucians_luscious_lasagna.clj:24:45).
+; Unmatched delimiter: )
+; Evaluation of file lucians_luscious_lasagna.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: lucians_luscious_lasagna.clj
+#'lucians-luscious-lasagna/total-time
+; Running tests for lucians-luscious-lasagna...
+; ERROR in lucians-luscious-lasagna-test/total-time-multiple-layers-test (lucians_luscious_lasagna.clj:21):
+; error: java.lang.ClassCastException: class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (lucians_luscious_lasagna.clj:21)
+; expected:
+(= 16 (lucians-luscious-lasagna/total-time 4 8))
+; ERROR in lucians-luscious-lasagna-test/total-time-one-layer-test (lucians_luscious_lasagna.clj:18):
+; error: java.lang.ClassCastException: class java.lang.Long cannot be cast to class clojure.lang.IFn (java.lang.Long is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (lucians_luscious_lasagna.clj:18)
+; expected:
+(= 32 (lucians-luscious-lasagna/total-time 1 30))
+; 6 tests finished, problems found. 😭 errors: 2, failures: 0, ns: 1, vars: 6
+clj꞉lucians-luscious-lasagna꞉> 
+; Evaluating file: lucians_luscious_lasagna.clj
+; Syntax error reading source at (lucians_luscious_lasagna.clj:24:1).
+; EOF while reading, starting at line 20
+; Evaluation of file lucians_luscious_lasagna.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: lucians_luscious_lasagna.clj
+#'lucians-luscious-lasagna/total-time
+; Running tests for lucians-luscious-lasagna...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉lucians-luscious-lasagna꞉> 
+; Evaluating file: lucians_luscious_lasagna.clj
+#'lucians-luscious-lasagna/total-time
+; Running tests for lucians-luscious-lasagna...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉lucians-luscious-lasagna꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉tracks-on-tracks-on-tracks꞉> 
+#'tracks-on-tracks-on-tracks/learning-list
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks_test.clj
+#'tracks-on-tracks-on-tracks-test/learning-list-test
+; Running tests for tracks-on-tracks-on-tracks-test...
+; FAIL in tracks-on-tracks-on-tracks-test/first-test (tracks_on_tracks_on_tracks_test.clj:17):
+; expected:
+"Lisp"
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; ERROR in tracks-on-tracks-on-tracks-test/list-add-test (AFn.java:11):
+; error: clojure.lang.ArityException: Wrong number of args (2) passed to: clojure.core/cat (AFn.java:11)
+; expected:
+(=
+ '("JavaScript" "Java" "Lisp" "Clojure")
+ (->
+  (tracks-on-tracks-on-tracks/new-list)
+  (tracks-on-tracks-on-tracks/add-language "Clojure")
+  (tracks-on-tracks-on-tracks/add-language "Lisp")
+  (tracks-on-tracks-on-tracks/add-language "Java")
+  (tracks-on-tracks-on-tracks/add-language "JavaScript")))
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 1, failures: 4, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks-test꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/first-test (tracks_on_tracks_on_tracks_test.clj:17):
+; expected:
+"Lisp"
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; ERROR in tracks-on-tracks-on-tracks-test/list-add-test (tracks_on_tracks_on_tracks.clj:11):
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app') (tracks_on_tracks_on_tracks.clj:11)
+; expected:
+(=
+ '("JavaScript" "Java" "Lisp" "Clojure")
+ (->
+  (tracks-on-tracks-on-tracks/new-list)
+  (tracks-on-tracks-on-tracks/add-language "Clojure")
+  (tracks-on-tracks-on-tracks/add-language "Lisp")
+  (tracks-on-tracks-on-tracks/add-language "Java")
+  (tracks-on-tracks-on-tracks/add-language "JavaScript")))
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 1, failures: 4, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/first-test (tracks_on_tracks_on_tracks_test.clj:17):
+; expected:
+"Lisp"
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; ERROR in tracks-on-tracks-on-tracks-test/list-add-test (core.clj:11):
+; error: java.lang.ClassCastException: class java.lang.String cannot be cast to class clojure.lang.IPersistentCollection (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IPersistentCollection is in unnamed module of loader 'app') (core.clj:11)
+; expected:
+(=
+ '("JavaScript" "Java" "Lisp" "Clojure")
+ (->
+  (tracks-on-tracks-on-tracks/new-list)
+  (tracks-on-tracks-on-tracks/add-language "Clojure")
+  (tracks-on-tracks-on-tracks/add-language "Lisp")
+  (tracks-on-tracks-on-tracks/add-language "Java")
+  (tracks-on-tracks-on-tracks/add-language "JavaScript")))
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 1, failures: 4, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/first-test (tracks_on_tracks_on_tracks_test.clj:17):
+; expected:
+"Lisp"
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-add-test (tracks_on_tracks_on_tracks_test.clj:9):
+; expected:
+("JavaScript" "Java" "Lisp" "Clojure")
+; actual:
+()
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/first-test (tracks_on_tracks_on_tracks_test.clj:17):
+; expected:
+"Lisp"
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+()
+; 6 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+#function[clojure.core/filter/fn--5874]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+"hello"
+"hello"
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+#function[clojure.core/filter/fn--5874]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error compiling at (tracks_on_tracks_on_tracks.clj:18:1).
+; Unable to resolve symbol: doc-find in this context
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+#function[clojure.core/filter/fn--5874]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+#function[clojure.core/filter/fn--5874]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks_test.clj
+#'tracks-on-tracks-on-tracks-test/learning-list-test
+; Running tests for tracks-on-tracks-on-tracks-test...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+#function[clojure.core/filter/fn--5874]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks-test꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+#function[clojure.core/drop/fn--5906]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error reading source at (tracks_on_tracks_on_tracks.clj:22:20).
+; Unmatched delimiter: )
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+#function[clojure.core/drop/fn--5906]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+#function[clojure.core/drop/fn--5906]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+#function[clojure.core/drop/fn--5906]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+#function[clojure.core/drop/fn--5906]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+#function[clojure.core/drop/fn--5906]
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error (ClassCastException) compiling at (tracks_on_tracks_on_tracks.clj:22:1).
+; class clojure.lang.PersistentList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Execution error (ClassCastException) at tracks-on-tracks-on-tracks/remove-language (tracks_on_tracks_on_tracks.clj:21).
+; class clojure.lang.PersistentList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error reading source at (tracks_on_tracks_on_tracks.clj:32:1).
+; EOF while reading, starting at line 18
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+("Lisp" "Clojure")
+; 6 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+("one" "two")
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-remove-test (tracks_on_tracks_on_tracks_test.clj:20):
+; expected:
+("Clojure")
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error compiling at (tracks_on_tracks_on_tracks.clj:21:3).
+; Unable to resolve symbol: lan in this context
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error compiling at (tracks_on_tracks_on_tracks.clj:26:3).
+; Unable to resolve symbol: len in this context
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; FAIL in tracks-on-tracks-on-tracks-test/list-count-test (tracks_on_tracks_on_tracks_test.clj:23):
+; expected:
+3
+; actual:
+()
+; 6 tests finished, problems found. 😭 errors: 0, failures: 2, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[tracks-on-tracks-on-tracks/new-list]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error macroexpanding clojure.core/let at (tracks_on_tracks_on_tracks.clj:33:3).
+; list - failed: vector? at: [:bindings] spec: :clojure.core.specs.alpha/bindings
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[tracks-on-tracks-on-tracks/new-list]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[tracks-on-tracks-on-tracks/new-list]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[tracks-on-tracks-on-tracks/new-list]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[tracks-on-tracks-on-tracks/new-list]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks_test.clj
+; Syntax error reading source at (tracks_on_tracks_on_tracks_test.clj:27:1).
+; EOF while reading, starting at line 19
+; Evaluation of file tracks_on_tracks_on_tracks_test.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks_test.clj
+#'tracks-on-tracks-on-tracks-test/learning-list-test
+; Running tests for tracks-on-tracks-on-tracks-test...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks-test꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; ERROR in tracks-on-tracks-on-tracks-test/learning-list-test (AFn.java:26):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: tracks-on-tracks-on-tracks/add-language (AFn.java:26)
+; expected:
+(= 3 (tracks-on-tracks-on-tracks/learning-list))
+; 6 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; ERROR in tracks-on-tracks-on-tracks-test/learning-list-test (AFn.java:26):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: tracks-on-tracks-on-tracks/add-language (AFn.java:26)
+; expected:
+(= 3 (tracks-on-tracks-on-tracks/learning-list))
+; 6 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; ERROR in tracks-on-tracks-on-tracks-test/learning-list-test (AFn.java:26):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: tracks-on-tracks-on-tracks/add-language (AFn.java:26)
+; expected:
+(= 3 (tracks-on-tracks-on-tracks/learning-list))
+; 6 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; ERROR in tracks-on-tracks-on-tracks-test/learning-list-test (AFn.java:26):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/- (AFn.java:26)
+; expected:
+(= 3 (tracks-on-tracks-on-tracks/learning-list))
+; 6 tests finished, problems found. 😭 errors: 1, failures: 0, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error (ArityException) compiling at (tracks_on_tracks_on_tracks.clj:34:5).
+; Wrong number of args (0) passed to: clojure.core/->
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error compiling at (tracks_on_tracks_on_tracks.clj:34:9).
+; Unable to resolve symbol: add-list in this context
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error compiling at (tracks_on_tracks_on_tracks.clj:34:9).
+; Unable to resolve symbol: add-list in this context
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error compiling at (tracks_on_tracks_on_tracks.clj:34:30).
+; Unable to resolve symbol: add-list in this context
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error compiling at (tracks_on_tracks_on_tracks.clj:34:30).
+; Unable to resolve symbol: add-list in this context
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error compiling at (tracks_on_tracks_on_tracks.clj:34:30).
+; Unable to resolve symbol: add-list in this context
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Syntax error compiling at (tracks_on_tracks_on_tracks.clj:34:30).
+; Unable to resolve symbol: add-list in this context
+; Execution error (ArityException) at tracks-on-tracks-on-tracks/learning-list (tracks_on_tracks_on_tracks.clj:34).
+; Wrong number of args (0) passed to: clojure.core/-
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Syntax error compiling at (tracks_on_tracks_on_tracks.clj:34:30).
+; Unable to resolve symbol: add-list in this context
+; Execution error (ArityException) at tracks-on-tracks-on-tracks/learning-list (tracks_on_tracks_on_tracks.clj:34).
+; Wrong number of args (0) passed to: clojure.core/-
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error compiling at (tracks_on_tracks_on_tracks.clj:34:34).
+; Unable to resolve symbol: add-list in this context
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error (ArityException) compiling at (tracks_on_tracks_on_tracks.clj:36:1).
+; Wrong number of args (1) passed to: tracks-on-tracks-on-tracks/add-language
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Execution error (ArityException) at tracks-on-tracks-on-tracks/learning-list (form-init10989024800648849266.clj:34).
+; Wrong number of args (1) passed to: tracks-on-tracks-on-tracks/add-language
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error (ClassCastException) compiling at (tracks_on_tracks_on_tracks.clj:36:1).
+; class tracks_on_tracks_on_tracks$new_list cannot be cast to class clojure.lang.IPersistentCollection (tracks_on_tracks_on_tracks$new_list is in unnamed module of loader clojure.lang.DynamicClassLoader @4798a899; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Execution error (ClassCastException) at tracks-on-tracks-on-tracks/add-language (form-init10989024800648849266.clj:11).
+; class tracks_on_tracks_on_tracks$new_list cannot be cast to class clojure.lang.IPersistentCollection (tracks_on_tracks_on_tracks$new_list is in unnamed module of loader clojure.lang.DynamicClassLoader @42e0519a; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error reading source at (tracks_on_tracks_on_tracks.clj:34:55).
+; Unmatched delimiter: )
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error reading source at (tracks_on_tracks_on_tracks.clj:34:54).
+; Unmatched delimiter: )
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error reading source at (tracks_on_tracks_on_tracks.clj:36:1).
+; EOF while reading, starting at line 28
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error reading source at (tracks_on_tracks_on_tracks.clj:36:1).
+; EOF while reading, starting at line 28
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Syntax error reading source at (REPL:34:1).
+; EOF while reading, starting at line 28
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Syntax error reading source at (REPL:36:1).
+; EOF while reading, starting at line 28
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[tracks-on-tracks-on-tracks/new-list]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[tracks-on-tracks-on-tracks/new-list]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+#function[tracks-on-tracks-on-tracks/new-list]
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+#function[clojure.lang.PersistentList/Primordial]
+clj꞉tracks-on-tracks-on-tracks꞉> 
+#function[clojure.lang.PersistentList/Primordial]
+clj꞉tracks-on-tracks-on-tracks꞉> 
+#function[clojure.lang.PersistentList/Primordial]
+clj꞉tracks-on-tracks-on-tracks꞉> 
+#function[clojure.lang.PersistentList/Primordial]
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error reading source at (tracks_on_tracks_on_tracks.clj:37:1).
+; EOF while reading, starting at line 28
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error (ClassCastException) compiling at (tracks_on_tracks_on_tracks.clj:37:1).
+; class java.lang.String cannot be cast to class clojure.lang.IPersistentCollection (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Execution error (ClassCastException) at tracks-on-tracks-on-tracks/add-language (tracks_on_tracks_on_tracks.clj:11).
+; class java.lang.String cannot be cast to class clojure.lang.IPersistentCollection (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error (ArityException) compiling at (tracks_on_tracks_on_tracks.clj:37:1).
+; Wrong number of args (1) passed to: tracks-on-tracks-on-tracks/add-language
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error (ClassCastException) compiling at (tracks_on_tracks_on_tracks.clj:37:1).
+; class tracks_on_tracks_on_tracks$new_list cannot be cast to class clojure.lang.IPersistentCollection (tracks_on_tracks_on_tracks$new_list is in unnamed module of loader clojure.lang.DynamicClassLoader @7edc7c28; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error (ClassCastException) compiling at (tracks_on_tracks_on_tracks.clj:37:1).
+; class tracks_on_tracks_on_tracks$new_list cannot be cast to class clojure.lang.IPersistentCollection (tracks_on_tracks_on_tracks$new_list is in unnamed module of loader clojure.lang.DynamicClassLoader @55de2381; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error (ClassCastException) compiling at (tracks_on_tracks_on_tracks.clj:37:1).
+; class tracks_on_tracks_on_tracks$new_list cannot be cast to class clojure.lang.IPersistentCollection (tracks_on_tracks_on_tracks$new_list is in unnamed module of loader clojure.lang.DynamicClassLoader @55f963fb; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Execution error (ClassCastException) at tracks-on-tracks-on-tracks/add-language (form-init10989024800648849266.clj:11).
+; class tracks_on_tracks_on_tracks$new_list cannot be cast to class clojure.lang.IPersistentCollection (tracks_on_tracks_on_tracks$new_list is in unnamed module of loader clojure.lang.DynamicClassLoader @336ef54c; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error macroexpanding clojure.core/let at (tracks_on_tracks_on_tracks.clj:33:3).
+; [list () new-list] - failed: even-number-of-forms? at: [:bindings] spec: :clojure.core.specs.alpha/bindings
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error reading source at (tracks_on_tracks_on_tracks.clj:33:24).
+; Unmatched delimiter: ]
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+#function[clojure.lang.PersistentList/Primordial]
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+#object[clojure.lang.Var$Unbound 0x7e925c2c "Unbound: #'tracks-on-tracks-on-tracks/list"]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#object[clojure.lang.Var$Unbound 0x7e925c2c "Unbound: #'tracks-on-tracks-on-tracks/list"]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error (ClassCastException) compiling at (tracks_on_tracks_on_tracks.clj:38:1).
+; class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error compiling def at (tracks_on_tracks_on_tracks.clj:34:5).
+; Too few arguments to def
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+#function[clojure.lang.PersistentList/Primordial]
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+()
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+()
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+()
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error (ClassCastException) compiling at (tracks_on_tracks_on_tracks.clj:39:1).
+; class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error (ClassCastException) compiling at (tracks_on_tracks_on_tracks.clj:39:1).
+; class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error (ClassCastException) compiling at (tracks_on_tracks_on_tracks.clj:39:1).
+; class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app')
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Execution error (ClassCastException) at tracks-on-tracks-on-tracks/eval11608 (form-init10989024800648849266.clj:39).
+; class clojure.lang.PersistentList$EmptyList cannot be cast to class clojure.lang.IFn (clojure.lang.PersistentList$EmptyList and clojure.lang.IFn are in unnamed module of loader 'app')
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error compiling def at (tracks_on_tracks_on_tracks.clj:36:1).
+; Too few arguments to def
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+("clojure")
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+clj꞉tracks-on-tracks-on-tracks꞉> 
+("clojure")
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+; Syntax error (ArityException) compiling at (tracks_on_tracks_on_tracks.clj:38:1).
+; Wrong number of args (0) passed to: tracks-on-tracks-on-tracks/add-language
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+; Syntax error (ClassCastException) compiling at (tracks_on_tracks_on_tracks.clj:38:1).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+; Syntax error (ClassCastException) compiling at (tracks_on_tracks_on_tracks.clj:38:1).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+; Syntax error (ClassCastException) compiling at (tracks_on_tracks_on_tracks.clj:38:1).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+; Execution error (ClassCastException) at tracks-on-tracks-on-tracks/eval11973 (form-init10989024800648849266.clj:38).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+; Syntax error (ClassCastException) compiling at (tracks_on_tracks_on_tracks.clj:39:1).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error reading source at (tracks_on_tracks_on_tracks.clj:40:1).
+; EOF while reading, starting at line 36
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+nil
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Execution error (ClassCastException) at tracks-on-tracks-on-tracks/eval12067 (form-init10989024800648849266.clj:39).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉tracks-on-tracks-on-tracks꞉> 
+#'tracks-on-tracks-on-tracks/list
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+clj꞉tracks-on-tracks-on-tracks꞉> 
+("clojure")
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Execution error (ClassCastException) at tracks-on-tracks-on-tracks/eval12071 (form-init10989024800648849266.clj:39).
+; class java.lang.String cannot be cast to class clojure.lang.IFn (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IFn is in unnamed module of loader 'app')
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error reading source at (tracks_on_tracks_on_tracks.clj:41:1).
+; EOF while reading, starting at line 36
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Execution error (ClassCastException) at tracks-on-tracks-on-tracks/add-language (tracks_on_tracks_on_tracks.clj:11).
+; class clojure.lang.PersistentList$Primordial cannot be cast to class clojure.lang.IPersistentCollection (clojure.lang.PersistentList$Primordial and clojure.lang.IPersistentCollection are in unnamed module of loader 'app')
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Execution error (ClassCastException) at tracks-on-tracks-on-tracks/add-language (tracks_on_tracks_on_tracks.clj:11).
+; class clojure.lang.PersistentList$Primordial cannot be cast to class clojure.lang.IPersistentCollection (clojure.lang.PersistentList$Primordial and clojure.lang.IPersistentCollection are in unnamed module of loader 'app')
+clj꞉tracks-on-tracks-on-tracks꞉> 
+#'tracks-on-tracks-on-tracks/list
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+clj꞉tracks-on-tracks-on-tracks꞉> 
+#'tracks-on-tracks-on-tracks/list
+clj꞉tracks-on-tracks-on-tracks꞉> 
+("clojure")
+clj꞉tracks-on-tracks-on-tracks꞉> 
+("Clojure")
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Execution error (ClassCastException) at tracks-on-tracks-on-tracks/add-language (tracks_on_tracks_on_tracks.clj:11).
+; class clojure.lang.PersistentList$Primordial cannot be cast to class clojure.lang.IPersistentCollection (clojure.lang.PersistentList$Primordial and clojure.lang.IPersistentCollection are in unnamed module of loader 'app')
+clj꞉tracks-on-tracks-on-tracks꞉> 
+nil
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Execution error (ClassCastException) at tracks-on-tracks-on-tracks/add-language (tracks_on_tracks_on_tracks.clj:11).
+; class clojure.lang.PersistentList$Primordial cannot be cast to class clojure.lang.IPersistentCollection (clojure.lang.PersistentList$Primordial and clojure.lang.IPersistentCollection are in unnamed module of loader 'app')
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Execution error (ClassCastException) at tracks-on-tracks-on-tracks/add-language (tracks_on_tracks_on_tracks.clj:11).
+; class clojure.lang.PersistentList$Primordial cannot be cast to class clojure.lang.IPersistentCollection (clojure.lang.PersistentList$Primordial and clojure.lang.IPersistentCollection are in unnamed module of loader 'app')
+clj꞉tracks-on-tracks-on-tracks꞉> 
+#'tracks-on-tracks-on-tracks/list
+; WARNING: list already refers to: #'clojure.core/list in namespace: tracks-on-tracks-on-tracks, being replaced by: #'tracks-on-tracks-on-tracks/list
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error reading source at (tracks_on_tracks_on_tracks.clj:37:18).
+; Unmatched delimiter: )
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error reading source at (tracks_on_tracks_on_tracks.clj:41:1).
+; EOF while reading, starting at line 36
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+("Lisp" "Clojure")
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Execution error (ArityException) at tracks-on-tracks-on-tracks/eval12428 (form-init10989024800648849266.clj:39).
+; Wrong number of args (0) passed to: tracks-on-tracks-on-tracks/remove-language
+clj꞉tracks-on-tracks-on-tracks꞉> 
+nil
+clj꞉tracks-on-tracks-on-tracks꞉> 
+("Clojure")
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+nil
+clj꞉tracks-on-tracks-on-tracks꞉> 
+("Javascript" "Java" "Clojure")
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+3
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+3
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#function[clojure.lang.PersistentList/Primordial]
+; Running tests for tracks-on-tracks-on-tracks...
+; FAIL in tracks-on-tracks-on-tracks-test/learning-list-test (tracks_on_tracks_on_tracks_test.clj:26):
+; expected:
+3
+; actual:
+#function[clojure.lang.PersistentList/Primordial]
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+3
+; Running tests for tracks-on-tracks-on-tracks...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error compiling at (tracks_on_tracks_on_tracks.clj:35:9).
+; Unable to resolve symbol: n in this context
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+3
+; Running tests for tracks-on-tracks-on-tracks...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+; Syntax error reading source at (tracks_on_tracks_on_tracks.clj:39:19).
+; Unmatched delimiter: )
+; Evaluation of file tracks_on_tracks_on_tracks.clj failed: class clojure.lang.Compiler$CompilerException
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+3
+; Running tests for tracks-on-tracks-on-tracks...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+3
+; Running tests for tracks-on-tracks-on-tracks...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+3
+; Running tests for tracks-on-tracks-on-tracks...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 
+; Evaluating file: tracks_on_tracks_on_tracks.clj
+#'tracks-on-tracks-on-tracks/learning-list
+; Running tests for tracks-on-tracks-on-tracks...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉tracks-on-tracks-on-tracks꞉> 

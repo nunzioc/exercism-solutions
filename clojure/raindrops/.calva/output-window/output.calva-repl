@@ -1,0 +1,5222 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+; Evaluating file: raindrops.clj
+#'raindrops/convert
+; Running tests for raindrops...
+; ERROR in raindrops-test/fifteen (AFn.java:30):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: raindrops/convert (AFn.java:30)
+; expected:
+(= "PlingPlang" (raindrops/convert 15))
+; ERROR in raindrops-test/fifty-two (AFn.java:45):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: raindrops/convert (AFn.java:45)
+; expected:
+(= "52" (raindrops/convert 52))
+; ERROR in raindrops-test/five (AFn.java:12):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: raindrops/convert (AFn.java:12)
+; expected:
+(= "Plang" (raindrops/convert 5))
+; ERROR in raindrops-test/forty-nine (AFn.java:42):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: raindrops/convert (AFn.java:42)
+; expected:
+(= "Plong" (raindrops/convert 49))
+; ERROR in raindrops-test/fourteen (AFn.java:27):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: raindrops/convert (AFn.java:27)
+; expected:
+(= "Plong" (raindrops/convert 14))
+; ERROR in raindrops-test/nine (AFn.java:21):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: raindrops/convert (AFn.java:21)
+; expected:
+(= "Pling" (raindrops/convert 9))
+; ERROR in raindrops-test/one (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: raindrops/convert (AFn.java:6)
+; expected:
+(= "1" (raindrops/convert 1))
+; ERROR in raindrops-test/one-hundred-five (AFn.java:48):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: raindrops/convert (AFn.java:48)
+; expected:
+(= "PlingPlangPlong" (raindrops/convert 105))
+; ERROR in raindrops-test/seven (AFn.java:15):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: raindrops/convert (AFn.java:15)
+; expected:
+(= "Plong" (raindrops/convert 7))
+; ERROR in raindrops-test/six (AFn.java:18):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: raindrops/convert (AFn.java:18)
+; expected:
+(= "Pling" (raindrops/convert 6))
+; ERROR in raindrops-test/ten (AFn.java:24):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: raindrops/convert (AFn.java:24)
+; expected:
+(= "Plang" (raindrops/convert 10))
+; ERROR in raindrops-test/thirty-five (AFn.java:39):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: raindrops/convert (AFn.java:39)
+; expected:
+(= "PlangPlong" (raindrops/convert 35))
+; ERROR in raindrops-test/three (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: raindrops/convert (AFn.java:9)
+; expected:
+(= "Pling" (raindrops/convert 3))
+; ERROR in raindrops-test/twelve-thousand-one-hundred-twenty-one (AFn.java:51):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: raindrops/convert (AFn.java:51)
+; expected:
+(= "12121" (raindrops/convert 12121))
+; ERROR in raindrops-test/twenty-five (AFn.java:36):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: raindrops/convert (AFn.java:36)
+; expected:
+(= "Plang" (raindrops/convert 25))
+; ERROR in raindrops-test/twenty-one (AFn.java:33):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: raindrops/convert (AFn.java:33)
+; expected:
+(= "PlingPlong" (raindrops/convert 21))
+; 16 tests finished, problems found. 😭 errors: 16, failures: 0, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+#'raindrops/convert
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+nil
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+nil
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+nil
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+nil
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+nil
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+nil
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+nil
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+nil
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+nil
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+nil
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+nil
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+nil
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+nil
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+nil
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+nil
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+nil
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+#'raindrops/convert
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error (ArityException) compiling at (raindrops.clj:4:3).
+; Wrong number of args (0) passed to: clojure.core/some->
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval8656 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error (ArityException) compiling at (raindrops.clj:4:3).
+; Wrong number of args (0) passed to: clojure.core/some->>
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval8843 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error (ArityException) compiling at (raindrops.clj:4:3).
+; Wrong number of args (0) passed to: clojure.core/condp
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval9030 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+#'raindrops/convert
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error (ArityException) compiling at (raindrops.clj:4:3).
+; Wrong number of args (0) passed to: clojure.core/->
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval9405 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error (ArityException) compiling at (raindrops.clj:4:3).
+; Wrong number of args (0) passed to: clojure.core/->
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval9592 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+#'raindrops/convert
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+15
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+52
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+5
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+49
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+14
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+9
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+1
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+105
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+7
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+6
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+10
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+35
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+3
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+12121
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+25
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+21
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+#'raindrops/convert
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+#'raindrops/convert
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+#'raindrops/convert
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error (IllegalArgumentException) compiling at (raindrops.clj:4:3).
+; Can't call nil, form: (nil (str n))
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval10531 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+#'raindrops/convert
+; Running tests for raindrops...
+; ERROR in raindrops-test/fifteen (raindrops.clj:30):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:30)
+; expected:
+(= "PlingPlang" (raindrops/convert 15))
+; ERROR in raindrops-test/fifty-two (raindrops.clj:45):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:45)
+; expected:
+(= "52" (raindrops/convert 52))
+; ERROR in raindrops-test/five (raindrops.clj:12):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:12)
+; expected:
+(= "Plang" (raindrops/convert 5))
+; ERROR in raindrops-test/forty-nine (raindrops.clj:42):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:42)
+; expected:
+(= "Plong" (raindrops/convert 49))
+; ERROR in raindrops-test/fourteen (raindrops.clj:27):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:27)
+; expected:
+(= "Plong" (raindrops/convert 14))
+; ERROR in raindrops-test/nine (raindrops.clj:21):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:21)
+; expected:
+(= "Pling" (raindrops/convert 9))
+; ERROR in raindrops-test/one (raindrops.clj:6):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:6)
+; expected:
+(= "1" (raindrops/convert 1))
+; ERROR in raindrops-test/one-hundred-five (raindrops.clj:48):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:48)
+; expected:
+(= "PlingPlangPlong" (raindrops/convert 105))
+; ERROR in raindrops-test/seven (raindrops.clj:15):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:15)
+; expected:
+(= "Plong" (raindrops/convert 7))
+; ERROR in raindrops-test/six (raindrops.clj:18):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:18)
+; expected:
+(= "Pling" (raindrops/convert 6))
+; ERROR in raindrops-test/ten (raindrops.clj:24):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:24)
+; expected:
+(= "Plang" (raindrops/convert 10))
+; ERROR in raindrops-test/thirty-five (raindrops.clj:39):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:39)
+; expected:
+(= "PlangPlong" (raindrops/convert 35))
+; ERROR in raindrops-test/three (raindrops.clj:9):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:9)
+; expected:
+(= "Pling" (raindrops/convert 3))
+; ERROR in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops.clj:51):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:51)
+; expected:
+(= "12121" (raindrops/convert 12121))
+; ERROR in raindrops-test/twenty-five (raindrops.clj:36):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:36)
+; expected:
+(= "Plang" (raindrops/convert 25))
+; ERROR in raindrops-test/twenty-one (raindrops.clj:33):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:33)
+; expected:
+(= "PlingPlong" (raindrops/convert 21))
+; 16 tests finished, problems found. 😭 errors: 16, failures: 0, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+#'raindrops/convert
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+#'raindrops/convert
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+#'raindrops/convert
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+#'raindrops/convert
+; Running tests for raindrops...
+; ERROR in raindrops-test/fifteen (raindrops.clj:30):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:30)
+; expected:
+(= "PlingPlang" (raindrops/convert 15))
+; ERROR in raindrops-test/fifty-two (raindrops.clj:45):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:45)
+; expected:
+(= "52" (raindrops/convert 52))
+; ERROR in raindrops-test/five (raindrops.clj:12):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:12)
+; expected:
+(= "Plang" (raindrops/convert 5))
+; ERROR in raindrops-test/forty-nine (raindrops.clj:42):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:42)
+; expected:
+(= "Plong" (raindrops/convert 49))
+; ERROR in raindrops-test/fourteen (raindrops.clj:27):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:27)
+; expected:
+(= "Plong" (raindrops/convert 14))
+; ERROR in raindrops-test/nine (raindrops.clj:21):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:21)
+; expected:
+(= "Pling" (raindrops/convert 9))
+; ERROR in raindrops-test/one (raindrops.clj:6):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:6)
+; expected:
+(= "1" (raindrops/convert 1))
+; ERROR in raindrops-test/one-hundred-five (raindrops.clj:48):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:48)
+; expected:
+(= "PlingPlangPlong" (raindrops/convert 105))
+; ERROR in raindrops-test/seven (raindrops.clj:15):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:15)
+; expected:
+(= "Plong" (raindrops/convert 7))
+; ERROR in raindrops-test/six (raindrops.clj:18):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:18)
+; expected:
+(= "Pling" (raindrops/convert 6))
+; ERROR in raindrops-test/ten (raindrops.clj:24):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:24)
+; expected:
+(= "Plang" (raindrops/convert 10))
+; ERROR in raindrops-test/thirty-five (raindrops.clj:39):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:39)
+; expected:
+(= "PlangPlong" (raindrops/convert 35))
+; ERROR in raindrops-test/three (raindrops.clj:9):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:9)
+; expected:
+(= "Pling" (raindrops/convert 3))
+; ERROR in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops.clj:51):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:51)
+; expected:
+(= "12121" (raindrops/convert 12121))
+; ERROR in raindrops-test/twenty-five (raindrops.clj:36):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:36)
+; expected:
+(= "Plang" (raindrops/convert 25))
+; ERROR in raindrops-test/twenty-one (raindrops.clj:33):
+; error: java.lang.IllegalArgumentException: No matching clause: () (raindrops.clj:33)
+; expected:
+(= "PlingPlong" (raindrops/convert 21))
+; 16 tests finished, problems found. 😭 errors: 16, failures: 0, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+#'raindrops/convert
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+""
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+"hellohi"
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+"hellohi"
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error reading source at (raindrops.clj:6:1).
+; EOF while reading, starting at line 3
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+raindrops/eval12278 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error reading source at (raindrops.clj:6:1).
+; EOF while reading, starting at line 3
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+raindrops/eval12465 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error reading source at (raindrops.clj:7:1).
+; EOF while reading, starting at line 3
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+raindrops/eval12652 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error reading source at (raindrops.clj:7:1).
+; EOF while reading, starting at line 3
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+raindrops/eval12839 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error reading source at (raindrops.clj:5:1).
+; EOF while reading, starting at line 3
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+raindrops/eval13026 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error reading source at (raindrops.clj:5:1).
+; EOF while reading, starting at line 3
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+raindrops/eval13213 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error reading source at (raindrops.clj:5:1).
+; EOF while reading, starting at line 3
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+raindrops/eval13400 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error (ArityException) compiling at (raindrops.clj:4:3).
+; Wrong number of args (0) passed to: clojure.core/cond->
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval13587 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+"7"
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error (ArityException) compiling at (raindrops.clj:4:3).
+; Wrong number of args (0) passed to: clojure.core/cond->
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval13776 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+()
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+()
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+()
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+()
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+()
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+()
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+()
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+()
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+()
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+"7"
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+"7"
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Unexpected error (AssertionError) macroexpanding cond-> at (raindrops.clj:4:3).
+; Assert failed: (even? (count clauses))
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7018)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7092)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval14345 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Unexpected error (AssertionError) macroexpanding cond-> at (raindrops.clj:4:3).
+; Assert failed: (even? (count clauses))
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7018)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7092)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval14532 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+5
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Unexpected error (AssertionError) macroexpanding cond-> at (raindrops.clj:4:3).
+; Assert failed: (even? (count clauses))
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7018)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7092)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval14721 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Unexpected error (AssertionError) macroexpanding cond-> at (raindrops.clj:4:3).
+; Assert failed: (even? (count clauses))
+0
+clj꞉raindrops꞉> 
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7018)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7092)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval14908 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Unexpected error (AssertionError) macroexpanding cond-> at (raindrops.clj:4:3).
+; Assert failed: (even? (count clauses))
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7018)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7092)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval15097 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Unexpected error (AssertionError) macroexpanding cond-> at (raindrops.clj:4:3).
+; Assert failed: (even? (count clauses))
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7018)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7092)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval15284 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error compiling at (raindrops.clj:5:12).
+; Unable to resolve symbol: % in this context
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$HostExpr$Parser/parse (Compiler.java:1020)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7101)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$IfExpr$Parser/parse (Compiler.java:2824)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6436)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval15471 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Syntax error compiling at (raindrops.clj:5:12).
+; Unable to resolve symbol: % in this context
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$HostExpr$Parser/parse (Compiler.java:1020)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7101)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$IfExpr$Parser/parse (Compiler.java:2824)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6436)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval15659 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+0
+; Running tests for raindrops...
+; ERROR in raindrops-test/fifteen (AFn.java:30):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/mod (AFn.java:30)
+; expected:
+(= "PlingPlang" (raindrops/convert 15))
+; ERROR in raindrops-test/fifty-two (AFn.java:45):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/mod (AFn.java:45)
+; expected:
+(= "52" (raindrops/convert 52))
+; ERROR in raindrops-test/five (AFn.java:12):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/mod (AFn.java:12)
+; expected:
+(= "Plang" (raindrops/convert 5))
+; ERROR in raindrops-test/forty-nine (AFn.java:42):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/mod (AFn.java:42)
+; expected:
+(= "Plong" (raindrops/convert 49))
+; ERROR in raindrops-test/fourteen (AFn.java:27):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/mod (AFn.java:27)
+; expected:
+(= "Plong" (raindrops/convert 14))
+; ERROR in raindrops-test/nine (AFn.java:21):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/mod (AFn.java:21)
+; expected:
+(= "Pling" (raindrops/convert 9))
+; ERROR in raindrops-test/one (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/mod (AFn.java:6)
+; expected:
+(= "1" (raindrops/convert 1))
+; ERROR in raindrops-test/one-hundred-five (AFn.java:48):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/mod (AFn.java:48)
+; expected:
+(= "PlingPlangPlong" (raindrops/convert 105))
+; ERROR in raindrops-test/seven (AFn.java:15):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/mod (AFn.java:15)
+; expected:
+(= "Plong" (raindrops/convert 7))
+; ERROR in raindrops-test/six (AFn.java:18):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/mod (AFn.java:18)
+; expected:
+(= "Pling" (raindrops/convert 6))
+; ERROR in raindrops-test/ten (AFn.java:24):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/mod (AFn.java:24)
+; expected:
+(= "Plang" (raindrops/convert 10))
+; ERROR in raindrops-test/thirty-five (AFn.java:39):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/mod (AFn.java:39)
+; expected:
+(= "PlangPlong" (raindrops/convert 35))
+; ERROR in raindrops-test/three (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/mod (AFn.java:9)
+; expected:
+(= "Pling" (raindrops/convert 3))
+; ERROR in raindrops-test/twelve-thousand-one-hundred-twenty-one (AFn.java:51):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/mod (AFn.java:51)
+; expected:
+(= "12121" (raindrops/convert 12121))
+; ERROR in raindrops-test/twenty-five (AFn.java:36):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/mod (AFn.java:36)
+; expected:
+(= "Plang" (raindrops/convert 25))
+; ERROR in raindrops-test/twenty-one (AFn.java:33):
+; error: clojure.lang.ArityException: Wrong number of args (1) passed to: clojure.core/mod (AFn.java:33)
+; expected:
+(= "PlingPlong" (raindrops/convert 21))
+; 16 tests finished, problems found. 😭 errors: 16, failures: 0, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+0
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15Pling"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9Pling"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105Pling"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6Pling"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3Pling"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21Pling"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+0
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15PlingPlingPling"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9PlingPlingPling"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105PlingPlingPling"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6PlingPlingPling"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3PlingPlingPling"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21PlingPlingPling"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+0
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15PlingPlingPling"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5Pling"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9PlingPling"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105PlingPlingPling"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6PlingPling"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10Pling"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35Pling"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3PlingPling"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25Pling"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21PlingPling"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+0
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15PlingPling"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5Pling"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49Pling"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14Pling"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9Pling"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105PlingPlingPling"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7Pling"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6Pling"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10Pling"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35PlingPling"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3Pling"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25Pling"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21PlingPling"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+0
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15PlingPlang"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5Plang"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49Pling"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14Pling"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9Pling"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105PlingPlangPling"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7Pling"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6Pling"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10Plang"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35PlangPling"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3Pling"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25Plang"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21PlingPling"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+0
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15PlingPlang"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5Plang"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49Pl0ng"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14Pl0ng"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9Pling"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105PlingPlangPl0ng"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7Pl0ng"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6Pling"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10Plang"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35PlangPl0ng"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3Pling"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25Plang"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21PlingPl0ng"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+0
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15PlingPlang"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5Plang"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49Plong"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14Plong"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9Pling"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105PlingPlangPlong"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7Plong"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6Pling"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10Plang"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35PlangPlong"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3Pling"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25Plang"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21PlingPlong"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Unexpected error (AssertionError) macroexpanding cond-> at (raindrops.clj:4:3).
+; Assert failed: (even? (count clauses))
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7018)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7092)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval17375 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15PlingPlang"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5Plang"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49Plong"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14Plong"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9Pling"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105PlingPlangPlong"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7Plong"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6Pling"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10Plang"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35PlangPlong"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3Pling"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25Plang"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21PlingPlong"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+0
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15PlingPlang15"
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+"5252"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5Plang5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49Plong49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14Plong14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9Pling9"
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+"11"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105PlingPlangPlong105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7Plong7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6Pling6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10Plang10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35PlangPlong35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3Pling3"
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+"1212112121"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25Plang25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21PlingPlong21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+0
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15PlingPlang15"
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+"5252"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5Plang5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49Plong49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14Plong14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9Pling9"
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+"11"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105PlingPlangPlong105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7Plong7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6Pling6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10Plang10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35PlangPlong35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3Pling3"
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+"1212112121"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25Plang25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21PlingPlong21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Unexpected error (AssertionError) macroexpanding cond-> at (raindrops.clj:4:3).
+; Assert failed: (even? (count clauses))
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7018)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7092)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval17944 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15PlingPlang15"
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+"5252"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5Plang5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49Plong49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14Plong14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9Pling9"
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+"11"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105PlingPlangPlong105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7Plong7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6Pling6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10Plang10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35PlangPlong35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3Pling3"
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+"1212112121"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25Plang25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21PlingPlong21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+; Unexpected error (AssertionError) macroexpanding cond-> at (raindrops.clj:4:3).
+; Assert failed: (even? (count clauses))
+; Evaluation of file raindrops.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7018)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7092)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+raindrops/eval18131 (form-init17512800623623294948.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15PlingPlang15"
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+"5252"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5Plang5"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49Plong49"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14Plong14"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9Pling9"
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+"11"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105PlingPlangPlong105"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7Plong7"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6Pling6"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10Plang10"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35PlangPlong35"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3Pling3"
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+"1212112121"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25Plang25"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21PlingPlong21"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 16, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+0
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifteen (raindrops_test.clj:30):
+; expected:
+"PlingPlang"
+; actual:
+"15PlingPlang"
+; FAIL in raindrops-test/five (raindrops_test.clj:12):
+; expected:
+"Plang"
+; actual:
+"5Plang"
+; FAIL in raindrops-test/forty-nine (raindrops_test.clj:42):
+; expected:
+"Plong"
+; actual:
+"49Plong"
+; FAIL in raindrops-test/fourteen (raindrops_test.clj:27):
+; expected:
+"Plong"
+; actual:
+"14Plong"
+; FAIL in raindrops-test/nine (raindrops_test.clj:21):
+; expected:
+"Pling"
+; actual:
+"9Pling"
+; FAIL in raindrops-test/one-hundred-five (raindrops_test.clj:48):
+; expected:
+"PlingPlangPlong"
+; actual:
+"105PlingPlangPlong"
+; FAIL in raindrops-test/seven (raindrops_test.clj:15):
+; expected:
+"Plong"
+; actual:
+"7Plong"
+; FAIL in raindrops-test/six (raindrops_test.clj:18):
+; expected:
+"Pling"
+; actual:
+"6Pling"
+; FAIL in raindrops-test/ten (raindrops_test.clj:24):
+; expected:
+"Plang"
+; actual:
+"10Plang"
+; FAIL in raindrops-test/thirty-five (raindrops_test.clj:39):
+; expected:
+"PlangPlong"
+; actual:
+"35PlangPlong"
+; FAIL in raindrops-test/three (raindrops_test.clj:9):
+; expected:
+"Pling"
+; actual:
+"3Pling"
+; FAIL in raindrops-test/twenty-five (raindrops_test.clj:36):
+; expected:
+"Plang"
+; actual:
+"25Plang"
+; FAIL in raindrops-test/twenty-one (raindrops_test.clj:33):
+; expected:
+"PlingPlong"
+; actual:
+"21PlingPlong"
+; 16 tests finished, problems found. 😭 errors: 0, failures: 13, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+0
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+""
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+""
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+""
+; 16 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+0
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+""
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+""
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+""
+; 16 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+0
+; Running tests for raindrops...
+; FAIL in raindrops-test/fifty-two (raindrops_test.clj:45):
+; expected:
+"52"
+; actual:
+""
+; FAIL in raindrops-test/one (raindrops_test.clj:6):
+; expected:
+"1"
+; actual:
+""
+; FAIL in raindrops-test/twelve-thousand-one-hundred-twenty-one (raindrops_test.clj:51):
+; expected:
+"12121"
+; actual:
+""
+; 16 tests finished, problems found. 😭 errors: 0, failures: 3, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+0
+; Running tests for raindrops...
+; 16 tests finished, all passing 👍, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+#'raindrops/convert
+; Running tests for raindrops...
+; 16 tests finished, all passing 👍, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+0
+; Running tests for raindrops...
+; 16 tests finished, all passing 👍, ns: 1, vars: 16
+clj꞉raindrops꞉> 
+; Evaluating file: raindrops.clj
+#'raindrops/convert
+; Running tests for raindrops...
+; 16 tests finished, all passing 👍, ns: 1, vars: 16
+clj꞉raindrops꞉> 

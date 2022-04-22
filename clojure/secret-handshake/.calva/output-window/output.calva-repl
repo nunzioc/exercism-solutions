@@ -1,0 +1,315 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+["wink"]
+clj꞉secret-handshake꞉> 
+()
+clj꞉secret-handshake꞉> 
+["wink"]
+clj꞉secret-handshake꞉> 
+["wink"]
+clj꞉secret-handshake꞉> 
+["wink"]
+clj꞉secret-handshake꞉> 
+["wink"]
+clj꞉secret-handshake꞉> 
+["wink"]
+clj꞉secret-handshake꞉> 
+["wink" "double blink"]
+clj꞉secret-handshake꞉> 
+["wink"]
+clj꞉secret-handshake꞉> 
+["wink" "double blink"]
+clj꞉secret-handshake꞉> 
+; Evaluating file: secret_handshake_test.clj
+#'secret-handshake-test/lower-5-bits-zero
+; Running tests for secret-handshake-test...
+; FAIL in secret-handshake-test/all-actions (secret_handshake_test.clj:39):
+; all actions together
+; expected:
+(=
+ ["wink" "double blink" "close your eyes" "jump"]
+ (secret-handshake/commands 15))
+; actual:
+(not
+ (=
+  ["wink" "double blink" "close your eyes" "jump"]
+  ["wink" "double blink"]))
+; FAIL in secret-handshake-test/close-your-eyes (secret_handshake_test.clj:15):
+; a close your eyes is returned for a binary 100
+; expected:
+(= ["close your eyes"] (secret-handshake/commands 4))
+; actual:
+(not (= ["close your eyes"] []))
+; FAIL in secret-handshake-test/double-blink (secret_handshake_test.clj:11):
+; a double blink is returned for a binary 10
+; expected:
+(= ["double blink"] (secret-handshake/commands 2))
+; actual:
+(not (= ["double blink"] []))
+; FAIL in secret-handshake-test/jump (secret_handshake_test.clj:19):
+; a jump is returned for a binary 1000
+; expected:
+(= ["jump"] (secret-handshake/commands 8))
+; actual:
+(not (= ["jump"] []))
+; FAIL in secret-handshake-test/reverse-all-actions (secret_handshake_test.clj:45):
+; reversing all actions together
+; expected:
+(=
+ ["jump" "close your eyes" "double blink" "wink"]
+ (secret-handshake/commands 31))
+; actual:
+(not
+ (=
+  ["jump" "close your eyes" "double blink" "wink"]
+  ["wink" "double blink"]))
+; FAIL in secret-handshake-test/reversing (secret_handshake_test.clj:27):
+; giving a binary 10000 reverses actions
+; expected:
+(= ["double blink" "wink"] (secret-handshake/commands 19))
+; actual:
+(not (= ["double blink" "wink"] ["wink" "double blink"]))
+; FAIL in secret-handshake-test/reversing-one-action (secret_handshake_test.clj:31):
+; reversing one action returns the same action
+; expected:
+(= ["jump"] (secret-handshake/commands 24))
+; actual:
+(not (= ["jump"] []))
+; 12 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 12
+clj꞉secret-handshake-test꞉> 
+; Evaluating file: secret_handshake.clj
+["wink" "double blink" "close your eyes"]
+; Running tests for secret-handshake-test...
+; FAIL in secret-handshake-test/close-your-eyes (secret_handshake_test.clj:15):
+; a close your eyes is returned for a binary 100
+; expected:
+(= ["close your eyes"] (secret-handshake/commands 4))
+; actual:
+(not (= ["close your eyes"] []))
+; FAIL in secret-handshake-test/double-blink (secret_handshake_test.clj:11):
+; a double blink is returned for a binary 10
+; expected:
+(= ["double blink"] (secret-handshake/commands 2))
+; actual:
+(not (= ["double blink"] []))
+; FAIL in secret-handshake-test/jump (secret_handshake_test.clj:19):
+; a jump is returned for a binary 1000
+; expected:
+(= ["jump"] (secret-handshake/commands 8))
+; actual:
+(not (= ["jump"] []))
+; FAIL in secret-handshake-test/reversing (secret_handshake_test.clj:27):
+; giving a binary 10000 reverses actions
+; expected:
+(= ["double blink" "wink"] (secret-handshake/commands 19))
+; actual:
+(not (= ["double blink" "wink"] ["wink" "double blink"]))
+; FAIL in secret-handshake-test/reversing-one-action (secret_handshake_test.clj:31):
+; reversing one action returns the same action
+; expected:
+(= ["jump"] (secret-handshake/commands 24))
+; actual:
+(not (= ["jump"] []))
+; 12 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 12
+clj꞉secret-handshake-test꞉> 
+; Evaluating file: secret_handshake.clj
+; Unexpected error (AssertionError) macroexpanding cond-> at (secret_handshake.clj:4:3).
+; Assert failed: (even? (count clauses))
+; Evaluation of file secret_handshake.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7018)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7092)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6118)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+secret-handshake/eval23835 (form-init5787164409318267530.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for secret-handshake-test...
+; FAIL in secret-handshake-test/close-your-eyes (secret_handshake_test.clj:15):
+; a close your eyes is returned for a binary 100
+; expected:
+(= ["close your eyes"] (secret-handshake/commands 4))
+; actual:
+(not (= ["close your eyes"] []))
+; FAIL in secret-handshake-test/double-blink (secret_handshake_test.clj:11):
+; a double blink is returned for a binary 10
+; expected:
+(= ["double blink"] (secret-handshake/commands 2))
+; actual:
+(not (= ["double blink"] []))
+; FAIL in secret-handshake-test/jump (secret_handshake_test.clj:19):
+; a jump is returned for a binary 1000
+; expected:
+(= ["jump"] (secret-handshake/commands 8))
+; actual:
+(not (= ["jump"] []))
+; FAIL in secret-handshake-test/reversing (secret_handshake_test.clj:27):
+; giving a binary 10000 reverses actions
+; expected:
+(= ["double blink" "wink"] (secret-handshake/commands 19))
+; actual:
+(not (= ["double blink" "wink"] ["wink" "double blink"]))
+; FAIL in secret-handshake-test/reversing-one-action (secret_handshake_test.clj:31):
+; reversing one action returns the same action
+; expected:
+(= ["jump"] (secret-handshake/commands 24))
+; actual:
+(not (= ["jump"] []))
+; 12 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 12
+clj꞉secret-handshake-test꞉> 
+; Evaluating file: secret_handshake.clj
+; Unexpected error (AssertionError) macroexpanding cond-> at (secret_handshake.clj:4:3).
+; Assert failed: (even? (count clauses))
+; Evaluation of file secret_handshake.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/macroexpand1 (Compiler.java:7018)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7092)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6118)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+secret-handshake/eval23852 (form-init5787164409318267530.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for secret-handshake-test...
+; FAIL in secret-handshake-test/close-your-eyes (secret_handshake_test.clj:15):
+; a close your eyes is returned for a binary 100
+; expected:
+(= ["close your eyes"] (secret-handshake/commands 4))
+; actual:
+(not (= ["close your eyes"] []))
+; FAIL in secret-handshake-test/double-blink (secret_handshake_test.clj:11):
+; a double blink is returned for a binary 10
+; expected:
+(= ["double blink"] (secret-handshake/commands 2))
+; actual:
+(not (= ["double blink"] []))
+; FAIL in secret-handshake-test/jump (secret_handshake_test.clj:19):
+; a jump is returned for a binary 1000
+; expected:
+(= ["jump"] (secret-handshake/commands 8))
+; actual:
+(not (= ["jump"] []))
+; FAIL in secret-handshake-test/reversing (secret_handshake_test.clj:27):
+; giving a binary 10000 reverses actions
+; expected:
+(= ["double blink" "wink"] (secret-handshake/commands 19))
+; actual:
+(not (= ["double blink" "wink"] ["wink" "double blink"]))
+; FAIL in secret-handshake-test/reversing-one-action (secret_handshake_test.clj:31):
+; reversing one action returns the same action
+; expected:
+(= ["jump"] (secret-handshake/commands 24))
+; actual:
+(not (= ["jump"] []))
+; 12 tests finished, problems found. 😭 errors: 0, failures: 5, ns: 1, vars: 12
+clj꞉secret-handshake-test꞉> 
+[]
+clj꞉secret-handshake꞉> 
+true
+clj꞉secret-handshake꞉> 
+; Unexpected error (AssertionError) macroexpanding cond-> at (secret_handshake.clj:4:3).
+; Assert failed: (even? (count clauses))
+; Syntax error reading source at (REPL:9:36).
+; Unmatched delimiter: )
+clj꞉secret-handshake꞉> 
+; Evaluating file: secret_handshake.clj
+["double blink"]
+; Running tests for secret-handshake-test...
+; FAIL in secret-handshake-test/close-your-eyes (secret_handshake_test.clj:15):
+; a close your eyes is returned for a binary 100
+; expected:
+(= ["close your eyes"] (secret-handshake/commands 4))
+; actual:
+(not (= ["close your eyes"] []))
+; FAIL in secret-handshake-test/jump (secret_handshake_test.clj:19):
+; a jump is returned for a binary 1000
+; expected:
+(= ["jump"] (secret-handshake/commands 8))
+; actual:
+(not (= ["jump"] []))
+; FAIL in secret-handshake-test/reversing (secret_handshake_test.clj:27):
+; giving a binary 10000 reverses actions
+; expected:
+(= ["double blink" "wink"] (secret-handshake/commands 19))
+; actual:
+(not (= ["double blink" "wink"] ["wink" "double blink"]))
+; FAIL in secret-handshake-test/reversing-one-action (secret_handshake_test.clj:31):
+; reversing one action returns the same action
+; expected:
+(= ["jump"] (secret-handshake/commands 24))
+; actual:
+(not (= ["jump"] []))
+; 12 tests finished, problems found. 😭 errors: 0, failures: 4, ns: 1, vars: 12
+clj꞉secret-handshake-test꞉> 
+; Evaluating file: secret_handshake.clj
+["double blink"]
+; Running tests for secret-handshake-test...
+; 12 tests finished, all passing 👍, ns: 1, vars: 12
+clj꞉secret-handshake-test꞉> 

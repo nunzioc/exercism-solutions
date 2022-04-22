@@ -1,0 +1,477 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+((\A \A \A) (\B \B \B) (\C))
+clj꞉run-length-encoding꞉> 
+([3 \A] [3 \B] [1 \C])
+clj꞉run-length-encoding꞉> 
+(3 \A 3 \B 1 \C)
+clj꞉run-length-encoding꞉> 
+"3A3B1C"
+clj꞉run-length-encoding꞉> 
+; Syntax error compiling at (run_length_encoding.clj:7:8).
+; Unable to resolve symbol: plain-text in this context
+clj꞉run-length-encoding꞉> 
+#'run-length-encoding/plain-text
+clj꞉run-length-encoding꞉> 
+((\W \W \W \W \W \W \W \W \W \W \W \W)
+ (\B)
+ (\W \W \W \W \W \W \W \W \W \W \W \W)
+ (\B \B \B)
+ (\W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W)
+ (\B))
+clj꞉run-length-encoding꞉> 
+([12 \W] [1 \B] [12 \W] [3 \B] [24 \W] [1 \B])
+clj꞉run-length-encoding꞉> 
+; Execution error (ArityException) at run-length-encoding/eval23434 (form-init7030366337967043718.clj:10).
+; Wrong number of args (0) passed to: clojure.core/flatten
+clj꞉run-length-encoding꞉> 
+(12 \W 1 \B 12 \W 3 \B 24 \W 1 \B)
+clj꞉run-length-encoding꞉> 
+"12W1B12W3B24W1B"
+clj꞉run-length-encoding꞉> 
+; Evaluating file: run_length_encoding_test.clj
+; Syntax error compiling at (run_length_encoding_test.clj:9:12).
+; No such var: rle/run-length-encode
+; Evaluation of file run_length_encoding_test.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3888)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6384)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$TryExpr$Parser/parse (Compiler.java:2314)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$TryExpr$Parser/parse (Compiler.java:2314)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6436)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$MapExpr/parse (Compiler.java:3104)
+clojure.lang.Compiler/analyze (Compiler.java:6797)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:594)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+run-length-encoding-test/eval23445 (form-init7030366337967043718.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for run-length-encoding-test...
+; No tests found. 😱, ns: 0, vars: 0
+clj꞉run-length-encoding-test꞉> 
+#'run-length-encoding/run-length-decode
+clj꞉run-length-encoding꞉> 
+; Evaluating file: run_length_encoding_test.clj
+#'run-length-encoding-test/consistency
+; Running tests for run-length-encoding-test...
+; FAIL in run-length-encoding-test/consistency (run_length_encoding_test.clj:57):
+; Encode a string and then decode it. Should return the same one.
+; expected:
+nil
+; actual:
+"zzz ZZ  zZ"
+; FAIL in run-length-encoding-test/decode-empty-string (run_length_encoding_test.clj:33):
+; decode empty string
+; expected:
+nil
+; actual:
+""
+; FAIL in run-length-encoding-test/decode-lowercase (run_length_encoding_test.clj:49):
+; decode string with lowercase characters
+; expected:
+nil
+; actual:
+"aabbbcccc"
+; FAIL in run-length-encoding-test/decode-mixed-whitespace (run_length_encoding_test.clj:53):
+; decode string with mixed whitespace characters in it
+; expected:
+nil
+; actual:
+"  hsqq qww  "
+; FAIL in run-length-encoding-test/decode-no-single-characters (run_length_encoding_test.clj:41):
+; decode string with no single characters
+; expected:
+nil
+; actual:
+"AABBBCCCC"
+; FAIL in run-length-encoding-test/decode-single-and-repeated-characters (run_length_encoding_test.clj:45):
+; decode string with single and repeated characters
+; expected:
+nil
+; actual:
+"WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB"
+; FAIL in run-length-encoding-test/decode-single-characters (run_length_encoding_test.clj:37):
+; decode string with single characters only
+; expected:
+nil
+; actual:
+"XYZ"
+; FAIL in run-length-encoding-test/encode-multiple-whitespace (run_length_encoding_test.clj:25):
+; encode string with whitespace characters mixed in it
+; expected:
+"2 1h1s2q1 1q2w2 "
+; actual:
+"2 hs2q q2w2 "
+; FAIL in run-length-encoding-test/encode-single-characters-without-count (run_length_encoding_test.clj:13):
+; encode single characters without count
+; expected:
+"1X1Y1Z"
+; actual:
+"XYZ"
+; FAIL in run-length-encoding-test/encode-string-with-single-and-mixed-characters (run_length_encoding_test.clj:21):
+; encode string with single and mixed characters
+; expected:
+"12W1B12W3B24W1B"
+; actual:
+"12WB12W3B24WB"
+; 13 tests finished, problems found. 😭 errors: 0, failures: 10, ns: 1, vars: 13
+clj꞉run-length-encoding-test꞉> 
+"11"
+clj꞉run-length-encoding꞉> 
+"12WB12W3B24WB"
+clj꞉run-length-encoding꞉> 
+; Evaluating file: run_length_encoding.clj
+#'run-length-encoding/run-length-decode
+; Running tests for run-length-encoding-test...
+; FAIL in run-length-encoding-test/consistency (run_length_encoding_test.clj:57):
+; Encode a string and then decode it. Should return the same one.
+; expected:
+nil
+; actual:
+"zzz ZZ  zZ"
+; FAIL in run-length-encoding-test/decode-empty-string (run_length_encoding_test.clj:33):
+; decode empty string
+; expected:
+nil
+; actual:
+""
+; FAIL in run-length-encoding-test/decode-lowercase (run_length_encoding_test.clj:49):
+; decode string with lowercase characters
+; expected:
+nil
+; actual:
+"aabbbcccc"
+; FAIL in run-length-encoding-test/decode-mixed-whitespace (run_length_encoding_test.clj:53):
+; decode string with mixed whitespace characters in it
+; expected:
+nil
+; actual:
+"  hsqq qww  "
+; FAIL in run-length-encoding-test/decode-no-single-characters (run_length_encoding_test.clj:41):
+; decode string with no single characters
+; expected:
+nil
+; actual:
+"AABBBCCCC"
+; FAIL in run-length-encoding-test/decode-single-and-repeated-characters (run_length_encoding_test.clj:45):
+; decode string with single and repeated characters
+; expected:
+nil
+; actual:
+"WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB"
+; FAIL in run-length-encoding-test/decode-single-characters (run_length_encoding_test.clj:37):
+; decode string with single characters only
+; expected:
+nil
+; actual:
+"XYZ"
+; 13 tests finished, problems found. 😭 errors: 0, failures: 7, ns: 1, vars: 13
+clj꞉run-length-encoding-test꞉> 
+"12WB12W3B24WB"
+clj꞉run-length-encoding꞉> 
+#'run-length-encoding/cipher-text
+clj꞉run-length-encoding꞉> 
+((\1 \2 \W \B \1 \2 \W \3 \B \2 \4 \W \B))
+clj꞉run-length-encoding꞉> 
+; Syntax error compiling at (run_length_encoding.clj:18:1).
+; Unable to find static field: isAlphabetic in class java.lang.Character
+clj꞉run-length-encoding꞉> 
+; Syntax error compiling at (run_length_encoding.clj:18:1).
+; Unable to find static field: isDigit in class java.lang.Character
+clj꞉run-length-encoding꞉> 
+true
+clj꞉run-length-encoding꞉> 
+((\1 \2) (\W \B) (\1 \2) (\W) (\3) (\B) (\2 \4) (\W \B))
+clj꞉run-length-encoding꞉> 
+; Error printing return value (ClassCastException) at run-length-encoding/eval23919$fn (form-init7030366337967043718.clj:18).
+; class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉run-length-encoding꞉> 
+; Execution error (ClassCastException) at run-length-encoding/eval23923 (form-init7030366337967043718.clj:19).
+; class java.lang.Character cannot be cast to class java.lang.Number (java.lang.Character and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉run-length-encoding꞉> 
+false
+clj꞉run-length-encoding꞉> 
+((\1 \2) (\W \B) (\1 \2) (\W) (\3) (\B) (\2 \4) (\W \B))
+clj꞉run-length-encoding꞉> 
+((\1 \2) (\W \B) (\1 \2) (\W) (\3) (\B) (\2 \4) (\W \B))
+clj꞉run-length-encoding꞉> 
+((\1) (\2) (\W \B) (\1) (\2) (\W) (\3) (\B) (\2) (\4) (\W \B))
+clj꞉run-length-encoding꞉> 
+((\1 \2) (\W) (\B) (\1 \2) (\W) (\3) (\B) (\2 \4) (\W) (\B))
+clj꞉run-length-encoding꞉> 
+"12"
+clj꞉run-length-encoding꞉> 
+; Execution error (ClassCastException) at run-length-encoding/eval24003 (form-init7030366337967043718.clj:19).
+; class java.lang.String cannot be cast to class java.lang.Character (java.lang.String and java.lang.Character are in module java.base of loader 'bootstrap')
+clj꞉run-length-encoding꞉> 
+; Execution error (ClassCastException) at run-length-encoding/eval24005 (form-init7030366337967043718.clj:19).
+; class java.lang.String cannot be cast to class java.lang.Number (java.lang.String and java.lang.Number are in module java.base of loader 'bootstrap')
+clj꞉run-length-encoding꞉> 
+12
+clj꞉run-length-encoding꞉> 
+12
+clj꞉run-length-encoding꞉> 
+((\1 \2) (\W) (\B) (\1 \2) (\W) (\3) (\B) (\2 \4) (\W) (\B))
+clj꞉run-length-encoding꞉> 
+(12 \W \B 12 \W 3 \B 24 \W \B)
+clj꞉run-length-encoding꞉> 
+; Execution error (ClassCastException) at run-length-encoding/eval24239 (form-init7030366337967043718.clj:20).
+; class java.lang.String cannot be cast to class clojure.lang.IPersistentCollection (java.lang.String is in module java.base of loader 'bootstrap'; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+clj꞉run-length-encoding꞉> 
+; Execution error (ClassCastException) at run-length-encoding/eval24409$fn (form-init7030366337967043718.clj:18).
+; class java.lang.Integer cannot be cast to class clojure.lang.IPersistentCollection (java.lang.Integer is in module java.base of loader 'bootstrap'; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+clj꞉run-length-encoding꞉> 
+(12 \W \B 12 \W 3 \B 24 \W \B)
+clj꞉run-length-encoding꞉> 
+#'run-length-encoding/tmp
+clj꞉run-length-encoding꞉> 
+(12 \W \B 12 \W 3 \B 24 \W \B)
+clj꞉run-length-encoding꞉> 
+; Execution error (ClassCastException) at run-length-encoding/eval24439$fn (form-init7030366337967043718.clj:21).
+; class java.lang.Integer cannot be cast to class clojure.lang.IPersistentCollection (java.lang.Integer is in module java.base of loader 'bootstrap'; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+clj꞉run-length-encoding꞉> 
+[12 \W \B 12 \W 3 \B 24 \W \B]
+clj꞉run-length-encoding꞉> 
+[12
+ (\W \W \W \W \W \W \W \W \W \W \W \W)
+ \B
+ 12
+ (\W \W \W \W \W \W \W \W \W \W \W \W)
+ 3
+ (\B \B \B)
+ 24
+ (\W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W)
+ \B]
+clj꞉run-length-encoding꞉> 
+(\B \W 24 \B 3 \W 12 \B (\W \W \W \W \W \W \W \W \W \W \W \W))
+clj꞉run-length-encoding꞉> 
+(\B \W 24 \B 3 \W 12 \B (\W \W \W \W \W \W \W \W \W \W \W \W))
+clj꞉run-length-encoding꞉> 
+(\B
+ (\W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W)
+ (\B \B \B)
+ (\W \W \W \W \W \W \W \W \W \W \W \W)
+ \B
+ (\W \W \W \W \W \W \W \W \W \W \W \W))
+clj꞉run-length-encoding꞉> 
+((\W \W \W \W \W \W \W \W \W \W \W \W)
+ \B
+ (\W \W \W \W \W \W \W \W \W \W \W \W)
+ (\B \B \B)
+ (\W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W \W)
+ \B)
+clj꞉run-length-encoding꞉> 
+"WWWWWWWWWWWWBWWWWWWWWWWWWBBBWWWWWWWWWWWWWWWWWWWWWWWWB"
+clj꞉run-length-encoding꞉> 
+; Evaluating file: run_length_encoding.clj
+; Syntax error (ClassCastException) compiling at (run_length_encoding.clj:23:1).
+; class java.lang.Integer cannot be cast to class clojure.lang.IPersistentCollection (java.lang.Integer is in module java.base of loader 'bootstrap'; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+; Evaluation of file run_length_encoding.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+run-length-encoding/eval24632 (form-init7030366337967043718.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for run-length-encoding-test...
+; FAIL in run-length-encoding-test/decode-single-characters (run_length_encoding_test.clj:37):
+; decode string with single characters only
+; expected:
+"ZYX"
+; actual:
+"XYZ"
+; 13 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 13
+clj꞉run-length-encoding-test꞉> 
+#'run-length-encoding/cipher-text
+clj꞉run-length-encoding꞉> 
+[\X 2 \Y \Z]
+clj꞉run-length-encoding꞉> 
+((\X) (\2) (\Y) (\Z))
+clj꞉run-length-encoding꞉> 
+(\X 2 \Y \Z)
+clj꞉run-length-encoding꞉> 
+[\X 2 \Y \Z]
+clj꞉run-length-encoding꞉> 
+[\X 2]
+clj꞉run-length-encoding꞉> 
+(2 \X)
+clj꞉run-length-encoding꞉> 
+(\Z (\Y \Y) \X)
+clj꞉run-length-encoding꞉> 
+"XYYZ"
+clj꞉run-length-encoding꞉> 
+; Evaluating file: run_length_encoding.clj
+; Syntax error (ClassCastException) compiling at (run_length_encoding.clj:25:1).
+; class java.lang.Character cannot be cast to class clojure.lang.IPersistentCollection (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+; Evaluation of file run_length_encoding.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+run-length-encoding/eval24785 (form-init7030366337967043718.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for run-length-encoding-test...
+; 13 tests finished, all passing 👍, ns: 1, vars: 13
+clj꞉run-length-encoding-test꞉> 
+((\X) (\2) (\Y) (\Z))
+clj꞉run-length-encoding꞉> 
+(\X 2 \Y \Z)
+clj꞉run-length-encoding꞉> 
+"XYYZ"
+clj꞉run-length-encoding꞉> 
+; Execution error (IllegalArgumentException) at run-length-encoding/eval25163 (form-init7030366337967043718.clj:22).
+; Don't know how to create ISeq from: clojure.core$comp$fn__5792
+clj꞉run-length-encoding꞉> 
+; Evaluating file: run_length_encoding.clj
+; Syntax error (ClassCastException) compiling at (run_length_encoding.clj:32:1).
+; class java.lang.Character cannot be cast to class clojure.lang.IPersistentCollection (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+; Evaluation of file run_length_encoding.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+run-length-encoding/eval25176 (form-init7030366337967043718.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for run-length-encoding-test...
+; 13 tests finished, all passing 👍, ns: 1, vars: 13
+clj꞉run-length-encoding-test꞉> 
+; Evaluating file: run_length_encoding.clj
+; Syntax error (ClassCastException) compiling at (run_length_encoding.clj:27:1).
+; class java.lang.Character cannot be cast to class clojure.lang.IPersistentCollection (java.lang.Character is in module java.base of loader 'bootstrap'; clojure.lang.IPersistentCollection is in unnamed module of loader 'app')
+; Evaluation of file run_length_encoding.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7647)
+run-length-encoding/eval25229 (form-init7030366337967043718.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for run-length-encoding-test...
+; 13 tests finished, all passing 👍, ns: 1, vars: 13
+clj꞉run-length-encoding-test꞉> 
+; Evaluating file: run_length_encoding.clj
+#'run-length-encoding/run-length-decode
+; Running tests for run-length-encoding-test...
+; 13 tests finished, all passing 👍, ns: 1, vars: 13
+clj꞉run-length-encoding-test꞉> 
+; nREPL Connection was closed

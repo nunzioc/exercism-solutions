@@ -1,0 +1,676 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+(nil nil nil)
+clj꞉rna-transcription꞉> 
+(nil nil nil)
+clj꞉rna-transcription꞉> 
+"AGC"
+clj꞉rna-transcription꞉> 
+:c
+clj꞉rna-transcription꞉> 
+:c
+clj꞉rna-transcription꞉> 
+(nil nil \G)
+clj꞉rna-transcription꞉> 
+(\G)
+clj꞉rna-transcription꞉> 
+(nil nil \G)
+clj꞉rna-transcription꞉> 
+#'rna-transcription/to-rna
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription_test.clj
+#'rna-transcription-test/it-validates-dna-strands
+; Running tests for rna-transcription-test...
+; FAIL in rna-transcription-test/it-transcribes-all-nucleotides (rna_transcription_test.clj:18):
+; expected:
+(= "UGCACCAGAAUU" (rna-transcription/to-rna "ACGTGGTCTTAA"))
+; actual:
+(not (= "UGCACCAGAAUU" (\U \G \C \A \C \C \A \G \A \A \U \U)))
+; FAIL in rna-transcription-test/it-transcribes-thymine-to-adenine (rna_transcription_test.clj:15):
+; expected:
+(= "A" (rna-transcription/to-rna "T"))
+; actual:
+(not (= "A" (\A)))
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; FAIL in rna-transcription-test/transcribes-adenine-to-uracil (rna_transcription_test.clj:12):
+; expected:
+(= "U" (rna-transcription/to-rna "A"))
+; actual:
+(not (= "U" (\U)))
+; FAIL in rna-transcription-test/transcribes-cytosine-to-guanine (rna_transcription_test.clj:6):
+; expected:
+(= "G" (rna-transcription/to-rna "C"))
+; actual:
+(not (= "G" (\G)))
+; FAIL in rna-transcription-test/transcribes-guanine-to-cytosine (rna_transcription_test.clj:9):
+; expected:
+(= "C" (rna-transcription/to-rna "G"))
+; actual:
+(not (= "C" (\C)))
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉rna-transcription-test꞉> 
+; Evaluating file: rna_transcription.clj
+#'rna-transcription/to-rna
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-transcribes-all-nucleotides (rna_transcription_test.clj:18):
+; expected:
+"UGCACCAGAAUU"
+; actual:
+(\U \G \C \A \C \C \A \G \A \A \U \U)
+; FAIL in rna-transcription-test/it-transcribes-thymine-to-adenine (rna_transcription_test.clj:15):
+; expected:
+"A"
+; actual:
+(\A)
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; FAIL in rna-transcription-test/transcribes-adenine-to-uracil (rna_transcription_test.clj:12):
+; expected:
+"U"
+; actual:
+(\U)
+; FAIL in rna-transcription-test/transcribes-cytosine-to-guanine (rna_transcription_test.clj:6):
+; expected:
+"G"
+; actual:
+(\G)
+; FAIL in rna-transcription-test/transcribes-guanine-to-cytosine (rna_transcription_test.clj:9):
+; expected:
+"C"
+; actual:
+(\C)
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+()
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-transcribes-all-nucleotides (rna_transcription_test.clj:18):
+; expected:
+"UGCACCAGAAUU"
+; actual:
+(\U \G \C \A \C \C \A \G \A \A \U \U)
+; FAIL in rna-transcription-test/it-transcribes-thymine-to-adenine (rna_transcription_test.clj:15):
+; expected:
+"A"
+; actual:
+(\A)
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; FAIL in rna-transcription-test/transcribes-adenine-to-uracil (rna_transcription_test.clj:12):
+; expected:
+"U"
+; actual:
+(\U)
+; FAIL in rna-transcription-test/transcribes-cytosine-to-guanine (rna_transcription_test.clj:6):
+; expected:
+"G"
+; actual:
+(\G)
+; FAIL in rna-transcription-test/transcribes-guanine-to-cytosine (rna_transcription_test.clj:9):
+; expected:
+"C"
+; actual:
+(\C)
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+""
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-transcribes-all-nucleotides (rna_transcription_test.clj:18):
+; expected:
+"UGCACCAGAAUU"
+; actual:
+(\U \G \C \A \C \C \A \G \A \A \U \U)
+; FAIL in rna-transcription-test/it-transcribes-thymine-to-adenine (rna_transcription_test.clj:15):
+; expected:
+"A"
+; actual:
+(\A)
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; FAIL in rna-transcription-test/transcribes-adenine-to-uracil (rna_transcription_test.clj:12):
+; expected:
+"U"
+; actual:
+(\U)
+; FAIL in rna-transcription-test/transcribes-cytosine-to-guanine (rna_transcription_test.clj:6):
+; expected:
+"G"
+; actual:
+(\G)
+; FAIL in rna-transcription-test/transcribes-guanine-to-cytosine (rna_transcription_test.clj:9):
+; expected:
+"C"
+; actual:
+(\C)
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+"(\\A \\C)"
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-transcribes-all-nucleotides (rna_transcription_test.clj:18):
+; expected:
+"UGCACCAGAAUU"
+; actual:
+(\U \G \C \A \C \C \A \G \A \A \U \U)
+; FAIL in rna-transcription-test/it-transcribes-thymine-to-adenine (rna_transcription_test.clj:15):
+; expected:
+"A"
+; actual:
+(\A)
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; FAIL in rna-transcription-test/transcribes-adenine-to-uracil (rna_transcription_test.clj:12):
+; expected:
+"U"
+; actual:
+(\U)
+; FAIL in rna-transcription-test/transcribes-cytosine-to-guanine (rna_transcription_test.clj:6):
+; expected:
+"G"
+; actual:
+(\G)
+; FAIL in rna-transcription-test/transcribes-guanine-to-cytosine (rna_transcription_test.clj:9):
+; expected:
+"C"
+; actual:
+(\C)
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+"(\\A \\C)"
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+; Syntax error compiling at (rna_transcription.clj:6:1).
+; Unable to resolve symbol: join in this context
+; Evaluation of file rna_transcription.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyze (Compiler.java:6808)
+clojure.lang.Compiler$InvokeExpr/parse (Compiler.java:3820)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7108)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7173)
+clojure.lang.Compiler/load (Compiler.java:7635)
+rna-transcription/eval9102 (form-init690374647908789569.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-transcribes-all-nucleotides (rna_transcription_test.clj:18):
+; expected:
+"UGCACCAGAAUU"
+; actual:
+(\U \G \C \A \C \C \A \G \A \A \U \U)
+; FAIL in rna-transcription-test/it-transcribes-thymine-to-adenine (rna_transcription_test.clj:15):
+; expected:
+"A"
+; actual:
+(\A)
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; FAIL in rna-transcription-test/transcribes-adenine-to-uracil (rna_transcription_test.clj:12):
+; expected:
+"U"
+; actual:
+(\U)
+; FAIL in rna-transcription-test/transcribes-cytosine-to-guanine (rna_transcription_test.clj:6):
+; expected:
+"G"
+; actual:
+(\G)
+; FAIL in rna-transcription-test/transcribes-guanine-to-cytosine (rna_transcription_test.clj:9):
+; expected:
+"C"
+; actual:
+(\C)
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+"AC"
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-transcribes-all-nucleotides (rna_transcription_test.clj:18):
+; expected:
+"UGCACCAGAAUU"
+; actual:
+(\U \G \C \A \C \C \A \G \A \A \U \U)
+; FAIL in rna-transcription-test/it-transcribes-thymine-to-adenine (rna_transcription_test.clj:15):
+; expected:
+"A"
+; actual:
+(\A)
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; FAIL in rna-transcription-test/transcribes-adenine-to-uracil (rna_transcription_test.clj:12):
+; expected:
+"U"
+; actual:
+(\U)
+; FAIL in rna-transcription-test/transcribes-cytosine-to-guanine (rna_transcription_test.clj:6):
+; expected:
+"G"
+; actual:
+(\G)
+; FAIL in rna-transcription-test/transcribes-guanine-to-cytosine (rna_transcription_test.clj:9):
+; expected:
+"C"
+; actual:
+(\C)
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+"AC"
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+; Syntax error macroexpanding clojure.core/ns at (rna_transcription.clj:1:1).
+; (()) - failed: Extra input spec: :clojure.core.specs.alpha/ns-form
+; Evaluation of file rna_transcription.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/checkSpecs (Compiler.java:6971)
+clojure.lang.Compiler/macroexpand1 (Compiler.java:6987)
+clojure.lang.Compiler/macroexpand (Compiler.java:7074)
+clojure.lang.Compiler/eval (Compiler.java:7160)
+clojure.lang.Compiler/load (Compiler.java:7635)
+rna-transcription/eval9269 (form-init690374647908789569.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-transcribes-all-nucleotides (rna_transcription_test.clj:18):
+; expected:
+"UGCACCAGAAUU"
+; actual:
+(\U \G \C \A \C \C \A \G \A \A \U \U)
+; FAIL in rna-transcription-test/it-transcribes-thymine-to-adenine (rna_transcription_test.clj:15):
+; expected:
+"A"
+; actual:
+(\A)
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; FAIL in rna-transcription-test/transcribes-adenine-to-uracil (rna_transcription_test.clj:12):
+; expected:
+"U"
+; actual:
+(\U)
+; FAIL in rna-transcription-test/transcribes-cytosine-to-guanine (rna_transcription_test.clj:6):
+; expected:
+"G"
+; actual:
+(\G)
+; FAIL in rna-transcription-test/transcribes-guanine-to-cytosine (rna_transcription_test.clj:9):
+; expected:
+"C"
+; actual:
+(\C)
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+"AC"
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-transcribes-all-nucleotides (rna_transcription_test.clj:18):
+; expected:
+"UGCACCAGAAUU"
+; actual:
+(\U \G \C \A \C \C \A \G \A \A \U \U)
+; FAIL in rna-transcription-test/it-transcribes-thymine-to-adenine (rna_transcription_test.clj:15):
+; expected:
+"A"
+; actual:
+(\A)
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; FAIL in rna-transcription-test/transcribes-adenine-to-uracil (rna_transcription_test.clj:12):
+; expected:
+"U"
+; actual:
+(\U)
+; FAIL in rna-transcription-test/transcribes-cytosine-to-guanine (rna_transcription_test.clj:6):
+; expected:
+"G"
+; actual:
+(\G)
+; FAIL in rna-transcription-test/transcribes-guanine-to-cytosine (rna_transcription_test.clj:9):
+; expected:
+"C"
+; actual:
+(\C)
+; 6 tests finished, problems found. 😭 errors: 0, failures: 6, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+"AC"
+; Running tests for rna-transcription...
+; ERROR in rna-transcription-test/it-transcribes-all-nucleotides (rna_transcription.clj:18):
+; error: java.lang.ClassCastException: class clojure.lang.LazySeq cannot be cast to class clojure.lang.IFn (clojure.lang.LazySeq and clojure.lang.IFn are in unnamed module of loader 'app') (rna_transcription.clj:18)
+; expected:
+(= "UGCACCAGAAUU" (rna-transcription/to-rna "ACGTGGTCTTAA"))
+; ERROR in rna-transcription-test/it-transcribes-thymine-to-adenine (rna_transcription.clj:15):
+; error: java.lang.ClassCastException: class clojure.lang.LazySeq cannot be cast to class clojure.lang.IFn (clojure.lang.LazySeq and clojure.lang.IFn are in unnamed module of loader 'app') (rna_transcription.clj:15)
+; expected:
+(= "A" (rna-transcription/to-rna "T"))
+; ERROR in rna-transcription-test/it-validates-dna-strands (rna_transcription.clj:21):
+; error: java.lang.ClassCastException: class clojure.lang.LazySeq cannot be cast to class clojure.lang.IFn (clojure.lang.LazySeq and clojure.lang.IFn are in unnamed module of loader 'app') (rna_transcription.clj:21)
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; ERROR in rna-transcription-test/transcribes-adenine-to-uracil (rna_transcription.clj:12):
+; error: java.lang.ClassCastException: class clojure.lang.LazySeq cannot be cast to class clojure.lang.IFn (clojure.lang.LazySeq and clojure.lang.IFn are in unnamed module of loader 'app') (rna_transcription.clj:12)
+; expected:
+(= "U" (rna-transcription/to-rna "A"))
+; ERROR in rna-transcription-test/transcribes-cytosine-to-guanine (rna_transcription.clj:6):
+; error: java.lang.ClassCastException: class clojure.lang.LazySeq cannot be cast to class clojure.lang.IFn (clojure.lang.LazySeq and clojure.lang.IFn are in unnamed module of loader 'app') (rna_transcription.clj:6)
+; expected:
+(= "G" (rna-transcription/to-rna "C"))
+; ERROR in rna-transcription-test/transcribes-guanine-to-cytosine (rna_transcription.clj:9):
+; error: java.lang.ClassCastException: class clojure.lang.LazySeq cannot be cast to class clojure.lang.IFn (clojure.lang.LazySeq and clojure.lang.IFn are in unnamed module of loader 'app') (rna_transcription.clj:9)
+; expected:
+(= "C" (rna-transcription/to-rna "G"))
+; 6 tests finished, problems found. 😭 errors: 6, failures: 0, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+"AC"
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+"AC"
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+; Syntax error reading source at (rna_transcription.clj:5:11).
+; Map literal must contain an even number of forms
+; Evaluation of file rna_transcription.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+rna-transcription/eval9671 (form-init690374647908789569.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+"AC"
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+; Syntax error reading source at (rna_transcription.clj:5:11).
+; Map literal must contain an even number of forms
+; Evaluation of file rna_transcription.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/load (Compiler.java:7642)
+rna-transcription/eval9834 (form-init690374647908789569.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+"AC"
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+"AC"
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+; Syntax error (ArityException) compiling count at (rna_transcription.clj:5:11).
+; Wrong number of args (0) passed to: clojure.core/count--inliner--5506
+; Evaluation of file rna_transcription.clj failed: class clojure.lang.Compiler$CompilerException
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7114)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$IfExpr$Parser/parse (Compiler.java:2824)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6118)
+clojure.lang.Compiler$LetExpr$Parser/parse (Compiler.java:6436)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler$BodyExpr$Parser/parse (Compiler.java:6120)
+clojure.lang.Compiler$FnMethod/parse (Compiler.java:5467)
+clojure.lang.Compiler$FnExpr/parse (Compiler.java:4029)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7104)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7094)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/access$300 (Compiler.java:38)
+clojure.lang.Compiler$DefExpr$Parser/parse (Compiler.java:596)
+clojure.lang.Compiler/analyzeSeq (Compiler.java:7106)
+clojure.lang.Compiler/analyze (Compiler.java:6789)
+clojure.lang.Compiler/eval (Compiler.java:7180)
+clojure.lang.Compiler/load (Compiler.java:7635)
+rna-transcription/eval10080 (form-init690374647908789569.clj:1)
+clojure.lang.Compiler/eval (Compiler.java:7176)
+clojure.core/eval (core.clj:3214)
+clojure.core/eval (core.clj:3210)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.core/apply (core.clj:665)
+clojure.core/with-bindings* (core.clj:1973)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:87)
+clojure.main/repl (main.clj:414)
+clojure.main/repl (main.clj:435)
+clojure.main/repl (main.clj:345)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:84)
+nrepl.middleware.interruptible-eval/evaluate (interruptible_eval.clj:56)
+nrepl.middleware.interruptible-eval/interruptible-eval (interruptible_eval.clj:152)
+nrepl.middleware.session/session-exec (session.clj:218)
+nrepl.middleware.session/session-exec (session.clj:217)
+java.lang.Thread/run (Thread.java:829)
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+"AC"
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+"AC"
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+"AC"
+; Running tests for rna-transcription...
+; FAIL in rna-transcription-test/it-validates-dna-strands (rna_transcription_test.clj:21):
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; actual:
+nil
+; 6 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+"AC"
+; Running tests for rna-transcription...
+; ERROR in rna-transcription-test/it-transcribes-all-nucleotides (AFn.java:18):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/= (AFn.java:18)
+; expected:
+(= "UGCACCAGAAUU" (rna-transcription/to-rna "ACGTGGTCTTAA"))
+; ERROR in rna-transcription-test/it-transcribes-thymine-to-adenine (AFn.java:15):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/= (AFn.java:15)
+; expected:
+(= "A" (rna-transcription/to-rna "T"))
+; ERROR in rna-transcription-test/it-validates-dna-strands (AFn.java:21):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/= (AFn.java:21)
+; expected:
+(thrown? AssertionError (rna-transcription/to-rna "XCGFGGTDTTAA"))
+; ERROR in rna-transcription-test/transcribes-adenine-to-uracil (AFn.java:12):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/= (AFn.java:12)
+; expected:
+(= "U" (rna-transcription/to-rna "A"))
+; ERROR in rna-transcription-test/transcribes-cytosine-to-guanine (AFn.java:6):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/= (AFn.java:6)
+; expected:
+(= "G" (rna-transcription/to-rna "C"))
+; ERROR in rna-transcription-test/transcribes-guanine-to-cytosine (AFn.java:9):
+; error: clojure.lang.ArityException: Wrong number of args (0) passed to: clojure.core/= (AFn.java:9)
+; expected:
+(= "C" (rna-transcription/to-rna "G"))
+; 6 tests finished, problems found. 😭 errors: 6, failures: 0, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+"AC"
+; Running tests for rna-transcription...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 
+; Evaluating file: rna_transcription.clj
+#'rna-transcription/to-rna
+; Running tests for rna-transcription...
+; 6 tests finished, all passing 👍, ns: 1, vars: 6
+clj꞉rna-transcription꞉> 

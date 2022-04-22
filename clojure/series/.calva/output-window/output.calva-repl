@@ -1,0 +1,113 @@
+; This is the Calva evaluation results output window.
+; TIPS: The keyboard shortcut `ctrl+alt+o o` shows and focuses this window
+;   when connected to a REPL session.
+; Please see https://calva.io/output/ for more info.
+; Happy coding! ♥️
+
+; Jacking in...
+; Starting Jack-in Terminal: lein update-in :dependencies conj '[nrepl,"0.9.0"]' -- update-in :plugins conj '[cider/cider-nrepl,"0.27.4"]' -- update-in '[:repl-options,:nrepl-middleware]' conj '["cider.nrepl/cider-middleware"]' -- repl :headless
+; Hooking up nREPL sessions...
+; Connected session: clj
+; TIPS:
+;   - You can edit the contents here. Use it as a REPL if you like.
+;   - `alt+enter` evaluates the current top level form.
+;   - `ctrl+enter` evaluates the current form.
+;   - `alt+up` and `alt+down` traverse up and down the REPL command history
+;      when the cursor is after the last contents at the prompt
+;   - Clojure lines in stack traces are peekable and clickable.
+clj꞉user꞉>  ; Use `alt+enter` to evaluate
+; Jack-in done.
+clj꞉user꞉> 
+; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:553).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉series꞉> 
+nil
+clj꞉series꞉> 
+("hel")
+clj꞉series꞉> 
+("h" "e" "l" "l" "o")
+clj꞉series꞉> 
+#".."
+clj꞉series꞉> 
+; Execution error (ArityException) at series/eval23429 (form-init4348305619013960540.clj:5).
+; Wrong number of args (1) passed to: clojure.core/re-seq
+clj꞉series꞉> 
+("he" "ll")
+clj꞉series꞉> 
+; Execution error (ArityException) at series/eval23433 (form-init4348305619013960540.clj:5).
+; Wrong number of args (1) passed to: clojure.core/re-seq
+clj꞉series꞉> 
+("he" "ll")
+clj꞉series꞉> 
+"lo"
+clj꞉series꞉> 
+"hel"
+clj꞉series꞉> 
+; Execution error (StringIndexOutOfBoundsException) at java.lang.String/checkBoundsBeginEnd (String.java:3319).
+; begin 0, end 7, length 5
+clj꞉series꞉> 
+"hel"
+clj꞉series꞉> 
+5
+clj꞉series꞉> 
+; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:553).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉series꞉> 
+5
+clj꞉series꞉> 
+5
+clj꞉series꞉> 
+(3 4)
+clj꞉series꞉> 
+5
+clj꞉series꞉> 
+; Error printing return value (IllegalArgumentException) at clojure.lang.RT/seqFrom (RT.java:553).
+; Don't know how to create ISeq from: java.lang.Long
+clj꞉series꞉> 
+; Syntax error macroexpanding clojure.core/let at (series.clj:6:1).
+; [end (range 3 (inc (count "hello")))] - failed: simple-symbol? at: [:bindings :form :local-symbol] spec: :clojure.core.specs.alpha/local-name
+((range 3 (inc (count "hello")))) - failed: Extra input at: [:bindings :form :seq-destructure] spec: :clojure.core.specs.alpha/seq-binding-form
+[end (range 3 (inc (count "hello")))] - failed: map? at: [:bindings :form :map-destructure] spec: :clojure.core.specs.alpha/map-bindings
+[end (range 3 (inc (count "hello")))] - failed: map? at: [:bindings :form :map-destructure] spec: :clojure.core.specs.alpha/map-special-binding
+clj꞉series꞉> 
+([0 3] [0 4] [0 5])
+clj꞉series꞉> 
+([0 3] [1 4] [2 5])
+clj꞉series꞉> 
+("hel" "ell" "llo")
+clj꞉series꞉> 
+#'series/slices
+clj꞉series꞉> 
+; Evaluating file: series_test.clj
+#'series-test/number<string
+; Running tests for series-test...
+; FAIL in series-test/number-eq-zero (series_test.clj:11):
+; number = 0
+; expected:
+(= [""] (slices "123" 0))
+; actual:
+(not (= [""] ("" "" "" "")))
+; 5 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 5
+clj꞉series-test꞉> 
+; Evaluating file: series.clj
+#'series/slices
+; Running tests for series-test...
+; FAIL in series-test/number-eq-zero (series_test.clj:11):
+; number = 0
+; expected:
+(= [""] (slices "123" 0))
+; actual:
+(not (= [""] ""))
+; 5 tests finished, problems found. 😭 errors: 0, failures: 1, ns: 1, vars: 5
+clj꞉series-test꞉> 
+; Evaluating file: series.clj
+#'series/slices
+; Running tests for series-test...
+; 5 tests finished, all passing 👍, ns: 1, vars: 5
+clj꞉series-test꞉> 
+((\h \e \l) (\e \l \l) (\l \l \o))
+clj꞉series꞉> 
+()
+clj꞉series꞉> 
+((\h \e \l) (\e \l \l) (\l \l \o) (\l \o \!))
+clj꞉series꞉> 
