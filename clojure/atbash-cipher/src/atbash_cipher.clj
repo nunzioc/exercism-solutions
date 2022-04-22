@@ -8,4 +8,10 @@
     char))
 
 (defn encode [string]
-  (str/join " " (map str/join (partition-all 5 (map cipher (re-seq #"\w" (str/lower-case string)))))))
+  (->> string
+       (str/lower-case)
+       (re-seq #"\w")
+       (map cipher)
+       (partition-all 5)
+       (map str/join)
+       (str/join "")))
