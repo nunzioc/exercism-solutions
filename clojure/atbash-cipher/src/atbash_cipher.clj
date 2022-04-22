@@ -14,4 +14,4 @@
        (map cipher)
        (partition-all 5)
        (map str/join)
-       (str/join "")))
+       (str/join " ")))
