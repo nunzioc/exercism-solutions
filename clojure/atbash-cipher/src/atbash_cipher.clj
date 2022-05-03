@@ -8,6 +8,7 @@
     char))
 
 (defn encode [string]
+<<<<<<< HEAD
   (->> string
        (str/lower-case)
        (re-seq #"\w")
@@ -15,3 +16,6 @@
        (partition-all 5)
        (map str/join)
        (str/join " ")))
+=======
+  (str/join " " (map str/join (partition-all 5 (map cipher (re-seq #"\w" (str/lower-case string)))))))
+>>>>>>> 8f817ca (atbash)
